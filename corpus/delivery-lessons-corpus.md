@@ -91,6 +91,13 @@ URL directly before quoting it.
 **Source:** [Amazon: Summary of the Amazon S3 Service Disruption in the Northern Virginia (US-EAST-1) Region](https://aws.amazon.com/message/41926/), March 2017.
 **Cost:** L
 
+### REL-003: TSB's bank migration landed with no way back
+**Situation:** In April 2018, TSB Bank migrated roughly 5.4 million customer accounts from Lloyds' legacy platform to a new system (Proteo4UK) in a single "big bang" cutover rather than a staged rollout, without a workable rollback plan for if problems emerged after go-live. When the migration surfaced major defects, TSB could not revert to the old platform — it had already been decommissioned as part of the same release — and had to fix the new system live in production while customers were locked out of online and mobile banking, in some cases seeing other customers' account data or unable to access their own money.
+**Impact:** Weeks of disrupted banking access for millions of customers; TSB was fined roughly £48.65 million by UK regulators, with total costs including compensation and remediation estimated above £330 million.
+**Lesson:** "Deployed" isn't the same as "released safely" if there's no way back once something turns out to be broken. A cutover at this scale needs the old system kept live and reachable until the new one is proven, not decommissioned as part of the same go-live — reversibility has to be designed in before the migration starts, not improvised after it fails.
+**Source:** [Slaughter and May: Independent Review of TSB's 2018 IT migration](https://www.slaughterandmay.com/news/slaughter-and-may-s-independent-review-of-tsb-s-2018-migration-to-a-new-it-platform/) (commissioned by the TSB Board), published November 19, 2019.
+**Cost:** L
+
 ---
 
 ## RCK — Recheck
@@ -132,6 +139,20 @@ URL directly before quoting it.
 **Impact:** MCAS activated on faulty single-sensor data on two flights, Lion Air 610 (October 2018) and Ethiopian Airlines 302 (March 2019), killing 346 people combined; the 737 MAX fleet was grounded worldwide for about 20 months.
 **Lesson:** Delegating sign-off to the people who built the thing isn't ratification, it's the same reviewer wearing two hats. A named, independent human has to actually see the full, current version of what they're approving.
 **Source:** [DOT OIG: Weaknesses in FAA's Certification and Delegation Processes Hindered Its Oversight of the 737 MAX 8](https://www.oig.dot.gov/sites/default/files/FAA%20Certification%20of%20737%20MAX%20Boeing%20II%20Final%20Report%5E2-23-2021.pdf), February 2021.
+**Cost:** L
+
+### RAT-002: NASA overrode Thiokol engineers' recommendation not to launch Challenger
+**Situation:** On the night of January 27, 1986, Morton Thiokol engineers formally recommended against launching Space Shuttle Challenger the next morning, because the solid rocket boosters' O-ring seals had never been tested or flown at the forecast freezing temperatures and were known to lose resiliency in cold. NASA managers at Marshall Space Flight Center pushed back on that recommendation during a teleconference, and Thiokol's own management then reversed its engineers' position and signed off on launch, overriding the technical objection to give NASA a clean "GO." Challenger launched the next morning, January 28, 1986, and broke apart 73 seconds after liftoff when a failed O-ring seal let hot gas escape.
+**Impact:** All seven crew members were killed; the Space Shuttle program was grounded for 32 months.
+**Lesson:** When the people with the technical standing to say "no" get overruled by the people who need the "yes," the sign-off has stopped tracking risk and started tracking organizational pressure. A ratification process only works if reversing an engineering recommendation requires clearing a higher bar of evidence than the recommendation itself, not just a louder room.
+**Source:** Report of the Presidential Commission on the Space Shuttle Challenger Accident (the "Rogers Commission Report"), June 6, 1986; summarized at [NASA: Report of the Presidential Commission](https://www.nasa.gov/history/rogersrep/v1appa.htm).
+**Cost:** L
+
+### RAT-003: Japan's nuclear regulator rubber-stamped the industry's own safety assessments
+**Situation:** Before the March 2011 Fukushima Daiichi accident, Japan's nuclear regulator (NISA) was housed inside the same government ministry responsible for promoting the nuclear industry, and its safety approvals routinely consisted of accepting utilities' own self-submitted assessments rather than independently verifying them. In one instance the Diet's investigation cited by name, NISA accepted TEPCO's 2009 anti-seismic assessment for a reactor even though the assessment covered only a fraction of the plant's safety-critical equipment. The independent National Diet of Japan Fukushima Nuclear Accident Independent Investigation Commission concluded the accident was fundamentally a result of this "regulatory capture," not simply a natural disaster.
+**Impact:** A triple reactor meltdown following the March 11, 2011 earthquake and tsunami; over 150,000 people evacuated, with cleanup costs estimated in the hundreds of billions of dollars.
+**Lesson:** A regulator that shares institutional incentives with the entity it's approving isn't ratifying anything, it's co-signing. Genuine sign-off requires an approver whose interest in saying "yes" is structurally weaker than their interest in being right — a stated policy of independence isn't enough if the org chart, funding, or mission ties the approver's success to the approved party's.
+**Source:** [National Diet of Japan Fukushima Nuclear Accident Independent Investigation Commission: official report](https://www.nirs.org/wp-content/uploads/fukushima/naiic_report.pdf), July 5, 2012.
 **Cost:** L
 
 ---
