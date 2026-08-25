@@ -34,6 +34,20 @@ URL directly before quoting it.
 **Source:** [Cloudflare: Cloudflare outage on July 2, 2019](https://blog.cloudflare.com/cloudflare-outage/), July 2019.
 **Cost:** L
 
+### VER-003: Facebook's own audit tool had the exact bug it existed to prevent
+**Situation:** On October 4, 2021, a routine maintenance command intended to assess available backbone capacity was run against Facebook's global backbone network. Facebook's systems include an audit tool specifically built to catch and stop commands like this one before they cause outsized damage, but a bug in that audit tool let the command through anyway, and it ended up withdrawing the BGP advertisements for Facebook's own DNS servers from the backbone. Because those DNS servers became unreachable, and the same backbone loss also broke the remote tools engineers would normally use to fix it, engineers had to be dispatched physically to data centers to restore access.
+**Impact:** ~6 hours of complete outage across Facebook, Instagram, WhatsApp, and Oculus, plus Meta's internal tools, globally.
+**Lesson:** A safety check that exists specifically to catch one class of dangerous command is a single point of failure for that entire class — if the checker has its own bug, "we have an audit tool for this" provides zero actual protection. Verify the audit tool's negative case (that it actually blocks the bad command) as rigorously as the command itself; a check nobody has watched actually fail a bad input is unverified.
+**Source:** [Meta Engineering: More details about the October 4 outage](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/), October 5, 2021.
+**Cost:** L
+
+### VER-004: AppNexus's staging environment couldn't trigger the bug that took down production
+**Situation:** On September 17, 2013, AppNexus pushed a routine data update to its "impbus" ad-serving clusters after the update had already passed both staging and production validation tests. The update triggered a double-free bug, but the bug only manifested after a specific time delay had elapsed in the running process — a condition staging never exercised, since nothing in the validation process held the update under running load for that long before marking it passed. Once the update reached roughly 900 production impbus servers worldwide, they crashed within moments of each other as the same delay elapsed on each one nearly simultaneously.
+**Impact:** Ad serving stopped entirely, then ran in a partially degraded state, for roughly two and a half hours total.
+**Lesson:** "Passed staging" only verifies against the conditions staging actually reproduces. If a bug's trigger depends on elapsed time, sustained load, or any other property a short validation run doesn't hold long enough to hit, staging will pass and production will still fail — match staging's duration and conditions to what production actually does, not just its inputs.
+**Source:** [Xandr Engineering: 2013–09–17 Outage Postmortem](https://medium.com/xandr-tech/2013-09-17-outage-postmortem-586b19ae4307), September 2013.
+**Cost:** M
+
 ---
 
 ## ART — Artifact Creation
@@ -94,6 +108,20 @@ URL directly before quoting it.
 **Lesson:** An expiring credential is a predictable failure with a known date. A recheck against that date, days or weeks ahead, catches it for free; discovering it from a user-facing outage is the expensive way to find out.
 **Source:** [Exoprise: Microsoft Teams Outage Due To Expired Certificate](http://www.exoprise.com/2020/02/04/teams-outage-expired-certificate/), February 2020.
 **Cost:** M
+
+### RCK-003: A signing certificate expired and took down every Firefox add-on
+**Situation:** On May 4, 2019, the intermediate certificate Mozilla used to sign Firefox add-ons expired. Firefox's add-on system requires a valid signature chain before it will load an extension, so the moment the certificate's validity window ended, every already-installed signed add-on and theme stopped loading across Firefox's install base — with no code change and no attacker involved, the certificate had simply been valid and then wasn't. Mozilla's own post read: "We're deeply sorry for this occurrence. Currently the signature verification process is not working, causing all installed add-ons and themes to be disabled." Restoring service required pushing a new, valid certificate through the same update mechanism.
+**Impact:** Roughly 15,000 add-ons disabled across Firefox's install base for around 15–21 hours for most users.
+**Lesson:** An expiring credential is a scheduled failure with a known date already sitting on a calendar somewhere. If nothing rechecks that date ahead of the deadline and forces a renewal, the credential expires exactly on schedule and the "current" state everything downstream depends on silently becomes false.
+**Source:** [Mozilla Add-ons Blog: Add-ons disabled or failing to install in Firefox](https://blog.mozilla.org/addons/2019/05/04/update-regarding-add-ons-in-firefox/), May 4, 2019.
+**Cost:** L
+
+### RCK-004: An expired certificate inside carrier software took down mobile data for millions
+**Situation:** On December 6, 2018, a software certificate embedded inside Ericsson's SGSN-MME network element, a core piece of mobile data infrastructure used by carriers worldwide, expired. Because the certificate lived inside vendor software rather than being tracked as an externally-managed credential up for renewal, no process was rechecking its expiration date, and its expiry caused affected network nodes to fault simultaneously across every carrier running that software version. The resulting failures took down mobile data service for O2 in the UK, SoftBank in Japan, and carriers in several other countries at the same time.
+**Impact:** O2 UK: roughly 16–24 hours of degraded or unavailable mobile data for millions of subscribers; SoftBank Japan: about 5 hours; 11 countries affected in total.
+**Lesson:** A certificate embedded inside vendor software is still a certificate with an expiration date. If it isn't inventoried and rechecked against that date the same way externally-facing certificates are, its expiry surfaces for the first time as a live, simultaneous, multi-carrier outage instead of a routine renewal ticket.
+**Source:** [TechCrunch: Here's what caused yesterday's O2 and SoftBank outages](https://techcrunch.com/2018/12/07/heres-what-caused-yesterdays-o2-and-softbank-outages/), December 7, 2018.
+**Cost:** L
 
 ---
 
