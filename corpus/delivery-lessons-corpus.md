@@ -117,6 +117,13 @@ URL directly before quoting it.
 **Source:** [Leveson & Turner: An Investigation of the Therac-25 Accidents](https://www.cs.columbia.edu/~junfeng/08fa-e6998/sched/readings/therac25.pdf), IEEE Computer, 1993.
 **Cost:** L
 
+### REV-002: Parity's team reviewed a reported vulnerability and misjudged it as low-risk
+**Situation:** In July 2017, Parity fixed one multi-sig wallet vulnerability by deploying a new version of its wallet library contract — but that new version had a separate flaw: because the library's functions were directly callable, anyone could call its `initWallet` function and become the owner of the shared library itself, not just of an individual wallet. In August 2017, a GitHub user reported this exact risk; Parity's team reviewed the report but assessed it as not warranting action. On November 6, 2017, a user triggered the flaw (not maliciously), became owner of the library, and then deleted it — and because every multi-sig wallet built on that library delegated its logic to it rather than holding its own code, deleting the shared library permanently froze the funds in every wallet depending on it.
+**Impact:** Hundreds of multi-sig wallets permanently lost access to their funds; contemporaneous reporting valued the frozen ETH at roughly $150–300 million depending on when the estimate was taken.
+**Lesson:** A reported risk that gets reviewed and dismissed has failed exactly as thoroughly as one that was never reported, if the review doesn't correctly weigh what's actually at stake — here, that the flaw sat in a single shared library every wallet delegated to, not in an isolated per-wallet contract. When a report's severity depends on understanding the blast radius of the underlying architecture, route it to someone who can actually assess that, not just whoever triages the queue.
+**Source:** [Parity Technologies: A Postmortem on the Parity Multi-Sig Library Self-Destruct](https://medium.com/paritytech/a-postmortem-on-the-parity-multi-sig-library-self-destruct-63daca3a4cf7), November 2017; corroborated by [CoinDesk: Parity Team Publishes Postmortem on $160 Million Ether Freeze](https://www.coindesk.com/markets/2017/11/15/parity-team-publishes-postmortem-on-160-million-ether-freeze), November 15, 2017.
+**Cost:** L
+
 ---
 
 ## REC — Recall
