@@ -5,6 +5,9 @@ status: candidate
 source:
 project: # geo | cippe | ci | lords-of-cian | fleet | <real project name>
 tags: []
+provenance: # optional — omit entirely if this note wasn't distilled from an archived session
+  file: # raw/<date>-<slug>.jsonl
+  turns: [] # [start_line, end_line] into that file
 ---
 
 # <Title states the lesson itself, not the topic>
