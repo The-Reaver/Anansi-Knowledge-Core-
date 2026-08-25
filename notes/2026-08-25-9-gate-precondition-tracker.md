@@ -20,17 +20,40 @@ item 2 confirms what FLEET_LEVELING's four stages currently mean, and (b) item 3
 real gate count. Filling this in prematurely would be exactly the kind of guess the original
 proposal warned against. See the stub in "Crosswalk table (stub)" below.
 
-**2. Check FLEET_LEVELING's actual current content — hard blocked.** `FLEET_LEVELING_2026-08-01.md`
-is not in this repository. A full search (`grep -r FLEET_LEVELING`, `find *FLEET*`) found nothing
-— it exists only in the operator's local `knowledge-home` folder, per the README's own note that
-imports from there are still pending. I cannot read a file I don't have; I am not guessing at its
-contents. **Needs the operator**: either add the file to this repo, or paste its four stages'
-actual per-transition criteria (if any exist) directly.
+**2. Check FLEET_LEVELING's actual current content — unblocked, real finding.** Both
+`FLEET_LEVELING_2026-08-01.md` and `STARS.docx` were located in the `Stag-Fleet` repo (on
+`session/knowledge-core-2026-08-06` and `session/augustin-2026-08-06`, identical bytes on both)
+and are now added to this repo's root, plus the audit report FLEET_LEVELING itself points to
+(`reports/AMADEUS_AUDIT_FLEET_LEVELING_2026-08-01.md`).
 
-**3. Bottom-up derivation of gate domains.** In progress — a research agent is deriving candidate
-capability/governance domains from the cited sources (METR Time Horizon, DeepMind Levels of AGI,
-NIST AI RMF, ISO 42001, OWASP Agentic AI maturity), explicitly not targeting nine as the answer.
-Result will land as a follow-up note once the agent completes.
+The actual content changes the picture the original notes gave. `FLEET_LEVELING_2026-08-01.md` is
+**not** a standing scale definition — it's a dated ledger entry claiming 8 agents ascended
+Seed/Designed → Active, Beta on 2026-08-01, each gated by a discrimination harness that must go
+RED when the capability is broken and GREEN when restored (a real, documented per-transition
+criterion — proof-based, not a rubber stamp). But the file carries its own audit note at the top:
+an independent Amadeus audit found only 4 of the 8 claimed ascensions actually had a real, checked
+proving artifact (Amaya, Jasiah, Omar, Jayden); the other 4 (Sentinel, Weaver, Kratos, Valen) were
+returned to unproven, not disproven, status. The document's own "compiled and verified by
+Amadeus" attribution is flagged false by the audit — Amadeus checked it independently, after the
+fact.
+
+**Effect on item 1 (the crosswalk table)**: FLEET_LEVELING isn't a stable, agreed-on ground truth
+to crosswalk against as-is — it's a disputed claim with a live correction layered on top. The
+crosswalk work needs to point at the audited, corrected status per agent, not the original
+document's claims at face value.
+
+**3. Bottom-up derivation of gate domains — done, candidate.** See
+`2026-08-25-9-gate-domain-derivation.md`. Twelve citable capability/governance domains were
+identified across the cited sources plus a few more found in research (Feng/McDonald/Zhang's
+"Levels of Autonomy for AI Agents," OpenAI's four-dimension agentic framework). The most defensible
+merge logic yields **10 gates (5 capability, 5 governance)**, not nine — reported honestly along
+with a sensitivity table showing the real range is roughly 5-12 depending on specific, nameable
+judgment calls. Two sourcing gaps (NIST's agentic-profile publication status, OWASP's exact
+tier/level counts) need direct primary-document verification before ratification — this agent's
+WebFetch access to primary sources was blocked in-session, so findings rest on search-engine-
+mediated summaries. Not yet ratified; the table still needs to resolve three flagged boundary
+placements (autonomy gate's axis, blast-radius classification's axis, Map/Measure merge) before
+adopting a final count.
 
 **4. Decide and ratify Gate 1's specific threshold — research done, decision still pending.** See
 `2026-08-25-gate-1-threshold-candidates.md`: three concrete, cited candidates (METR-only,
@@ -43,12 +66,17 @@ input, not a ratified number.
 `2026-08-25-gate-n-documentation-convention.md`. No blocker; this is a naming rule, not a
 governance judgment call, but it still isn't ratified until the operator's pass.
 
-**6. Confirm the STARS.docx citation-only edit — drafted, not confirmed.** The exact proposed
-citation text is in `2026-08-25-stars-citation-edit-draft.md`, ready to insert. Two real blockers
-remain: (a) `STARS.docx` isn't in this repo either, so the edit can't actually be applied here;
-(b) no note anywhere records *who* holds ratification authority over STARS.docx specifically
-(the notes say only "Brain-Trust-ratified"). **Needs the operator**: name who signs off on
-STARS.docx edits, and provide the file (or apply the drafted text directly).
+**6. Confirm the STARS.docx citation-only edit — drafted, still needs sign-off.** `STARS.docx` is
+now in this repo (see item 2) and its content confirms the original notes' description exactly:
+a 7-phase SDLC-mapped, TRL 1-9 maturity model, a weighted 0-100 composite index (weights 10/12/13
+/13/12/20/20), a weakest-link floor cap (composite can't exceed the weakest phase's normalized
+score by more than 25 points), and a ceiling-durability discount (a displayed 100 is withheld
+until all seven phases hold certified TRL9 across two consecutive quarterly re-baselines). The
+exact proposed citation text is still in `2026-08-25-stars-citation-edit-draft.md`, ready to
+insert — but it is not yet applied to the file, and no note anywhere records *who* holds
+ratification authority over STARS.docx specifically (the notes say only "Brain-Trust-ratified").
+**Needs the operator**: name who signs off on STARS.docx edits, then the drafted text can be
+inserted directly.
 
 ## Crosswalk table (stub)
 
