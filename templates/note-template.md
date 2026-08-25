@@ -1,13 +1,15 @@
 ---
 id:
 type: # finding | decision | lesson | correction | ruling | artifact | question | spec | note
-status: candidate
+status: candidate # candidate = one agent's unverified read; ratified = a human signed off — treat accordingly
 source:
 project: # geo | cippe | ci | lords-of-cian | fleet | <real project name>
 tags: []
 provenance: # optional — omit entirely if this note wasn't distilled from an archived session
   file: # raw/<date>-<slug>.jsonl
   turns: [] # [start_line, end_line] into that file
+supersedes: [] # ids of notes this one replaces, if any — leave empty otherwise
+superseded_by: null # id of the note that replaced this one, if any — leave null otherwise
 ---
 
 # <Title states the lesson itself, not the topic>
