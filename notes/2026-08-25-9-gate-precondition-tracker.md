@@ -32,10 +32,12 @@ capability/governance domains from the cited sources (METR Time Horizon, DeepMin
 NIST AI RMF, ISO 42001, OWASP Agentic AI maturity), explicitly not targeting nine as the answer.
 Result will land as a follow-up note once the agent completes.
 
-**4. Decide and ratify Gate 1's specific threshold.** In progress — a separate research agent is
-finding real published METR Time Horizon numbers and the specific DeepMind Levels-of-AGI rung
-that would make a defensible, citable Gate 1 floor, as candidates for the operator/Brain Trust to
-ratify. Result will land as a follow-up note once the agent completes.
+**4. Decide and ratify Gate 1's specific threshold — research done, decision still pending.** See
+`2026-08-25-gate-1-threshold-candidates.md`: three concrete, cited candidates (METR-only,
+DeepMind-only, combined either/or), with a recommendation for the combined candidate. Real gaps
+flagged honestly (METR's own reliability ceiling, domain-skew toward software tasks, DeepMind's
+ontology having no attached operational test). Still needs the table's actual decision — this is
+input, not a ratified number.
 
 **5. Adopt the "Gate N" documentation convention — done, candidate.** See
 `2026-08-25-gate-n-documentation-convention.md`. No blocker; this is a naming rule, not a
@@ -68,3 +70,4 @@ one, and the ratified version of this table must say so explicitly (per the verd
 - extends, `2026-08-25-9-gate-brain-trust-verdict.md`, the ruling these six items gate.
 - affects, `2026-08-25-gate-n-documentation-convention.md`, item 5.
 - affects, `2026-08-25-stars-citation-edit-draft.md`, item 6.
+- affects, `2026-08-25-gate-1-threshold-candidates.md`, item 4.
