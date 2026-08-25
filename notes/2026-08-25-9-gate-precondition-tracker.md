@@ -7,12 +7,14 @@ project: fleet
 tags: [brain-trust, 9-gate, stars-dreams, fleet-leveling, tracker]
 ---
 
-# Tracker: the six preconditions the 9-Gate verdict set before the operator can ratify it — one is hard-blocked on file access, the rest are in progress or done
+# Tracker: five of the six 9-Gate preconditions are done; the operator ratified the scope decision ahead of the last one (the crosswalk table), which stays open as follow-on work
 
 ## Body
 
-`2026-08-25-9-gate-brain-trust-verdict.md` listed six items that must be done, not assumed,
-before the hybrid-or-other verdict can be ratified. Status as of this session:
+`2026-08-25-9-gate-brain-trust-verdict.md` listed six items to work before ratification. The
+operator ratified the verdict's scope decision on 2026-08-25 (see that note's Ratification
+section) with item 1 still open — a deliberate choice, not an oversight. Status as of this
+session:
 
 **1. Draft the Gate-range-to-FLEET_LEVELING-label crosswalk table.** Blocked-in-part. The
 mechanism is drafted below, but the actual gate-range boundaries can't be filled in until (a)

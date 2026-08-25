@@ -1,7 +1,7 @@
 ---
 id: 2026-08-25-9-gate-brain-trust-verdict
 type: ruling
-status: candidate, pending operator ratification
+status: ratified (scope decision) — implementation numbers still open, see Ratification section
 source: >
   this chat, running the fleet deliberation process the operator specified in
   `2026-08-08-heavy-chat-handoff-addendum-routing.md` ("let the brain trust and AJ render the
@@ -12,7 +12,35 @@ project: fleet
 tags: [brain-trust, ruling, 9-gate, stars-dreams, fleet-leveling, mandate-7, mandate-1]
 ---
 
-# Brain Trust candidate verdict: the 9-Gate model is neither a replacement for STARS.docx nor a parallel system to FLEET_LEVELING — it becomes the fleet's single onboarding/graduation ladder, with both existing systems repositioned around it
+# Ratified: the 9-Gate model is neither a replacement for STARS.docx nor a parallel system to FLEET_LEVELING — it becomes the fleet's single onboarding/graduation ladder, with both existing systems repositioned around it
+
+## Ratification
+
+Ratified by Abad Morel (the operator) on 2026-08-25, by direct instruction: "Ratify the
+hybrid-or-other verdict."
+
+**What this ratifies**: the structural scope decision the fleet voted on, 4-0 — 9-Gate becomes
+the fleet's single onboarding/graduation ladder; STARS.docx stays untouched in substance and
+remains sole authority on Augustin's CTO-training depth; FLEET_LEVELING stops being an
+independently-scored system and becomes a label derived from Gate status. This is now the fleet's
+governing position, not a candidate.
+
+**What this does not ratify**: the specific implementation numbers, which this verdict and every
+precondition item consistently framed as separate "table decisions" — the exact final gate count
+(candidate: 10, range 5-12 depending on named judgment calls, see
+`2026-08-25-9-gate-domain-derivation.md`), Gate 1's specific numeric threshold (three candidates
+proposed, none chosen, see `2026-08-25-gate-1-threshold-candidates.md`), and the actual
+Gate-range-to-FLEET_LEVELING-label crosswalk table (still a stub, see
+`2026-08-25-9-gate-precondition-tracker.md`). Those remain open for a follow-up ratification pass
+and are not folded into this one.
+
+**Status of the six preconditions at ratification time**: items 2, 3, 4, 5, and 6 are done; item
+1 (the crosswalk table) is unblocked but not yet filled in. The operator's ratification of the
+scope decision proceeds ahead of that last item being finalized — a deliberate choice to lock the
+structural direction now rather than hold it hostage to a mapping-table detail, made explicitly
+by the operator rather than assumed.
+
+## Body
 
 ## Body
 
