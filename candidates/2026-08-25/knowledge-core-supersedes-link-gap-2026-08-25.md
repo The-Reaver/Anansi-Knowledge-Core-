@@ -23,6 +23,14 @@ ratification time.
 This is a finding, not yet ratified — whether and how to build this is a decision for the
 operator, not something to silently treat as decided.
 
+**Update, 2026-08-25:** the operator approved building the fix. `templates/note-template.md`
+and `README.md` now carry the `supersedes` / `superseded_by` fields and the bidirectional
+enforcement rule (see `README.md`'s "Note format" section). This finding's own `status` is
+left as `candidate` — building the schema field isn't the same as ratifying this finding,
+and this session still has no Anansi access to run that gate. Once ratified, this note is a
+candidate for its own `supersedes` field to point at whatever replaces it, since the gap it
+names is now closed by the template change rather than by this note.
+
 ## Links
 
 - Architecture, Redlined Rev. 3, Part V

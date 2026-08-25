@@ -34,12 +34,22 @@ Every note carries:
 - `status` — e.g. `candidate`, `ratified`
 - `source` — where the lesson came from (session, chat, document)
 - `tags` — free-form
+- `supersedes` / `superseded_by` — the bidirectional link between a note and whatever
+  replaces it. See below.
 - `## Body` — what happened, why, and what to do differently. Plain language. Name the
   file, the command, the error.
 - `## Links` — ids of notes this one extends, contradicts, or depends on. Links are what
   turn a pile of notes into a graph.
 
 One lesson per note. A note holding three lessons gets found for none of them.
+
+**Supersedes is bidirectional, not a status flag.** A note being outdated isn't enough —
+if the note that replaces it doesn't point back, a later retrieval can surface the stale
+note and its correction side by side with no signal which one wins. So the rule at
+ratification time: when a new note ratifies with a non-empty `supersedes` list, the
+ratifier updates every note named there to set its `superseded_by` to the new note's id,
+in the same pass. A note is never left pointing nowhere while something else already
+replaced it.
 
 **Title** states the lesson itself, not the topic — "A silent empty artifact is a bug, it
 must fail loud" beats "Notes on the ERD renderer".
