@@ -5,6 +5,8 @@ status: candidate
 source:
 project: # geo | cippe | ci | lords-of-cian | fleet | <real project name>
 tags: []
+supersedes: [] # ids of notes this one replaces, if any — leave empty otherwise
+superseded_by: null # id of the note that replaced this one, if any — leave null otherwise
 ---
 
 # <Title states the lesson itself, not the topic>
