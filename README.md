@@ -50,5 +50,7 @@ See `templates/note-template.md` for the starting shape of a new note.
 
 ## Status
 
-Scaffold only — awaiting the first import of notes from the operator's local
-`knowledge-home` folder.
+First import landed 2026-08-08: five notes from the STAG Research-role chat (the 2x2
+troubleshooting-narrative research ratification, its handoff, an addendum, and the
+Curiosity Room / Solutions Room proposal with its Shift Department correction). Further
+imports from the operator's local `knowledge-home` folder are still pending.
