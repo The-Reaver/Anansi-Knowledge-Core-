@@ -311,6 +311,13 @@ the agent's own behavior, and map cleanly onto NIST's four functions.
   partly a function of what it's *capable* of touching reliably (Gates 1–4) and partly a function
   of what an organization *chooses* to grant it access to (governance). §6's sensitivity table
   shows this ambiguity has real consequences for the final count.
+- **Gate 5's naming source** is itself contestable: DeepMind's embedded Levels of Autonomy (No
+  AI / Tool / Consultant / Collaborator / Expert / Agent) and Feng/McDonald/Zhang's standalone scale
+  (Operator / Collaborator / Consultant / Approver / Observer) are two different frameworks that
+  happen to reuse "Collaborator" and "Consultant" at different rungs with different meanings.
+  Whichever the Brain Trust adopts for Gate 5's actual level names, the ratified document must
+  name its source explicitly and not silently blend the two, or "Collaborator" will mean two
+  different things in the same governance document.
 - **Gate 9 vs. Gate 8** (Measure vs. Map) is the second most contestable merge candidate: NIST
   frames these as temporally distinct (assess before deployment vs. monitor during operation), but
   a fleet running fast iteration cycles may find the practical distinction thin, which is why this
@@ -367,7 +374,8 @@ purposes, which further weakens "TRL uses nine" as a reason to expect any other 
 - extends, `2026-08-25-9-gate-brain-trust-verdict.md`, item 3 of its ratification preconditions
   ("Grounding Gate 1's floor" and "On the number 9" sections specifically).
 - extends, `2026-08-25-9-gate-precondition-tracker.md`, resolving item 3's "in progress" status.
-- depends on (not yet done), the separate research pass for item 4 (Gate 1's specific numeric
-  threshold), which this document's Gate 1 deliberately leaves as an open table decision.
+- depends on, `2026-08-25-gate-1-threshold-candidates.md`, item 4's research pass on Gate 1's
+  specific numeric threshold, which this document's Gate 1 deliberately leaves as an open table
+  decision — that note's confirmed DeepMind autonomy-level names are incorporated above.
 - affects, `2026-08-25-gate-n-documentation-convention.md`, once a specific gate count is ratified,
   the convention should be checked against the actual adopted sequence.
