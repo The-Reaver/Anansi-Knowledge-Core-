@@ -19,6 +19,8 @@ the other half of the same failure — every session owes the Core its lesson, u
 notes/            permanent, ratified atomic notes — the Core itself
 candidates/       unratified captures, one dated subfolder per session (candidates/<date>/)
 templates/        the note template new captures should start from
+curiosity-room/   live queue of open questions — see curiosity-room/README.md
+solutions-room/   live queue of worked solutions to those questions — see solutions-room/README.md
 ```
 
 Nothing enters `notes/` without the operator's pass. Everything lands in `candidates/`
