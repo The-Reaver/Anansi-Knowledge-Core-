@@ -66,17 +66,14 @@ input, not a ratified number.
 `2026-08-25-gate-n-documentation-convention.md`. No blocker; this is a naming rule, not a
 governance judgment call, but it still isn't ratified until the operator's pass.
 
-**6. Confirm the STARS.docx citation-only edit — drafted, still needs sign-off.** `STARS.docx` is
-now in this repo (see item 2) and its content confirms the original notes' description exactly:
-a 7-phase SDLC-mapped, TRL 1-9 maturity model, a weighted 0-100 composite index (weights 10/12/13
-/13/12/20/20), a weakest-link floor cap (composite can't exceed the weakest phase's normalized
-score by more than 25 points), and a ceiling-durability discount (a displayed 100 is withheld
-until all seven phases hold certified TRL9 across two consecutive quarterly re-baselines). The
-exact proposed citation text is still in `2026-08-25-stars-citation-edit-draft.md`, ready to
-insert — but it is not yet applied to the file, and no note anywhere records *who* holds
-ratification authority over STARS.docx specifically (the notes say only "Brain-Trust-ratified").
-**Needs the operator**: name who signs off on STARS.docx edits, then the drafted text can be
-inserted directly.
+**6. Confirm the STARS.docx citation-only edit — done.** `STARS.docx`'s own header names its
+ratification authority directly: "Owner: Abad Morel" — no separate edit-approval clause exists
+elsewhere in the document. Since Abad Morel is the operator, that resolved the blocker. The
+citation-only paragraph is now applied in the document (see
+`2026-08-25-stars-citation-edit-draft.md` for the exact text, how it was inserted, and how it was
+verified). STARS's substance is untouched: the 7-phase SDLC map, TRL 1-9, weighted 0-100
+composite (weights 10/12/13/13/12/20/20), weakest-link floor cap, and ceiling-durability discount
+are all exactly as the original notes described.
 
 ## Crosswalk table (stub)
 
