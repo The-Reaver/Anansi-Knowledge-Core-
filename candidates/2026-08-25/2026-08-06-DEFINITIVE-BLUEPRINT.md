@@ -2,7 +2,7 @@
 id: 2026-08-06-DEFINITIVE-BLUEPRINT
 type: note
 status: candidate
-source: Google Drive inbox capture, source chat not recorded in original note
+source: "Google Drive inbox capture, source chat not recorded in original note"
 project: geo
 tags: []
 ---

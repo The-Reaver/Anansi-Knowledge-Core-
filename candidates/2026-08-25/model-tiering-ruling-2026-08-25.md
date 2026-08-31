@@ -2,7 +2,7 @@
 id: model-tiering-ruling-2026-08-25
 type: ruling
 status: candidate
-source: Architecture, Redlined — Rev. 3 (artifact 924c39f2), Part IV; captured via GeoSuite session handoff, 2026-08-25
+source: "Architecture, Redlined — Rev. 3 (artifact 924c39f2), Part IV; captured via GeoSuite session handoff, 2026-08-25"
 project: fleet
 tags: [model-tiering, cost, agent-engineering]
 ---

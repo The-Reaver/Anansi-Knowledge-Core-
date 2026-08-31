@@ -1,8 +1,8 @@
 ---
-id: 2026-08-07-ownership-and-entity-map
+id: 2026-08-07-ownership-and-entity-map-2
 type: note
 status: ratified
-source: Cowork session 2026-08-07, operator on phone; clarified the company and project ownership structure and partners when scoping the architect's document. (source status: active)
+source: "Cowork session 2026-08-07, operator on phone; clarified the company and project ownership structure and partners when scoping the architect's document. (source status: active)"
 project: geo
 tags: [ownership, entities, tony-llc, stag, geo-suite, smart-seed-tech, hbot-usa, sonny, thrivemedix, architect, partners]
 ---

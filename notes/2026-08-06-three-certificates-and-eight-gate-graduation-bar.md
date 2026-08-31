@@ -2,7 +2,7 @@
 id: 2026-08-06-three-certificates-and-eight-gate-graduation-bar
 type: spec
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; defined the certification bar that flips an agent from school to cleared (source status: active); mined from candidates/2026-08-25/2026-08-06-graduation-bar-and-breakers-gauntlet-design.md
+source: "Cowork session 2026-08-06, operator on phone; defined the certification bar that flips an agent from school to cleared (source status: active); mined from candidates/2026-08-25/2026-08-06-graduation-bar-and-breakers-gauntlet-design.md"
 project: fleet
 tags: [certification, graduation-bar, gates, aj]
 ---

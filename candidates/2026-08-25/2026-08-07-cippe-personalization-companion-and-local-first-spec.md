@@ -2,7 +2,7 @@
 id: 2026-08-07-cippe-personalization-companion-and-local-first-spec
 type: decision
 status: candidate
-source: Cowork session 2026-08-07; operator described the intended real user (a specific neurodivergent privacy professional, referred to as "her"), and asked for deep personalization, a caring but non-sycophantic adaptive tool, confidential identity, and local-on-her-computer deployment. (source status: active)
+source: "Cowork session 2026-08-07; operator described the intended real user (a specific neurodivergent privacy professional, referred to as \"her\"), and asked for deep personalization, a caring but non-sycophantic adaptive tool, confidential identity, and local-on-her-computer deployment. (source status: active)"
 project: cippe
 tags: [cippe, personalization, companion, neurodivergent, caring, anti-sycophancy, confidentiality, local-first, single-container, adaptive]
 ---

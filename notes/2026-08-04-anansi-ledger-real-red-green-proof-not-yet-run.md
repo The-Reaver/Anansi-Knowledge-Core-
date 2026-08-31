@@ -2,7 +2,7 @@
 id: 2026-08-04-anansi-ledger-real-red-green-proof-not-yet-run
 type: finding
 status: ratified
-source: this chat, 2026-08-04, stated plainly at the close of the Jeremy/Jasiah build cycle (source status: active)
+source: "this chat, 2026-08-04, stated plainly at the close of the Jeremy/Jasiah build cycle (source status: active)"
 project: fleet
 tags: [anansi, jasiah, honesty, finding]
 ---

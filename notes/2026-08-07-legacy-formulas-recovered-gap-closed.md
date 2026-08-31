@@ -2,7 +2,7 @@
 id: 2026-08-07-legacy-formulas-recovered-gap-closed
 type: note
 status: ratified
-source: contribution chat two (STAG operator-contributions research session) close-out, reconciled 2026-08-07 (source status: resolved, 2026-08-07)
+source: "contribution chat two (STAG operator-contributions research session) close-out, reconciled 2026-08-07 (source status: resolved, 2026-08-07)"
 project: fleet
 tags: []
 ---

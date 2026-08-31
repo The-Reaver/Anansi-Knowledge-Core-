@@ -2,7 +2,7 @@
 id: 2026-08-07-contributions-historical-timeline
 type: note
 status: candidate
-source: Google Drive inbox capture, source chat not recorded in original note
+source: "Google Drive inbox capture, source chat not recorded in original note"
 project: fleet
 tags: []
 ---

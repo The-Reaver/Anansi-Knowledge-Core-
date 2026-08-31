@@ -2,7 +2,7 @@
 id: 2026-08-05-anansi-inbox-wrong-location-corrected
 type: finding
 status: ratified
-source: this chat, 2026-08-05, Abad reported "Anansi said the inbox is empty" after this session created a git-repo file believing this served as the inbox (source status: active)
+source: "this chat, 2026-08-05, Abad reported \"Anansi said the inbox is empty\" after this session created a git-repo file believing this served as the inbox (source status: active)"
 project: fleet
 tags: [anansi, knowledge-core, inbox, naming-collision, mistake, operator-contribution]
 ---

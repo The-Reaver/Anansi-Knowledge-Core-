@@ -2,7 +2,7 @@
 id: 2026-08-07-operator-is-layman-hand-hold-every-step
 type: note
 status: ratified
-source: operator directive, 2026-08-07 (source status: ratified by operator, 2026-08-07, reinforced)
+source: "operator directive, 2026-08-07 (source status: ratified by operator, 2026-08-07, reinforced)"
 project: fleet
 tags: []
 ---

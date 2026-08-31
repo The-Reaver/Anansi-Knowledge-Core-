@@ -2,7 +2,7 @@
 id: 2026-08-07-site-generator-mirrors-build-methodology
 type: decision
 status: ratified
-source: Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; directed that the Site Generator feature itself run on the same principles the team develops by (Mandate 12, slice by slice, layering, nothing lost). (source status: active)
+source: "Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; directed that the Site Generator feature itself run on the same principles the team develops by (Mandate 12, slice by slice, layering, nothing lost). (source status: active)"
 project: geo
 tags: [geo-suite, site-generator, methodology, slice-by-slice, layering, verification, provenance, mandate-12, demo]
 ---

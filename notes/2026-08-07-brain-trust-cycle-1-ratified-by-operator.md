@@ -2,7 +2,7 @@
 id: 2026-08-07-brain-trust-cycle-1-ratified-by-operator
 type: note
 status: ratified
-source: operator ratification, 2026-08-07 (source status: ratified, binding)
+source: "operator ratification, 2026-08-07 (source status: ratified, binding)"
 project: fleet
 tags: []
 ---

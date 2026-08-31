@@ -2,7 +2,7 @@
 id: knowledge-core-confidence-tier-gap-2026-08-25
 type: finding
 status: candidate
-source: Architecture, Redlined — Rev. 3, Part V; captured via GeoSuite session handoff, 2026-08-25
+source: "Architecture, Redlined — Rev. 3, Part V; captured via GeoSuite session handoff, 2026-08-25"
 project: fleet
 tags: [knowledge-core, zettelkasten, deepening]
 ---

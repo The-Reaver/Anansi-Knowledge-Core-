@@ -2,7 +2,7 @@
 id: 2026-08-04-jeremy-closed-gap-with-smoke-test-script
 type: artifact
 status: ratified
-source: this chat, 2026-08-04, Jeremy resumed via SendMessage after Jasiah's review (source status: active)
+source: "this chat, 2026-08-04, Jeremy resumed via SendMessage after Jasiah's review (source status: active)"
 project: fleet
 tags: [anansi, jeremy, jasiah, build-outcome]
 ---

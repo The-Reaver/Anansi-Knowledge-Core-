@@ -2,7 +2,7 @@
 id: 2026-08-04-device-folder-access-repeatedly-failed
 type: finding
 status: ratified
-source: this chat, 2026-08-04, repeated device_request_folder_access attempts across the session (source status: active)
+source: "this chat, 2026-08-04, repeated device_request_folder_access attempts across the session (source status: active)"
 project: fleet
 tags: [device-bridge, blocked, finding]
 ---

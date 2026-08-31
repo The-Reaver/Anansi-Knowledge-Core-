@@ -2,7 +2,7 @@
 id: 2026-08-06-tyr-curriculum-lead-breaker
 type: decision
 status: candidate
-source: Cowork session 2026-08-06, operator on phone; Brain Trust ruled to design TYR's curriculum next. TYR is the first agent from Seed, approved as lead Breaker and Security Auditor, reporting to AJ. (source status: active)
+source: "Cowork session 2026-08-06, operator on phone; Brain Trust ruled to design TYR's curriculum next. TYR is the first agent from Seed, approved as lead Breaker and Security Auditor, reporting to AJ. (source status: active)"
 project: fleet
 tags: [tyr, curriculum, stars, breaker, security, red-team, aj, certification]
 ---

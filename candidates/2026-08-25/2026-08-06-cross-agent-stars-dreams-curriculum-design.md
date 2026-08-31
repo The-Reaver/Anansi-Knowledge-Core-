@@ -2,7 +2,7 @@
 id: 2026-08-06-cross-agent-stars-dreams-curriculum-design
 type: decision
 status: candidate
-source: Cowork session 2026-08-06, operator on phone away from the machine; asked to design the STARS/DREAMS curriculum for the other agents and how curricula execute across chats. Captured to the Anansi Atomic Notes Inbox because the repo was not reachable from the phone. (source status: draft)
+source: "Cowork session 2026-08-06, operator on phone away from the machine; asked to design the STARS/DREAMS curriculum for the other agents and how curricula execute across chats. Captured to the Anansi Atomic Notes Inbox because the repo was not reachable from the phone. (source status: draft)"
 project: fleet
 tags: [training, curriculum, stars, dreams, cross-agent, resume-protocol, mandate-7, mandate-8]
 ---

@@ -2,7 +2,7 @@
 id: 2026-08-06-geo-suite-three-tools-one-platform-product-definition
 type: spec
 status: ratified
-source: Google Drive inbox capture, source chat not recorded in original note (source status: v1, 2026-08-06); mined from candidates/2026-08-25/2026-08-06-DEFINITIVE-BLUEPRINT.md
+source: "Google Drive inbox capture, source chat not recorded in original note (source status: v1, 2026-08-06); mined from candidates/2026-08-25/2026-08-06-DEFINITIVE-BLUEPRINT.md"
 project: geo
 tags: [geo-suite, product-definition, visibility, compliance-intelligence, sales]
 ---

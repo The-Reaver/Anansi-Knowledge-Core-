@@ -2,7 +2,7 @@
 id: 2026-08-06-cross-agent-curriculum-decisions-and-score-upgrade-plan
 type: decision
 status: candidate
-source: Cowork session 2026-08-06, operator on phone; chose the first agents and the score model, and asked for a documented plan to upgrade the score model soon. (source status: active)
+source: "Cowork session 2026-08-06, operator on phone; chose the first agents and the score model, and asked for a documented plan to upgrade the score model soon. (source status: active)"
 project: fleet
 tags: [training, curriculum, stars, dreams, leveling, upgrade-plan, jeremy, oluwole]
 ---

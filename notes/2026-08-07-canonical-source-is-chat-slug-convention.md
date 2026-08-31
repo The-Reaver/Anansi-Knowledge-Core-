@@ -2,7 +2,7 @@
 id: 2026-08-07-canonical-source-is-chat-slug-convention
 type: note
 status: ratified
-source: operator directive, 2026-08-07 (source status: ratified by operator, 2026-08-07)
+source: "operator directive, 2026-08-07 (source status: ratified by operator, 2026-08-07)"
 project: fleet
 tags: []
 ---

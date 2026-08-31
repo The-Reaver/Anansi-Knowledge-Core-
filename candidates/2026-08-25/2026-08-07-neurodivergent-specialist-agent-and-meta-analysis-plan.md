@@ -2,7 +2,7 @@
 id: 2026-08-07-neurodivergent-specialist-agent-and-meta-analysis-plan
 type: decision
 status: candidate
-source: Cowork session 2026-08-07; operator proposed a specific agent designed to help ADD/ADHD/neurodivergent individuals, and offered to contribute Gemini and Quinn research to combine with Claude's for a meta-analysis. (source status: active)
+source: "Cowork session 2026-08-07; operator proposed a specific agent designed to help ADD/ADHD/neurodivergent individuals, and offered to contribute Gemini and Quinn research to combine with Claude's for a meta-analysis. (source status: active)"
 project: fleet
 tags: [fleet, agent, neurodivergent, adhd, accessibility, research, meta-analysis, orlok, redesign]
 ---

@@ -2,7 +2,7 @@
 id: 2026-08-07-pkm-meta-analysis-reconciled-hub
 type: note
 status: candidate
-source: Beyond Philosophy to Formulas (Qwen deep-research meta-analysis), 2026-08-07, reconciled against our research (source status: hub note, 19 candidate notes held pending operator approval)
+source: "Beyond Philosophy to Formulas (Qwen deep-research meta-analysis), 2026-08-07, reconciled against our research (source status: hub note, 19 candidate notes held pending operator approval)"
 project: fleet
 tags: []
 ---

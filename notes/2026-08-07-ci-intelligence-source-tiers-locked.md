@@ -2,7 +2,7 @@
 id: 2026-08-07-ci-intelligence-source-tiers-locked
 type: spec
 status: ratified
-source: Cowork session 2026-08-07, operator on phone; asked for the plan to gather valid compliance information that the lawyer then validates, to feed the Knowledge Core; backbone sources verified via web search (source status: active); mined from candidates/2026-08-25/2026-08-07-compliance-intelligence-gathering-plan.md
+source: "Cowork session 2026-08-07, operator on phone; asked for the plan to gather valid compliance information that the lawyer then validates, to feed the Knowledge Core; backbone sources verified via web search (source status: active); mined from candidates/2026-08-25/2026-08-07-compliance-intelligence-gathering-plan.md"
 project: ci
 tags: [ci, sources, rss, api, legiscan, federal-register, tiers]
 ---

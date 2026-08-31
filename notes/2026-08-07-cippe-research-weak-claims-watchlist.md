@@ -2,7 +2,7 @@
 id: 2026-08-07-cippe-research-weak-claims-watchlist
 type: correction
 status: ratified
-source: Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2), weak-sourced claims flagged under Mandate 7 (source status: active); mined from candidates/2026-08-25/2026-08-07-cippe-redesign-blueprint-meta-analysis.md
+source: "Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2), weak-sourced claims flagged under Mandate 7 (source status: active); mined from candidates/2026-08-25/2026-08-07-cippe-redesign-blueprint-meta-analysis.md"
 project: cippe
 tags: [cippe, weak-claims, sourcing, mandate-7, correction]
 ---

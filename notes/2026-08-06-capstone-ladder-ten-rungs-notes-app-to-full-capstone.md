@@ -2,7 +2,7 @@
 id: 2026-08-06-capstone-ladder-ten-rungs-notes-app-to-full-capstone
 type: spec
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; approved TYR as lead Breaker, then asked for the capstone ladder and exact build sequence (source status: active); mined from candidates/2026-08-25/2026-08-06-capstone-ladder-and-build-priority-order.md
+source: "Cowork session 2026-08-06, operator on phone; approved TYR as lead Breaker, then asked for the capstone ladder and exact build sequence (source status: active); mined from candidates/2026-08-25/2026-08-06-capstone-ladder-and-build-priority-order.md"
 project: fleet
 tags: [capstone, curriculum, ladder, geo-suite, adlc]
 ---

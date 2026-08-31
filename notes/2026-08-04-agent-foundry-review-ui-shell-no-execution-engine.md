@@ -2,7 +2,7 @@
 id: 2026-08-04-agent-foundry-review-ui-shell-no-execution-engine
 type: finding
 status: ratified
-source: this chat, 2026-08-04, direct code review of the Agent Foundry Lovable project (source status: active)
+source: "this chat, 2026-08-04, direct code review of the Agent Foundry Lovable project (source status: active)"
 project: fleet
 tags: [agent-foundry, lovable, build-outcome]
 ---

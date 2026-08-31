@@ -2,7 +2,7 @@
 id: 2026-08-04-future-lovable-builds-route-through-fleet
 type: ruling
 status: ratified
-source: this chat, 2026-08-04, Abad's standing instruction (source status: active)
+source: "this chat, 2026-08-04, Abad's standing instruction (source status: active)"
 project: fleet
 tags: [lovable, fleet, operator-contribution]
 ---

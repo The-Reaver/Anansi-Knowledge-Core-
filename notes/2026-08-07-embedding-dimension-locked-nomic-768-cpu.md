@@ -2,7 +2,7 @@
 id: 2026-08-07-embedding-dimension-locked-nomic-768-cpu
 type: note
 status: ratified
-source: operator confirmed the Anansi host is a Dell Inspiron 14 5410, Intel Iris Xe integrated graphics, no dedicated GPU (source status: decided by operator host confirmation, 2026-08-07)
+source: "operator confirmed the Anansi host is a Dell Inspiron 14 5410, Intel Iris Xe integrated graphics, no dedicated GPU (source status: decided by operator host confirmation, 2026-08-07)"
 project: fleet
 tags: []
 ---

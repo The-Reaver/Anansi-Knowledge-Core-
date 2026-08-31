@@ -2,7 +2,7 @@
 id: 2026-08-07-cippe-research-clarifications-qwen-round2
 type: decision
 status: candidate
-source: Cowork session 2026-08-07; Qwen asked a second round of clarifying questions on the privacy-workflow research prompt. These are the ratified answers. (source status: active)
+source: "Cowork session 2026-08-07; Qwen asked a second round of clarifying questions on the privacy-workflow research prompt. These are the ratified answers. (source status: active)"
 project: cippe
 tags: [cippe, research, workflow, features, automation, decision-support, integration, local, privacy]
 ---

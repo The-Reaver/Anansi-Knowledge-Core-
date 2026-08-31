@@ -2,7 +2,7 @@
 id: 2026-08-04-tony-llc-cippe-handoff-received
 type: finding
 status: ratified
-source: this chat, 2026-08-04, Abad pasted a full handoff document explicitly as context, not a command (source status: active)
+source: "this chat, 2026-08-04, Abad pasted a full handoff document explicitly as context, not a command (source status: active)"
 project: cippe
 tags: [tony-llc, cippe, operator-contribution]
 ---

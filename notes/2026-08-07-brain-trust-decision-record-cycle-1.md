@@ -2,7 +2,7 @@
 id: 2026-08-07-brain-trust-decision-record-cycle-1
 type: note
 status: ratified
-source: Brain Trust verdict-and-vote cycle 1, eight seats, 2026-08-07 (source status: group conclusions reached, pending operator ratification)
+source: "Brain Trust verdict-and-vote cycle 1, eight seats, 2026-08-07 (source status: group conclusions reached, pending operator ratification)"
 project: fleet
 tags: []
 ---

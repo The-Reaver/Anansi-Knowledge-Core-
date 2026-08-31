@@ -2,7 +2,7 @@
 id: 2026-08-07-partner-financial-report-spec
 type: decision
 status: candidate
-source: Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; asked for a SEPARATE financial report so there is no ambiguity on costs later. Produce with the other reports after the demo build wraps. (source status: active)
+source: "Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; asked for a SEPARATE financial report so there is no ambiguity on costs later. Produce with the other reports after the demo build wraps. (source status: active)"
 project: fleet
 tags: [financial-report, partner, costs, staffing, salaries, cloud, tools, savings, deliverable-spec, budget]
 ---

@@ -2,7 +2,7 @@
 id: 2026-08-07-z-method-resolved-as-zettelkasten
 type: note
 status: ratified
-source: operator decision, 2026-08-07 (source status: resolved by operator, 2026-08-07)
+source: "operator decision, 2026-08-07 (source status: resolved by operator, 2026-08-07)"
 project: fleet
 tags: []
 ---

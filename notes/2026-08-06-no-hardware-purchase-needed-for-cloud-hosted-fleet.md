@@ -2,7 +2,7 @@
 id: 2026-08-06-no-hardware-purchase-needed-for-cloud-hosted-fleet
 type: decision
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries (source status: active); mined from candidates/2026-08-25/2026-08-06-brain-trust-verdicts-and-operator-contributions.md
+source: "Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries (source status: active); mined from candidates/2026-08-25/2026-08-06-brain-trust-verdicts-and-operator-contributions.md"
 project: fleet
 tags: [hardware, budget, cloud, supabase, memory]
 ---

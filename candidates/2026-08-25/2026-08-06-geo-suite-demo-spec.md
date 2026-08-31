@@ -2,7 +2,7 @@
 id: 2026-08-06-geo-suite-demo-spec
 type: decision
 status: candidate
-source: Cowork session 2026-08-06, operator on phone; asked for a tight demo scope to show the partner a real working product within two days. (source status: active)
+source: "Cowork session 2026-08-06, operator on phone; asked for a tight demo scope to show the partner a real working product within two days. (source status: active)"
 project: geo
 tags: [geo-suite, demo, spec, partner, prospecting, audit, report, sales, two-day]
 ---

@@ -2,7 +2,7 @@
 id: 2026-08-06-geo-demo-honesty-rule-never-fake-audit-numbers
 type: ruling
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; asked for a tight demo scope to show the partner a real working product within two days (source status: active); mined from candidates/2026-08-25/2026-08-06-geo-suite-demo-spec.md
+source: "Cowork session 2026-08-06, operator on phone; asked for a tight demo scope to show the partner a real working product within two days (source status: active); mined from candidates/2026-08-25/2026-08-06-geo-suite-demo-spec.md"
 project: geo
 tags: [geo-suite, demo, honesty, mandate-7]
 ---

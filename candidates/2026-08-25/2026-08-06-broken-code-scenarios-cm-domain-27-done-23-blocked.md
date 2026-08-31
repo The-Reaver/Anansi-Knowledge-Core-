@@ -2,7 +2,7 @@
 id: 2026-08-06-broken-code-scenarios-cm-domain-27-done-23-blocked
 type: artifact
 status: candidate
-source: this chat, 2026-08-04 to 2026-08-06, Augustin curriculum work on the 500 Broken Code Scenarios manual, CM domain (Concurrency and Memory Safety) (source status: active)
+source: "this chat, 2026-08-04 to 2026-08-06, Augustin curriculum work on the 500 Broken Code Scenarios manual, CM domain (Concurrency and Memory Safety) (source status: active)"
 project: fleet
 tags: [augustin, curriculum, broken-code-scenarios, concurrency, memory-safety, build-outcome, verified]
 ---

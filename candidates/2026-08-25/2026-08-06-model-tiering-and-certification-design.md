@@ -2,7 +2,7 @@
 id: 2026-08-06-model-tiering-and-certification-design
 type: decision
 status: candidate
-source: Cowork session 2026-08-06, operator on phone; asked how model selection works across the plumbing, whether the certifier must be a high model, and to research things not being considered. (source status: active)
+source: "Cowork session 2026-08-06, operator on phone; asked how model selection works across the plumbing, whether the certifier must be a high model, and to research things not being considered. (source status: active)"
 project: fleet
 tags: [modeling, model-tiering, certification, aj-auditor, proof, adversarial, mandate-7, strategy]
 ---

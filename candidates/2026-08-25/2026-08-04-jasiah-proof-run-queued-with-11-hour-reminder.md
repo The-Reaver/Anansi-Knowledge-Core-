@@ -2,7 +2,7 @@
 id: 2026-08-04-jasiah-proof-run-queued-with-11-hour-reminder
 type: artifact
 status: candidate
-source: this chat, 2026-08-04, Abad asked to queue this work for roughly 11 hours out (source status: active)
+source: "this chat, 2026-08-04, Abad asked to queue this work for roughly 11 hours out (source status: active)"
 project: fleet
 tags: [anansi, jasiah, scheduling, operator-contribution]
 ---

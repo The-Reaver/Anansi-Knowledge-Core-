@@ -2,7 +2,7 @@
 id: 2026-08-06-raw-chats-never-feed-knowledge-core-only-curated-atomic-notes
 type: ruling
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries, including a pushback in the operator's own interest on feeding chats into Knowledge Core (source status: active); mined from candidates/2026-08-25/2026-08-06-brain-trust-verdicts-and-operator-contributions.md
+source: "Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries, including a pushback in the operator's own interest on feeding chats into Knowledge Core (source status: active); mined from candidates/2026-08-25/2026-08-06-brain-trust-verdicts-and-operator-contributions.md"
 project: fleet
 tags: [knowledge-core, curation, noise, governance, distillation]
 ---

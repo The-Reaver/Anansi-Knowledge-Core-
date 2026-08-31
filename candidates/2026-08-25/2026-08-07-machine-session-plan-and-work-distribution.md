@@ -2,7 +2,7 @@
 id: 2026-08-07-machine-session-plan-and-work-distribution
 type: decision
 status: candidate
-source: Cowork session 2026-08-07; operator heading to the machine soon, asked when to close out chats (after Anansi local+cloud), and for a game plan on Antigravity's role and distributing work to save Claude usage. (source status: active)
+source: "Cowork session 2026-08-07; operator heading to the machine soon, asked when to close out chats (after Anansi local+cloud), and for a game plan on Antigravity's role and distributing work to save Claude usage. (source status: active)"
 project: fleet
 tags: [phase-0, machine-session, knowledge-core, anansi, chat-closeout, antigravity, lovable, distribution, usage, brain-trust]
 ---

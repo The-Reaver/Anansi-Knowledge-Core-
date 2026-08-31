@@ -2,7 +2,7 @@
 id: 2026-08-06-model-tier-per-adlc-stage
 type: spec
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; asked how model selection works across the plumbing (source status: active); mined from candidates/2026-08-25/2026-08-06-model-tiering-and-certification-design.md
+source: "Cowork session 2026-08-06, operator on phone; asked how model selection works across the plumbing (source status: active); mined from candidates/2026-08-25/2026-08-06-model-tiering-and-certification-design.md"
 project: fleet
 tags: [model-tiering, adlc, cost, certification]
 ---

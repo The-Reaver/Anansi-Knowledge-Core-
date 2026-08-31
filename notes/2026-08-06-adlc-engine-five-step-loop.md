@@ -2,7 +2,7 @@
 id: 2026-08-06-adlc-engine-five-step-loop
 type: spec
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; asked for the definitive gameplan and roadmap as a visual life cycle (source status: active); mined from candidates/2026-08-25/2026-08-06-agent-development-lifecycle-adlc-gameplan.md
+source: "Cowork session 2026-08-06, operator on phone; asked for the definitive gameplan and roadmap as a visual life cycle (source status: active); mined from candidates/2026-08-25/2026-08-06-agent-development-lifecycle-adlc-gameplan.md"
 project: fleet
 tags: [adlc, engine, curriculum, stars, dreams, mandate-7, mandate-8]
 ---

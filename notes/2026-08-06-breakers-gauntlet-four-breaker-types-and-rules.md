@@ -2,7 +2,7 @@
 id: 2026-08-06-breakers-gauntlet-four-breaker-types-and-rules
 type: spec
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; defined the certification bar that flips an agent from school to cleared, folding in the Red Team of Breakers (source status: active); mined from candidates/2026-08-25/2026-08-06-graduation-bar-and-breakers-gauntlet-design.md
+source: "Cowork session 2026-08-06, operator on phone; defined the certification bar that flips an agent from school to cleared, folding in the Red Team of Breakers (source status: active); mined from candidates/2026-08-25/2026-08-06-graduation-bar-and-breakers-gauntlet-design.md"
 project: fleet
 tags: [breakers, red-team, security, correctness, scale, chaos]
 ---

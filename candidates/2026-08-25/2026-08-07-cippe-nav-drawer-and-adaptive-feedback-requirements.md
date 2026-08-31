@@ -2,7 +2,7 @@
 id: 2026-08-07-cippe-nav-drawer-and-adaptive-feedback-requirements
 type: decision
 status: candidate
-source: Cowork session 2026-08-07; operator asked for a Notion-style intuitive navigation drawer researched for neurodivergent use, and an adaptive feedback loop that continuously learns what the person needs. Decision: build all features first, then do the deep research and redesign as one pass. (source status: active)
+source: "Cowork session 2026-08-07; operator asked for a Notion-style intuitive navigation drawer researched for neurodivergent use, and an adaptive feedback loop that continuously learns what the person needs. Decision: build all features first, then do the deep research and redesign as one pass. (source status: active)"
 project: cippe
 tags: [cippe, neurodivergent, navigation, notion, ux-research, feedback-loop, redesign, accessibility, adhd]
 ---

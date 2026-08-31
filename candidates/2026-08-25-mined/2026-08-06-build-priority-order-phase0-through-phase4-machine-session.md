@@ -2,7 +2,7 @@
 id: 2026-08-06-build-priority-order-phase0-through-phase4-machine-session
 type: decision
 status: candidate
-source: Cowork session 2026-08-06, operator on phone; approved TYR as lead Breaker, then asked for the capstone ladder and exact build sequence (source status: active); mined from candidates/2026-08-25/2026-08-06-capstone-ladder-and-build-priority-order.md
+source: "Cowork session 2026-08-06, operator on phone; approved TYR as lead Breaker, then asked for the capstone ladder and exact build sequence (source status: active); mined from candidates/2026-08-25/2026-08-06-capstone-ladder-and-build-priority-order.md"
 project: fleet
 tags: [build-order, roadmap, priority, machine-session, phases]
 ---

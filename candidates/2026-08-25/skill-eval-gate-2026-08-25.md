@@ -2,7 +2,7 @@
 id: skill-eval-gate-2026-08-25
 type: ruling
 status: candidate
-source: Architecture, Redlined — Rev. 3 (artifact 924c39f2), Part IV; live-tested end-to-end on the adversarial-review skill; captured via GeoSuite session handoff, 2026-08-25
+source: "Architecture, Redlined — Rev. 3 (artifact 924c39f2), Part IV; live-tested end-to-end on the adversarial-review skill; captured via GeoSuite session handoff, 2026-08-25"
 project: fleet
 tags: [skills, eval, quality-gate]
 ---

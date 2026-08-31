@@ -2,7 +2,7 @@
 id: 2026-08-07-partner-docs-key-message-core-scales-report-depth
 type: decision
 status: ratified
-source: Cowork session 2026-08-07, operator on phone; flagged twice that this point is great detail the partner needs, to justify the investment in agents, Knowledge Core, GEO Suite, tools, and software. (source status: active)
+source: "Cowork session 2026-08-07, operator on phone; flagged twice that this point is great detail the partner needs, to justify the investment in agents, Knowledge Core, GEO Suite, tools, and software. (source status: active)"
 project: geo
 tags: [partner-docs, key-message, knowledge-core, compounding, roi, geo-suite, finances, must-include]
 ---

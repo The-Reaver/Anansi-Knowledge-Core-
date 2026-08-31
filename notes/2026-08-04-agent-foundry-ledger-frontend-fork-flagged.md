@@ -2,7 +2,7 @@
 id: 2026-08-04-agent-foundry-ledger-frontend-fork-flagged
 type: finding
 status: ratified
-source: this chat, 2026-08-04, flagged during the Agent Foundry code review, genuinely unresolved (source status: draft)
+source: "this chat, 2026-08-04, flagged during the Agent Foundry code review, genuinely unresolved (source status: draft)"
 project: fleet
 tags: [agent-foundry, anansi, decision-needed]
 ---

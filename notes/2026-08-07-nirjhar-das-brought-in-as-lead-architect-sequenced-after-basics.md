@@ -2,7 +2,7 @@
 id: 2026-08-07-nirjhar-das-brought-in-as-lead-architect-sequenced-after-basics
 type: decision
 status: ratified
-source: Google Drive inbox capture, source chat not recorded in original note (source status: pinned Anansi note, kept current); mined from candidates/2026-08-25/2026-08-07-contributions-historical-timeline.md
+source: "Google Drive inbox capture, source chat not recorded in original note (source status: pinned Anansi note, kept current); mined from candidates/2026-08-25/2026-08-07-contributions-historical-timeline.md"
 project: fleet
 tags: [architect, nirjhar, hiring, sequencing]
 ---

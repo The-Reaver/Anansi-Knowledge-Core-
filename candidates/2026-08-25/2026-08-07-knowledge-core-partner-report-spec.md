@@ -2,7 +2,7 @@
 id: 2026-08-07-knowledge-core-partner-report-spec
 type: decision
 status: candidate
-source: Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; asked to note (not yet produce) a partner-facing report explaining the Knowledge Core for a non-technical partner. Produce after the demo build wraps. (source status: active)
+source: "Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; asked to note (not yet produce) a partner-facing report explaining the Knowledge Core for a non-technical partner. Produce after the demo build wraps. (source status: active)"
 project: fleet
 tags: [knowledge-core, partner-report, layman, maintenance-agents, compliance, lawyer, intelligence-gathering, deliverable-spec]
 ---

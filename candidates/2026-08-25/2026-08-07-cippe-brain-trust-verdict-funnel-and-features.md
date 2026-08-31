@@ -2,7 +2,7 @@
 id: 2026-08-07-cippe-brain-trust-verdict-funnel-and-features
 type: decision
 status: candidate
-source: Cowork session 2026-08-07; operator asked for deep research on the privacy intelligence funnel, what privacy professionals do day-to-day at top firms, and the tools they need, then a Brain Trust decision before continuing the build. Three parallel research agents ran; verdict synthesized here. (source status: active)
+source: "Cowork session 2026-08-07; operator asked for deep research on the privacy intelligence funnel, what privacy professionals do day-to-day at top firms, and the tools they need, then a Brain Trust decision before continuing the build. Three parallel research agents ran; verdict synthesized here. (source status: active)"
 project: cippe
 tags: [cippe, privacy, intelligence-funnel, maintenance, gdpr, ccpa, dsar, ropa, dpia, feature-set, brain-trust, research]
 ---

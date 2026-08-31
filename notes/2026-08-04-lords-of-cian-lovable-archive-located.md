@@ -2,7 +2,7 @@
 id: 2026-08-04-lords-of-cian-lovable-archive-located
 type: finding
 status: ratified
-source: this chat, 2026-08-04, Abad asked where the Lovable-built Lords of Cian archive was located (source status: active)
+source: "this chat, 2026-08-04, Abad asked where the Lovable-built Lords of Cian archive was located (source status: active)"
 project: lords-of-cian
 tags: [lords-of-cian, lovable]
 ---

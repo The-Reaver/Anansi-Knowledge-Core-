@@ -2,7 +2,7 @@
 id: 2026-08-04-claude-capability-question-resolved-proceed-at-full-capability
 type: decision
 status: ratified
-source: this chat, 2026-08-04, Abad asked directly whether this assistant is more capable than his fleet (source status: active)
+source: "this chat, 2026-08-04, Abad asked directly whether this assistant is more capable than his fleet (source status: active)"
 project: fleet
 tags: [fleet, operator-contribution]
 ---

@@ -2,7 +2,7 @@
 id: 2026-08-04-jeremy-built-anansi-ledger-minimal-slice
 type: artifact
 status: ratified
-source: this chat, 2026-08-04, a subagent acting as Jeremy, dispatched after Abad said "dispatch the fleet" (source status: active)
+source: "this chat, 2026-08-04, a subagent acting as Jeremy, dispatched after Abad said \"dispatch the fleet\" (source status: active)"
 project: fleet
 tags: [anansi, jeremy, build-outcome, operator-contribution]
 ---

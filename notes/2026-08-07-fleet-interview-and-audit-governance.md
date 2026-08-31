@@ -2,7 +2,7 @@
 id: 2026-08-07-fleet-interview-and-audit-governance
 type: decision
 status: ratified
-source: Cowork session 2026-08-07; operator defined how the fleet audits the built app and drives an intuitive interview (operator-conducted) after v1, with questions routed by domain and expertise, and a controlled agent-graduation rule. (source status: active)
+source: "Cowork session 2026-08-07; operator defined how the fleet audits the built app and drives an intuitive interview (operator-conducted) after v1, with questions routed by domain and expertise, and a controlled agent-graduation rule. (source status: active)"
 project: cippe
 tags: [fleet, governance, interview, audit, agent-graduation, roles, redesign, cippe]
 ---

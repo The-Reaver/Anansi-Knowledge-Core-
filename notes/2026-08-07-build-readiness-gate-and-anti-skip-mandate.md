@@ -2,7 +2,7 @@
 id: 2026-08-07-build-readiness-gate-and-anti-skip-mandate
 type: ruling
 status: ratified
-source: Cowork session 2026-08-07; operator asked how to prevent skipping protocol (interview, tech-stack decision) before building. This is the durable control. (source status: active)
+source: "Cowork session 2026-08-07; operator asked how to prevent skipping protocol (interview, tech-stack decision) before building. This is the durable control. (source status: active)"
 project: fleet
 tags: [adlc, gate, mandate, definition-of-ready, governance, prevention, read-first, verify]
 ---

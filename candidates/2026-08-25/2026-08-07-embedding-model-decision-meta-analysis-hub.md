@@ -2,7 +2,7 @@
 id: 2026-08-07-embedding-model-decision-meta-analysis-hub
 type: note
 status: candidate
-source: two deep-research reports (one that retrieved live data, one that could not), reconciled 2026-08-07 (source status: hub note, candidates held, staged for Brain Trust vote, Celestina leads)
+source: "two deep-research reports (one that retrieved live data, one that could not), reconciled 2026-08-07 (source status: hub note, candidates held, staged for Brain Trust vote, Celestina leads)"
 project: fleet
 tags: []
 ---

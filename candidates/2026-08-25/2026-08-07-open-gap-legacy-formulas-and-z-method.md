@@ -2,7 +2,7 @@
 id: 2026-08-07-open-gap-legacy-formulas-and-z-method
 type: note
 status: candidate
-source: operator, 2026-08-07 (source status: open, pending retrieval from the machine)
+source: "operator, 2026-08-07 (source status: open, pending retrieval from the machine)"
 project: fleet
 tags: []
 ---

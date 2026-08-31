@@ -2,7 +2,7 @@
 id: 2026-08-04-cowork-session-has-no-chat-rename-tool
 type: finding
 status: ratified
-source: this chat, 2026-08-04, requested at the start of the session and again at its close (source status: active)
+source: "this chat, 2026-08-04, requested at the start of the session and again at its close (source status: active)"
 project: fleet
 tags: [cowork, tooling-limitation, finding]
 ---

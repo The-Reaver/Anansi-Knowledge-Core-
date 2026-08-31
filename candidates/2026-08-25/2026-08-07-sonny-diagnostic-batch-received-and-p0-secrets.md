@@ -2,7 +2,7 @@
 id: 2026-08-07-sonny-diagnostic-batch-received-and-p0-secrets
 type: note
 status: candidate
-source: SONNY / ShopOnlineNewYork repo diagnostic close-out, harvested 2026-08-07 (source status: hub note, batch held as candidates pending operator approval)
+source: "SONNY / ShopOnlineNewYork repo diagnostic close-out, harvested 2026-08-07 (source status: hub note, batch held as candidates pending operator approval)"
 project: fleet
 tags: []
 ---

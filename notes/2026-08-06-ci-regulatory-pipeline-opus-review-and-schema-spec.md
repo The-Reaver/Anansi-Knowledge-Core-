@@ -2,7 +2,7 @@
 id: 2026-08-06-ci-regulatory-pipeline-opus-review-and-schema-spec
 type: artifact
 status: ratified
-source: this chat, 2026-08-05/06, Abad asked for the gameplan's own closing instruction, review by Opus model or higher, to actually run (source status: active)
+source: "this chat, 2026-08-05/06, Abad asked for the gameplan's own closing instruction, review by Opus model or higher, to actually run (source status: active)"
 project: ci
 tags: [compliance-intelligence, ci, regulatory-pipeline, opus-review, schema, operator-contribution]
 ---

@@ -2,7 +2,7 @@
 id: 2026-08-06-antigravity-role-verdict
 type: decision
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; approved building the GEO Suite demo on Lovable, then asked the Brain Trust to decide what role Google Antigravity plays (about 70% usage left there) and how cleanly Lovable, Antigravity, and Claude work together. Operator asked to pin it. (source status: active)
+source: "Cowork session 2026-08-06, operator on phone; approved building the GEO Suite demo on Lovable, then asked the Brain Trust to decide what role Google Antigravity plays (about 70% usage left there) and how cleanly Lovable, Antigravity, and Claude work together. Operator asked to pin it. (source status: active)"
 project: geo
 tags: [brain-trust, verdict, antigravity, lovable, tooling, division-of-labor, geo-suite, demo, engine-room, pin]
 ---

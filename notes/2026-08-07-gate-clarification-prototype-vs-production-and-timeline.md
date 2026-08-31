@@ -2,7 +2,7 @@
 id: 2026-08-07-gate-clarification-prototype-vs-production-and-timeline
 type: finding
 status: ratified
-source: Cowork session 2026-08-07; operator noted the in-person interview happens about a week after the app is tried, with nothing deployed and no domain yet. Clarifies the Build Readiness Gate does not block trials. (source status: active)
+source: "Cowork session 2026-08-07; operator noted the in-person interview happens about a week after the app is tried, with nothing deployed and no domain yet. Clarifies the Build Readiness Gate does not block trials. (source status: active)"
 project: cippe
 tags: [build-readiness-gate, prototype, production, timeline, cippe, interview]
 ---

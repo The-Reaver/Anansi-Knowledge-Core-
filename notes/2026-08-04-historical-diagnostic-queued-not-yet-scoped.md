@@ -2,7 +2,7 @@
 id: 2026-08-04-historical-diagnostic-queued-not-yet-scoped
 type: decision
 status: ratified
-source: this chat, 2026-08-04, Abad's request, reviewed by the same Brain Trust dispatch as Mandate 10 (source status: draft)
+source: "this chat, 2026-08-04, Abad's request, reviewed by the same Brain Trust dispatch as Mandate 10 (source status: draft)"
 project: fleet
 tags: [mandate-10, knowledge-core, brain-trust, operator-contribution, decision-needed]
 ---

@@ -2,7 +2,7 @@
 id: 2026-08-07-cippe-personalized-user-profile-and-companion-spec
 type: decision
 status: candidate
-source: Cowork session 2026-08-07; operator shared the intended user's profile for the CIPP/E copilot personalization, to be kept confidential. Deeper personalization, professional question design, and the local-only setup depend on the pending deep research and the Gemini+Quinn meta-analysis. (source status: active)
+source: "Cowork session 2026-08-07; operator shared the intended user's profile for the CIPP/E copilot personalization, to be kept confidential. Deeper personalization, professional question design, and the local-only setup depend on the pending deep research and the Gemini+Quinn meta-analysis. (source status: active)"
 project: cippe
 tags: [cippe, personalization, companion, confidential, neurodivergent, local-first, tailored, privacy]
 ---

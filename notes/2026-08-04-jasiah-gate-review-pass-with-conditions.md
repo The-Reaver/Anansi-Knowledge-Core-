@@ -2,7 +2,7 @@
 id: 2026-08-04-jasiah-gate-review-pass-with-conditions
 type: artifact
 status: ratified
-source: this chat, 2026-08-04, a second subagent acting as Jasiah, briefed to distrust Jeremy's self-report (source status: active)
+source: "this chat, 2026-08-04, a second subagent acting as Jasiah, briefed to distrust Jeremy's self-report (source status: active)"
 project: fleet
 tags: [anansi, jasiah, gate-review, build-outcome]
 ---

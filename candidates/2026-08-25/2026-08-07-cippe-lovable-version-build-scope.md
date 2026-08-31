@@ -2,7 +2,7 @@
 id: 2026-08-07-cippe-lovable-version-build-scope
 type: decision
 status: candidate
-source: Cowork session 2026-08-07; operator confirmed building the Lovable version from the Drive Ledger, Queue Entry, and Handoff, with a tour, a feedback loop, a bridge back to the team, and a private deploy on a domain the operator buys. (source status: active)
+source: "Cowork session 2026-08-07; operator confirmed building the Lovable version from the Drive Ledger, Queue Entry, and Handoff, with a tour, a feedback loop, a bridge back to the team, and a private deploy on a domain the operator buys. (source status: active)"
 project: cippe
 tags: [cippe, privacy-agent, lovable, neurodivergent, externalized-thread, gdpr, dsar, tour, feedback-loop, private-deploy]
 ---

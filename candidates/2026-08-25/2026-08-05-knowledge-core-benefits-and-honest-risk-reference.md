@@ -2,7 +2,7 @@
 id: 2026-08-05-knowledge-core-benefits-and-honest-risk-reference
 type: note
 status: candidate
-source: this chat, 2026-08-05, Abad asked for a thorough announcement of Knowledge Core's real state and business benefit, first written to a misplaced file and refiled here after the routing mistake was found (source status: active)
+source: "this chat, 2026-08-05, Abad asked for a thorough announcement of Knowledge Core's real state and business benefit, first written to a misplaced file and refiled here after the routing mistake was found (source status: active)"
 project: fleet
 tags: [anansi, knowledge-core, capability-ledger, supabase, business-case, permanent-reference]
 ---

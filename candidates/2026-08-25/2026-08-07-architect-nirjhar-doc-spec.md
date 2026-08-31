@@ -2,7 +2,7 @@
 id: 2026-08-07-architect-nirjhar-doc-spec
 type: decision
 status: candidate
-source: Cowork session 2026-08-07, operator on phone; uploaded Nirjhar's resume, asked for a technical document giving him the full scope and a business opportunity to join as lead architect, tied to his current SONNY (monolith to microservices) work. (source status: active)
+source: "Cowork session 2026-08-07, operator on phone; uploaded Nirjhar's resume, asked for a technical document giving him the full scope and a business opportunity to join as lead architect, tied to his current SONNY (monolith to microservices) work. (source status: active)"
 project: fleet
 tags: [architect, nirjhar, recruiting, technical-scope, opportunity, microservices, engine-room, deliverable-spec]
 ---

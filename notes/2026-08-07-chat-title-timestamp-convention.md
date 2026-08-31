@@ -2,7 +2,7 @@
 id: 2026-08-07-chat-title-timestamp-convention
 type: note
 status: ratified
-source: operator decision, 2026-08-07 (source status: ratified by operator, 2026-08-07)
+source: "operator decision, 2026-08-07 (source status: ratified by operator, 2026-08-07)"
 project: fleet
 tags: []
 ---

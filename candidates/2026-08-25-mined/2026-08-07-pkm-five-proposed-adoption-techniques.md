@@ -2,7 +2,7 @@
 id: 2026-08-07-pkm-five-proposed-adoption-techniques
 type: finding
 status: candidate
-source: Beyond Philosophy to Formulas (Qwen deep-research meta-analysis), 2026-08-07, reconciled against our research (source status: hub note, 19 candidate notes held pending operator approval); mined from candidates/2026-08-25/2026-08-07-pkm-meta-analysis-reconciled-hub.md
+source: "Beyond Philosophy to Formulas (Qwen deep-research meta-analysis), 2026-08-07, reconciled against our research (source status: hub note, 19 candidate notes held pending operator approval); mined from candidates/2026-08-25/2026-08-07-pkm-meta-analysis-reconciled-hub.md"
 project: fleet
 tags: [pkm, proposed, spaced-repetition, active-recall, dual-coding]
 ---

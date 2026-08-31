@@ -2,7 +2,7 @@
 id: 2026-08-05-memory-without-a-correction-path-is-worse-than-no-memory
 type: lesson
 status: ratified
-source: this chat, 2026-08-05, Abad asked for a thorough announcement of Knowledge Core's real state and business benefit (source status: active); mined from candidates/2026-08-25/2026-08-05-knowledge-core-benefits-and-honest-risk-reference.md
+source: "this chat, 2026-08-05, Abad asked for a thorough announcement of Knowledge Core's real state and business benefit (source status: active); mined from candidates/2026-08-25/2026-08-05-knowledge-core-benefits-and-honest-risk-reference.md"
 project: fleet
 tags: [knowledge-core, risk, correction-path, provenance, lesson]
 ---

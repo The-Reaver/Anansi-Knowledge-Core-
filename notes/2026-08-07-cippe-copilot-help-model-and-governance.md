@@ -2,7 +2,7 @@
 id: 2026-08-07-cippe-copilot-help-model-and-governance
 type: spec
 status: ratified
-source: Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2), consensus items firm (source status: active); mined from candidates/2026-08-25/2026-08-07-cippe-redesign-blueprint-meta-analysis.md
+source: "Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2), consensus items firm (source status: active); mined from candidates/2026-08-25/2026-08-07-cippe-redesign-blueprint-meta-analysis.md"
 project: cippe
 tags: [cippe, copilot, rag, local-llm, feature-ranking, governance]
 ---

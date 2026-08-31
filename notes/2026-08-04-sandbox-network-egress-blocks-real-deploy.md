@@ -2,7 +2,7 @@
 id: 2026-08-04-sandbox-network-egress-blocks-real-deploy
 type: finding
 status: ratified
-source: this chat, 2026-08-04, discovered by the Jeremy build subagent while building the Anansi ledger slice (source status: active)
+source: "this chat, 2026-08-04, discovered by the Jeremy build subagent while building the Anansi ledger slice (source status: active)"
 project: fleet
 tags: [anansi, jeremy, sandbox-limitation, finding]
 ---

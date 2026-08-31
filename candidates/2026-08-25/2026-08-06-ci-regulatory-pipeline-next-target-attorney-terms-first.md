@@ -2,7 +2,7 @@
 id: 2026-08-06-ci-regulatory-pipeline-next-target-attorney-terms-first
 type: decision
 status: candidate
-source: this chat, 2026-08-06, session closing; Abad had a separate chat already open on this thread and asked for closing notes so it knows exactly where to look and what to do (source status: active)
+source: "this chat, 2026-08-06, session closing; Abad had a separate chat already open on this thread and asked for closing notes so it knows exactly where to look and what to do (source status: active)"
 project: ci
 tags: [compliance-intelligence, ci, regulatory-pipeline, attorney-partnership, handoff, operator-contribution]
 ---

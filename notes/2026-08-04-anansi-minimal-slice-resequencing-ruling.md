@@ -2,7 +2,7 @@
 id: 2026-08-04-anansi-minimal-slice-resequencing-ruling
 type: decision
 status: ratified
-source: this chat, 2026-08-04, the same simulated Brain Trust dispatch that ratified Mandate 9 (source status: active)
+source: "this chat, 2026-08-04, the same simulated Brain Trust dispatch that ratified Mandate 9 (source status: active)"
 project: geo
 tags: [anansi, jeremy, mandate-9, brain-trust, governance]
 ---

@@ -2,7 +2,7 @@
 id: 2026-08-06-staffing-ask-three-assistants-700-to-1000-per-month
 type: decision
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; stated budget, staffing, local-system, and security requirements to bring to the partner and lawyer (source status: active); mined from candidates/2026-08-25/2026-08-06-partner-update-budget-and-staffing-decisions.md
+source: "Cowork session 2026-08-06, operator on phone; stated budget, staffing, local-system, and security requirements to bring to the partner and lawyer (source status: active); mined from candidates/2026-08-25/2026-08-06-partner-update-budget-and-staffing-decisions.md"
 project: fleet
 tags: [staffing, budget, partner-update, accountability]
 ---

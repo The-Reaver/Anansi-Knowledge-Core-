@@ -2,7 +2,7 @@
 id: 2026-08-06-broken-code-scenarios-ds-domain-24-of-50-verified
 type: artifact
 status: candidate
-source: this chat, 2026-08-06, Augustin curriculum DS wave DS-019 through DS-024 built by parallel subagents and re-verified by the main session (source status: active)
+source: "this chat, 2026-08-06, Augustin curriculum DS wave DS-019 through DS-024 built by parallel subagents and re-verified by the main session (source status: active)"
 project: fleet
 tags: [augustin, curriculum, broken-code-scenarios, distributed-systems, go, build-outcome, verified]
 ---

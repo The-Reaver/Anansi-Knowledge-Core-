@@ -2,7 +2,7 @@
 id: 2026-08-06-jeremy-and-oluwole-are-the-first-two-agents-to-prove-format
 type: decision
 status: ratified
-source: Cowork session 2026-08-06, operator on phone; chose the first agents and the score model (source status: active); mined from candidates/2026-08-25/2026-08-06-cross-agent-curriculum-decisions-and-score-upgrade-plan.md
+source: "Cowork session 2026-08-06, operator on phone; chose the first agents and the score model (source status: active); mined from candidates/2026-08-25/2026-08-06-cross-agent-curriculum-decisions-and-score-upgrade-plan.md"
 project: fleet
 tags: [curriculum, jeremy, oluwole, first-agents]
 ---

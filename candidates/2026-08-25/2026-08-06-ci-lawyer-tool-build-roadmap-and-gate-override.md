@@ -2,7 +2,7 @@
 id: 2026-08-06-ci-lawyer-tool-build-roadmap-and-gate-override
 type: decision
 status: candidate
-source: Cowork session, 2026-08-06; operator Abad overrode the "attorney terms before any code" gate and directed the slice-by-slice build of the lawyer-facing CI tool to start now (source status: active)
+source: "Cowork session, 2026-08-06; operator Abad overrode the \"attorney terms before any code\" gate and directed the slice-by-slice build of the lawyer-facing CI tool to start now (source status: active)"
 project: ci
 tags: [compliance-intelligence, ci, regulatory-pipeline, attorney-partnership, build-roadmap, gate-override, knowledge-core, maintenance-agents, handoff, operator-contribution]
 ---

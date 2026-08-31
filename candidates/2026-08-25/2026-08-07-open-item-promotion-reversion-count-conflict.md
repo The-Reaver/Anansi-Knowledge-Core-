@@ -2,7 +2,7 @@
 id: 2026-08-07-open-item-promotion-reversion-count-conflict
 type: note
 status: candidate
-source: contribution chats one and two reconciliation, 2026-08-07 (source status: held unverified, pending Moonshadow records)
+source: "contribution chats one and two reconciliation, 2026-08-07 (source status: held unverified, pending Moonshadow records)"
 project: fleet
 tags: []
 ---

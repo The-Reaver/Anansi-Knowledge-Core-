@@ -2,7 +2,7 @@
 id: 2026-08-07-RESUME-HERE-session-pin
 type: note
 status: candidate
-source: Google Drive inbox capture, source chat not recorded in original note (source status: active)
+source: "Google Drive inbox capture, source chat not recorded in original note (source status: active)"
 project: cippe
 tags: [resume, pin, status, verify, cippe, phase-0]
 ---

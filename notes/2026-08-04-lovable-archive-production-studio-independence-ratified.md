@@ -2,7 +2,7 @@
 id: 2026-08-04-lovable-archive-production-studio-independence-ratified
 type: decision
 status: ratified
-source: this chat, 2026-08-04, Abad's decision after the archive was located (source status: active)
+source: "this chat, 2026-08-04, Abad's decision after the archive was located (source status: active)"
 project: lords-of-cian
 tags: [lords-of-cian, lovable, operator-contribution]
 ---
