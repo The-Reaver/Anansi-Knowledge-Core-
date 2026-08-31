@@ -84,6 +84,31 @@ Live run against the GEO repo: **FAIL** — `installer not found`. See next sect
 
 ## 4. The GEO failure — diagnosed, with a second defect behind it
 
+> **CORRECTION, 2026-08-31, from the resumed session with direct disk access.** Defect 2 as
+> originally written below is **WRONG** and must not be acted on as stated. `run_gate()`
+> already contains an `if not declared:` branch returning FAIL ("parsed to ZERO declared
+> hooks... an unperformed check is not a clean check"), covered by
+> `test_unparseable_installer_fails_closed`. The vacuous PASS predicted below **cannot
+> occur**, and the rule this document told you to adopt was already implemented before it
+> was written. Confirmed empirically: GEO's installer parses to `{}` and the gate fails
+> closed.
+>
+> The structural cause below still holds — GEO declares hooks by directory listing, and no
+> text parser can ever satisfy it — but the consequence runs the **opposite** way. Fixing
+> installer discovery *alone* moves GEO from "installer not found" to a **permanent,
+> unfixable FAIL** on a repo whose hooks are correctly installed: a false block, which by
+> ratified precedent (`2026-08-30-the-model-tier-gate-blocks-every-docs-only-commit`) is the
+> more corrosive failure.
+>
+> Also superseded below: the test file is **386** lines, not 385; the stag run is now
+> **[verified]**, not [relayed]; the worktree is **intact**; and GEO's HEAD has moved from
+> `73a58ce` to `a428c6a` (both defects still reproduce there).
+>
+> **Operator rulings since:** Drive for Desktop for backups; and the gate gets **two
+> declaration mechanisms** — heredoc parser for stag, directory-listing discovery for GEO,
+> with wiring verified by content comparison against the tracked source.
+
+
 **[verified]** against `The-Reaver/The-Geo-Suite-` at commit
 `73a58ced20783975bdf2269bc0a5319f60f672ef`.
 
@@ -118,8 +143,8 @@ a file. The gate models one declaration mechanism; there are two. For GEO the de
 assertion is a **content comparison against the tracked source** — stronger than "references
 script X", and it catches silent-disable exactly.
 
-**Adopt as a rule:** "zero declared hooks parsed" is a **FAIL** in its own right, regardless
-of layout. An empty parse result must never be reported as clean.
+~~**Adopt as a rule:** "zero declared hooks parsed" is a **FAIL** in its own right.~~
+**Already implemented** — see the correction at the top of this section.
 
 **Also verified:** GEO's `.git/hooks` holds `pre-commit` and `pre-push`, while
 `scripts/git-hooks/` holds only `pre-commit`. GEO's pre-push is installed, undeclared **and
