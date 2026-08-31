@@ -5,6 +5,7 @@ status: candidate
 source: "Architecture, Redlined — Rev. 3, Part V; this session's own GeoSuite roadmap-gaps slices; captured via GeoSuite session handoff, 2026-08-25"
 project: geo
 tags: [geosuite, build-ledger, site-generator]
+superseded_by: geosuite-build-ledger-ruling-2026-08-25
 ---
 
 # One atomic note per non-obvious build decision, not a commentary on every line
@@ -80,6 +81,12 @@ speculative process. That tradeoff, now that the mechanism itself is concrete en
 actually weigh, is the operator's call — and building the actual `docs/build-ledger.md` file
 means touching the GeoSuite repo, which is out of scope for this session while another
 session is active there.
+
+**Ruling, 2026-08-31 — approved, conditionally.** See
+`geosuite-build-ledger-ruling-2026-08-25`: approved on the terms above, on the condition
+that enforcement is wired into the adversarial-review pass as an actual checklist line,
+not left as prose intent. Building `docs/build-ledger.md` itself remains a separate
+follow-up in `The-Reaver/The-Geo-Suite-`.
 
 ## Links
 
