@@ -1,7 +1,7 @@
 ---
 id: hardcoded-count-assertion-anti-pattern-2026-08-31
 type: lesson
-status: candidate
+status: ratified
 source: this chat, 2026-08-31, fixing red CI in The-Reaver/The-Geo-Suite- (PR #7), directly caused by tests/test_knowledge_core_feeds_import.py
 project: fleet
 tags: [testing, brittle-assertions, geosuite, ci]

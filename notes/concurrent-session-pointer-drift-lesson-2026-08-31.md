@@ -1,7 +1,7 @@
 ---
 id: concurrent-session-pointer-drift-lesson-2026-08-31
 type: lesson
-status: candidate
+status: ratified
 source: this chat, 2026-08-31, discovered while working GeoSuite's AUDIT_AND_REPORTS_ROADMAP.md, fixed in The-Reaver/The-Geo-Suite- PR #6
 project: fleet
 tags: [concurrency, coordination, ledger-drift, geosuite, hand-maintained-pointer]

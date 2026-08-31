@@ -1,7 +1,7 @@
 ---
 id: geosuite-s48-fix-2026-08-31
 type: finding
-status: candidate
+status: ratified
 source: this chat, 2026-08-31, S-48 fixed directly in The-Reaver/The-Geo-Suite- on branch claude/s48-repo-flag-boot-checks, PR #5
 project: geo
 tags: [geosuite, testability, mutation-testing, s48]

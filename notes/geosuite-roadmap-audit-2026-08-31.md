@@ -1,7 +1,7 @@
 ---
 id: geosuite-roadmap-audit-2026-08-31
 type: finding
-status: candidate
+status: ratified
 source: this chat, 2026-08-31, a full pass over The-Reaver/The-Geo-Suite-'s AUDIT_AND_REPORTS_ROADMAP.md, every item checked against the live code/schema rather than taken on the doc's word
 project: geo
 tags: [geosuite, roadmap, audit, backlog]

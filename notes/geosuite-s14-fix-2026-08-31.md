@@ -1,7 +1,7 @@
 ---
 id: geosuite-s14-fix-2026-08-31
 type: finding
-status: candidate
+status: ratified
 source: this chat, 2026-08-31, S-14 fixed directly in The-Reaver/The-Geo-Suite- on branch claude/s14-site-repos-boot-check, PR #4
 project: geo
 tags: [geosuite, production, data-loss, s14, testability]
