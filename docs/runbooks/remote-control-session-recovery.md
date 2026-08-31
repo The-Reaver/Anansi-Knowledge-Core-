@@ -67,11 +67,44 @@ Alternatives, in order of preference:
 
 ```
 claude --continue                                   # the last session started in this directory
-claude remote-control --session-id <session_id>     # server mode, one specific session by id
+claude remote-control --session-id <session_id>     # server mode only -- see the warning below
 ```
 
 `--session-id` and `--continue` need Claude Code v2.1.200 or later; earlier versions reject
 them as unknown arguments.
+
+### `--session-id` only works for bridge-attached sessions
+
+**Verified 2026-08-31.** `claude remote-control --session-id <id>` works only for a session
+that was attached to a bridge environment (server mode). Point it at a session started as a
+local CLI REPL with Remote Control turned on and it fails:
+
+```
+Error: Session session_011fVzmPQmgGNPQtKSnZtsBe has no environment_id.
+It may never have been attached to a bridge.
+```
+
+**Tell the two apart before choosing a command.** Look at the session record:
+
+| Field | Bridge/server session | Local REPL session |
+| --- | --- | --- |
+| `environment_id` | present | **absent** |
+| `origin` | `desktop_app`, `android`, `claude_code_mcp_seed` | `claude_code_cli` |
+| `tags` | — | `remote-control-repl` |
+| Recover with | `--resume` **or** `remote-control --session-id` | `--resume` **only** |
+
+A local REPL session's conversation lives in that machine's local history, so
+`claude --resume` from its working directory is the way to bring it back. There is no
+environment for `--session-id` to attach to.
+
+After it resumes, run `/remote-control` in that session if you want it visible from the
+phone or web again -- resuming restores the conversation locally, not the remote exposure.
+
+Note that such a session going offline is also a *different* failure from the stale-binding
+trap above: nothing was orphaned, the local `claude` process simply exited. The docs are
+explicit -- *"If you close the terminal, quit VS Code, or otherwise stop the `claude`
+process, the session goes offline until you bring it back."* No `last_init_error` is
+recorded, which is how you recognise it.
 
 ### Before you run it
 
@@ -112,5 +145,6 @@ unrecoverable, and it costs nothing when the original comes back.
 | Two bridge environments, same host and directory | Confirms the stale-binding state |
 | `last_init_error` timestamp frozen | No reconnect is being attempted; the binding is orphaned |
 | Reason says taken over / ended elsewhere / not found | Not recoverable. Seed a new session from a handoff |
+| `--session-id` says "has no environment_id" | It is a local REPL session, not a bridge one. Use `claude --resume` instead |
 | Conversation was compacted since | Old server session is archived; filter for archived sessions |
 | Need to keep working meanwhile | Start a new session on the *current* environment, seeded with the handoff |
