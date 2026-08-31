@@ -18,3 +18,5 @@ Agent Foundry, structurally, is close to what a front end for the Anansi capabil
 ## Links
 
 (none recorded in source)
+- relates-to: 2026-08-04-agent-foundry-review-ui-shell-no-execution-engine
+- relates-to: 2026-08-04-jeremy-built-anansi-ledger-minimal-slice

@@ -30,5 +30,5 @@ store's frontmatter is only as trustworthy as the last thing that touched it.
 
 ## Links
 
-- relates-to: 2026-08-25-ownership-and-entity-map-2 (duplicate id caught in the same
+- relates-to: 2026-08-07-ownership-and-entity-map-2 (duplicate id caught in the same
   integrity pass this note describes)

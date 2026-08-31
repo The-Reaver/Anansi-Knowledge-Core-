@@ -40,3 +40,5 @@ superseded_by: null
 ## Links
 
 (none recorded in source)
+- relates-to: 2026-08-07-chat-closeout-and-harvesting-method
+- relates-to: 2026-08-07-manual-and-prototype-delivered-closeout

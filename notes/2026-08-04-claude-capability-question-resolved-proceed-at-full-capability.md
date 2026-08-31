@@ -18,3 +18,4 @@ Abad asked directly whether this Cowork session's assistant is more capable than
 ## Links
 
 (none recorded in source)
+- relates-to: 2026-08-04-future-lovable-builds-route-through-fleet

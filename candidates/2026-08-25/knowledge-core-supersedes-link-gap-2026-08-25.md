@@ -36,3 +36,4 @@ names is now closed by the template change rather than by this note.
 ## Links
 
 - Architecture, Redlined Rev. 3, Part V
+- resolved-by: knowledge-core-supersedes-link-ruling-2026-08-25

@@ -93,3 +93,4 @@ follow-up in `The-Reaver/The-Geo-Suite-`.
 
 - Architecture, Redlined Rev. 3, Part V
 - The-Reaver/The-Geo-Suite- commits 01340f5, d575ff1, d7ff8da
+- ruled-on-by: geosuite-build-ledger-ruling-2026-08-25

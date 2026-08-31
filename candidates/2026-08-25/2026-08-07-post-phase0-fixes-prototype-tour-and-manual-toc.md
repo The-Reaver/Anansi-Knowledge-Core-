@@ -27,3 +27,5 @@ superseded_by: null
 ## Links
 
 - relates-to: the drivable prototype (privacy_copilot_prototype.html) and STAG_Operating_Manual.docx delivered 2026-08-07.
+- relates-to: 2026-08-07-prototype-tour-spotlight-drift-fix
+- relates-to: 2026-08-07-docx-toc-blank-until-field-updated-ship-prerendered

@@ -22,3 +22,5 @@ Current best formalization: the note quality-and-performance-formulas (2026-08-0
 ## Links
 
 (none recorded in source)
+- resolved-by: 2026-08-07-legacy-formulas-recovered-gap-closed
+- resolved-by: 2026-08-07-z-method-resolved-as-zettelkasten

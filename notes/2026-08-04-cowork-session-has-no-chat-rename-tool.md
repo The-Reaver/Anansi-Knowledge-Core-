@@ -18,3 +18,5 @@ Abad asked twice in this session to label or rename the chat, once at the start 
 ## Links
 
 (none recorded in source)
+- relates-to: 2026-08-07-chat-title-timestamp-convention
+- relates-to: 2026-08-04-device-folder-access-repeatedly-failed

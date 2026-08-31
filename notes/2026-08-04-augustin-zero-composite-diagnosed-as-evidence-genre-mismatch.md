@@ -18,3 +18,5 @@ Augustin's DREAMS composite score sits at 0/100, and the cause is not weak work.
 ## Links
 
 (none recorded in source)
+- relates-to: 2026-08-06-score-model-trl-now-with-leveling-math-upgrade-path
+- relates-to: 2026-08-06-cross-agent-stars-dreams-curriculum-design

@@ -76,3 +76,5 @@ Collect votes from N agents, weight each by its Wilson-scored reliability. Auto-
 ## Links
 
 (none recorded in source)
+- relates-to: 2026-08-07-pkm-effectiveness-formula-is-unvalidated-heuristic
+- relates-to: 2026-08-07-chat-closeout-and-harvesting-method

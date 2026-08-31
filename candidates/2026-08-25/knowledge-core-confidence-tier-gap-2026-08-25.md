@@ -37,3 +37,4 @@ session still has no Anansi access to run that gate.
 
 - Architecture, Redlined Rev. 3, Part V
 - GeoSuite rubric.py's documented/hypothesis tagging (backend/app/core/rubric.py, The-Reaver/The-Geo-Suite-)
+- resolved-by: knowledge-core-confidence-tier-ruling-2026-08-25

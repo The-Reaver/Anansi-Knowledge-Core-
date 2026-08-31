@@ -18,3 +18,4 @@ From 2026-08-07 onward, every conversation title includes a date and a timestamp
 ## Links
 
 (none recorded in source)
+- relates-to: 2026-08-07-canonical-source-is-chat-slug-convention

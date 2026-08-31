@@ -18,3 +18,5 @@ Abad set a standing instruction: future Lovable projects should be built with th
 ## Links
 
 (none recorded in source)
+- relates-to: 2026-08-04-claude-capability-question-resolved-proceed-at-full-capability
+- relates-to: 2026-08-04-lovable-archive-production-studio-independence-ratified
