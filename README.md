@@ -27,7 +27,7 @@ scripts/          tooling — the append-only writer for raw/ lives here
 ```
 
 Nothing enters `notes/` without the operator's pass. Everything lands in `candidates/`
-first.
+first. See "Ratification" below for what that pass actually checks.
 
 `raw/` and `notes/` are deliberately two different stores, not one. `raw/` is the
 ultimate source of truth — the exact words of a session, appended and never edited.
@@ -82,6 +82,29 @@ collapsing the two into one undifferentiated "truth" tier at retrieval time defe
 entire point of the ratification gate upstream of it.
 
 See `templates/note-template.md` for the starting shape of a new note.
+
+## Ratification
+
+The operator's pass on a candidate note isn't a rubber stamp — it's the same adversarial
+pattern this fleet already uses on code: an independent check trying to refute the claim,
+not just read it and nod. Before a candidate moves to `notes/`:
+
+1. **Search-and-compare, not a rebuild.** Check the candidate against what's already in
+   `notes/` — same topic, same tags, overlapping claim. This is meant to be cheap: a
+   targeted search, not a full audit of the whole Core every time one note ratifies.
+2. **Restates an existing ratified note, no new information?** Don't ratify a duplicate —
+   link to the note that already says it. A second note saying the same thing doesn't add
+   confidence, it adds a place for the two copies to quietly drift apart later.
+3. **Actually contradicts an existing ratified note?** That's not a silent ratify either.
+   Either the candidate sets `supersedes` to name what it replaces (and the ratifier
+   updates that note's `superseded_by` in the same pass, per the rule above), or the
+   contradiction gets resolved as an explicit decision before either note stands as
+   ratified — never left for a future retrieval to discover on its own.
+4. **No conflict, no duplicate?** Ratify normally.
+
+This applies to every candidate, not just the ones that look consequential — the whole
+point of catching a contradiction here is that it's cheap now and expensive later, once a
+session has already retrieved and acted on the stale claim.
 
 ## Status
 
