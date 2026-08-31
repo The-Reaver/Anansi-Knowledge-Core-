@@ -13,6 +13,19 @@ superseded_by: null
 
 ## Body
 
+> **CORRECTION -- this note's title is falsified.** "Jicome" **is** in the Knowledge Core
+> (`Stag-Fleet/research/knowledge-home/`), in at least five notes. But it appears there as
+> **"Jicome / Sovereign Trust Domain"**, a *Lords of Cian* worldbuilding naming canon locked
+> 2026-08-12 -- not a children's learning platform.
+>
+> So there are now **three** referents for one name: the operator's remembered personal
+> learning dashboard, the governance file's children's learning platform, and Lords of Cian
+> canon. The capture gap described below is real for the *product*; the claim that the Core
+> has never heard of Jicome is not. The naming collision is the finding, and it is worse than
+> a gap: a session searching the Core for "Jicome" gets confident, well-sourced answers about
+> the wrong thing.
+
+
 `governance/STAG-Naming-Standard-v1.0.md` (line 60) records: **BEDROCK → Jicome** — the
 real, live product name for the **children's learning platform**, not internal jargon. It
 was deliberately kept out of the mythology rename rule's blanket sweep once that

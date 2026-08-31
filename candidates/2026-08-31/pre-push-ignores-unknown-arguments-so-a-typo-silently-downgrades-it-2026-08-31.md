@@ -2,7 +2,7 @@
 id: pre-push-ignores-unknown-arguments-so-a-typo-silently-downgrades-it-2026-08-31
 type: finding
 status: candidate
-source: "Architecture session (session_01Q1wJW3McyXVkdvLjvLVKmy) capability audit, 2026-08-31 — relayed by the operator into a recovery session; observed on the operator machine and NOT independently re-verified here"
+source: "Recovery session, 2026-08-31 — VERIFIED directly against The-Reaver/Stag-Fleet at branch anansi-home-dashboard (b19dd5f), cloned and inspected; originally relayed from the capability audit and since confirmed in prepush.py"
 project: fleet
 tags: [pre-push, cli, silent-failure, security-gate, argument-parsing]
 supersedes: []
@@ -12,6 +12,18 @@ superseded_by: null
 # A misspelled flag turns the pre-push security gate non-blocking, and says nothing
 
 ## Body
+
+**Verified in `prepush.py`.** Argument handling is three lines: `argv = sys.argv[1:]`, then
+`fast = "--fast" in argv` and `strict = "--strict" in argv`. Pure membership tests, so any
+unrecognised token is discarded silently. The only `sys.exit(2)` guards `--fast` and
+`--strict` being combined; nothing rejects an unknown flag.
+
+**One refinement to the original claim.** The blocking stage -- staged secrets and stray
+`.env` files -- is documented in the file as failing CLOSED and still runs. What a typo
+silently costs is the *strict* mode in which a red `verify.py` exits 1; in default mode the
+test suite is advisory, printing "Re-run with `--strict` to make this exit 1". So `--stict`
+does not disable the secret scan, it downgrades test-blocking to advisory -- narrower than
+"runs non-blocking", and still a silent downgrade of a gate the operator believes is strict.
 
 The pre-push gate ignores arguments it does not recognise. Passing `--stict` instead of
 `--strict` does not error — the gate runs in its permissive, non-blocking mode and reports

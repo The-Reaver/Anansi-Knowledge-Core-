@@ -22,6 +22,11 @@ pull request, and on manual dispatch. `facts_floor` has a writer — it is compu
 `sites.py` and threaded through `site_pipeline.py`, and the repository's HEAD commit is
 literally *"S-52 — facts_floor has a writer, and a production landmine was found."*
 
+A third followed on the same check: the plan listed backups as covering committed history
+only, while `backup_fleet.py` already contains `capture_working_tree()` writing a
+`git diff HEAD` patch and an untracked-path list, exports stashes individually, and verifies
+bundles by cloning them. **Three of the plan's observed defects were already closed.**
+
 Neither claim was wrong when written. Both were overtaken by slices landing in parallel
 while the plan was being drafted. In a fleet running many concurrent sessions, an audit's
 findings decay in hours, not weeks — the same concurrency that makes the fleet productive

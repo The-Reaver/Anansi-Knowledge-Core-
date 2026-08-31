@@ -2,7 +2,7 @@
 id: backups-cover-committed-history-only-so-uncommitted-working-trees-are-covered-by-nothing-2026-08-31
 type: finding
 status: candidate
-source: "Architecture session (session_01Q1wJW3McyXVkdvLjvLVKmy) capability audit, 2026-08-31 — relayed by the operator into a recovery session; observed on the operator machine and NOT independently re-verified here"
+source: "Recovery session, 2026-08-31 — VERIFIED directly against The-Reaver/Stag-Fleet at branch anansi-home-dashboard (b19dd5f), cloned and inspected; the claim as relayed is largely superseded by the code"
 project: fleet
 tags: [backup, working-tree, data-loss, uncommitted, coverage-gap]
 supersedes: []
@@ -12,6 +12,22 @@ superseded_by: null
 # The backup captures committed history, so roughly 112 uncommitted files across the project repos are protected by nothing
 
 ## Body
+
+> **CORRECTION -- mostly already fixed.** `scripts/backup_fleet.py` on this branch already
+> does what the relayed claim says is missing. `capture_working_tree()` (line 205) writes
+> `git diff HEAD` as a patch **plus** a list of untracked-but-not-ignored paths. Stashes are
+> exported **individually** by walking `git stash list`, and its own docstring documents the
+> 1-of-5 incident as the reason. Bundles are verified by **actually cloning them and comparing
+> against the live source**, not by `git bundle verify` alone.
+>
+> **What remains true:** it is **not scheduled** -- the script says so itself, printing what a
+> scheduled invocation would look like and calling scheduling "an operator decision, not made
+> by this script". So it is still a snapshot someone runs, not a mechanism.
+>
+> **The one real remaining gap** is narrower than claimed: untracked files are captured as
+> **paths only, no contents**. A new file never `git add`-ed is listed in the backup and its
+> contents are not in it.
+
 
 The backup bundles committed history. Across the project repos there are roughly **112
 uncommitted files** — 44 in one repo alone — and none of them is covered. They exist in

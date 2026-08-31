@@ -2,7 +2,7 @@
 id: a-gate-that-does-not-declare-fail-open-or-fail-closed-cannot-be-audited-2026-08-31
 type: decision
 status: candidate
-source: "Architecture session (session_01Q1wJW3McyXVkdvLjvLVKmy) capability audit, 2026-08-31 — relayed by the operator into a recovery session; observed on the operator machine and NOT independently re-verified here"
+source: "Recovery session, 2026-08-31 — VERIFIED directly against The-Reaver/Stag-Fleet at branch anansi-home-dashboard (b19dd5f), cloned and inspected; originally relayed from the capability audit and since confirmed"
 project: fleet
 tags: [gates, fail-closed, auditability, convention, safeguards]
 supersedes: []
@@ -13,7 +13,8 @@ superseded_by: null
 
 ## Body
 
-The gate battery holds 34 gates. Reading them tells you what each checks; it does not tell you
+**Verified: `scripts/gates/` holds exactly 34 `.py` gates, and **zero** of them mention
+`fail-open` or `fail-closed` anywhere in their first 30 lines.** The gate battery holds 34 gates. Reading them tells you what each checks; it does not tell you
 what each does when the check **cannot be performed** — a missing input, an unparseable file,
 an unreachable dependency. That behaviour is the gate's real strength, and today it is
 discoverable only by reading each implementation closely.

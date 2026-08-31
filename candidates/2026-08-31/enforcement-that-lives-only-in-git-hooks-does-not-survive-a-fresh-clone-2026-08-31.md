@@ -29,6 +29,12 @@ installing* is, and it needs no intent. And a cloud session — which cannot run
 against a container it does not control — is structurally the least protected place work
 happens, while looking identical to a protected one.
 
+**Verified on the fleet repo too:** `Stag-Fleet/.claude/settings.json` declares **zero
+hooks** -- `hooks` is empty. Whatever session hook warms the Core or captures transcripts
+lives in one machine's *user* settings, not in the repository, so no clone and no cloud
+session inherits it. Enforcement and capture both depend on one machine's local
+configuration.
+
 **The only durable fix is a CI backstop** running the same checks server-side, where no clone
 can opt out. Hooks are a fast local convenience; CI is the enforcement.
 

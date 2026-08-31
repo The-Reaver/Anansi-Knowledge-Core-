@@ -13,6 +13,20 @@ superseded_by: null
 
 ## Body
 
+> **MAJOR CORRECTION, same day.** This note originally said the other half of the Core was a
+> *local* store unreachable from a cloud session. **Wrong.** It is a second **git** repository:
+> `The-Reaver/Stag-Fleet`, at `research/knowledge-home/`, holding **845 ratified notes and 193
+> candidates** against this repo's 125 and 80. It was cloned and audited from a cloud session
+> without difficulty. The divergence is real and larger than stated -- roughly **5x** -- but it
+> is a two-repository split, not a reachability problem, and any session with repo access can
+> reconcile it.
+>
+> Also corrected: of the nine dangling ids listed below, only **two** resolve in the Knowledge
+> Home (`2026-08-06-master-todo-and-offline-guide-established`,
+> `2026-08-06-read-first-rulebook-and-dev-process`). The other seven exist in **neither** store
+> and are genuinely broken edges, including `2026-08-07-mandate-1-fleet-first-decisions`.
+
+
 A dormant-area audit cited five note ids. Checked against this git-tracked repo, **four of
 the five do not exist here**:
 

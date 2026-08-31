@@ -2,7 +2,7 @@
 id: a-mandate-can-name-an-enforcement-mechanism-that-does-not-exist-2026-08-31
 type: finding
 status: candidate
-source: "Architecture session (session_01Q1wJW3McyXVkdvLjvLVKmy) capability audit, 2026-08-31 — relayed by the operator into a recovery session; observed on the operator machine and NOT independently re-verified here"
+source: "Recovery session, 2026-08-31 — VERIFIED directly against The-Reaver/Stag-Fleet at branch anansi-home-dashboard (b19dd5f), cloned and inspected; originally relayed from the capability audit and since confirmed in governance/mandates.json and scripts/gates/mandates_gate.py"
 project: fleet
 tags: [governance, mandates, enforcement, verification, registry]
 supersedes: []
@@ -12,6 +12,18 @@ superseded_by: null
 # Nothing checks that a mandate's declared enforcement mechanism actually exists
 
 ## Body
+
+**Verified.** `governance/mandates.json` holds **28 mandates, all 28 carrying a `mechanism`
+field**. Seventeen are honest prose -- "Agent-contract; not machine-gatable" -- which is
+creditable. Of the **eleven that name an actual file, ten of those named files do not exist**
+on the branch: `master-todo.md`, `brain-trust-on-demand-protocol.md`, `GEO_DEVELOPMENT_LOG.md`,
+two `research/knowledge-home/candidates/2026-08-09/...` notes, and several `CLAUDE.md` paths
+including `/Users/abadm/.claude/CLAUDE.md` -- a **macOS** path in a fleet running on Windows.
+
+**And `mandates_gate.py` never reads the `mechanism` field at all.** It checks that the
+registry parses, that rules are non-empty, that six governance law files exist, that specs
+carry a compliance section, and that two allowlists keep their honesty-disclosure lines.
+Enforcement claims themselves are unchecked.
 
 Each mandate in `governance/mandates.json` declares a `mechanism` — the script or hook that
 enforces it. **Nothing verifies that the named thing exists**, is installed, or runs. The

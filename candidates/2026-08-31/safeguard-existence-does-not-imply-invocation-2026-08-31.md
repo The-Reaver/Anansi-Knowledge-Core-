@@ -19,7 +19,12 @@ compares two *declaration* files to each other and never inspects what is actual
 installed in `.git/hooks/`. **Two documents can agree perfectly while describing an empty
 directory.**
 
-The gate battery had 34 gates, 7 of them wired.
+The gate battery had 34 gates, 7 of them wired. **Both numbers verified exactly**:
+`scripts/gates/` holds 34 `.py` files, and `scripts/hooks/install-git-hooks.sh` references
+exactly seven of them (`audit_report`, `core_ratification`, `hook_parity`, `mandates`,
+`model_tier`, `secret_scan`, `stale_stage_guard`). The installer declares three hooks --
+`pre-commit`, `commit-msg`, `prepare-commit-msg` -- and **no `pre-push`**, confirming the
+undeclared-hook catch the gate brief predicted.
 
 The general principle this establishes, and which most of the fleet's plans silently
 assume: **"a safeguard exists" does not imply "a safeguard runs."** Today that implication
