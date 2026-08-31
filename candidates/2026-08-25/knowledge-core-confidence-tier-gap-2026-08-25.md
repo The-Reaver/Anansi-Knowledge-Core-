@@ -5,6 +5,8 @@ status: candidate
 source: "Architecture, Redlined — Rev. 3, Part V; captured via GeoSuite session handoff, 2026-08-25"
 project: fleet
 tags: [knowledge-core, zettelkasten, deepening]
+supersedes: []
+superseded_by: knowledge-core-confidence-tier-ruling-2026-08-25
 ---
 
 # Ratified and unverified notes collapse into one undifferentiated truth tier

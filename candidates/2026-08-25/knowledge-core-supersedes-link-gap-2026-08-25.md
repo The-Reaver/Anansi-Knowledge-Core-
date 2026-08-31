@@ -5,6 +5,8 @@ status: candidate
 source: "Architecture, Redlined — Rev. 3, Part V; captured via GeoSuite session handoff, 2026-08-25"
 project: fleet
 tags: [knowledge-core, zettelkasten, deepening]
+supersedes: []
+superseded_by: knowledge-core-supersedes-link-ruling-2026-08-25
 ---
 
 # A superseded note needs a link back, or retrieval can surface it as current

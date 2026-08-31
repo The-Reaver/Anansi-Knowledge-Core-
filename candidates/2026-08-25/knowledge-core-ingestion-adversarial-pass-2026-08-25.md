@@ -6,7 +6,7 @@ source: Architecture, Redlined — Rev. 3, Part V
 project: fleet
 tags: [knowledge-core, zettelkasten, deepening, adversarial-review]
 supersedes: []
-superseded_by: null
+superseded_by: knowledge-core-ingestion-adversarial-pass-ruling-2026-08-25
 ---
 
 # A candidate ruling deserves the same adversarial pass a code fix gets
