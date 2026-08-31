@@ -1,7 +1,7 @@
 ---
 id: geosuite-p0-site-repos-flag-fixed-2026-08-31
 type: finding
-status: candidate
+status: ratified
 source: this chat, 2026-08-31, live Railway + Supabase check from a session working on Anansi-Knowledge-Core-
 project: geo
 tags: [geosuite, production, data-loss, p0]

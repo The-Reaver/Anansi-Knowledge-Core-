@@ -1,7 +1,7 @@
 ---
 id: geosuite-raw-law-count-fix-2026-08-31
 type: finding
-status: candidate
+status: ratified
 source: this chat, 2026-08-31, fixed directly in The-Reaver/The-Geo-Suite- on branch claude/fix-raw-law-count-20260831, PR #7
 project: geo
 tags: [geosuite, ci, red-main]

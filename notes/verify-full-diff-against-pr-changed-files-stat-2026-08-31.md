@@ -1,7 +1,7 @@
 ---
 id: verify-full-diff-against-pr-changed-files-stat-2026-08-31
 type: lesson
-status: candidate
+status: ratified
 source: "This session, 2026-08-31 — reviewing The-Reaver/Stag-Fleet#1, a subagent's first pass treated a 162,782-character fetched file list as the complete diff"
 project: fleet
 tags: [pr-review, tooling, pagination, verification]

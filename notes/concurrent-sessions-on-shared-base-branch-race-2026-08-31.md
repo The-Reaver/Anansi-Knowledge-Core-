@@ -1,7 +1,7 @@
 ---
 id: concurrent-sessions-on-shared-base-branch-race-2026-08-31
 type: finding
-status: candidate
+status: ratified
 source: "This session, 2026-08-31 — merging PR #5 into the-reaver/anansi-knowledge-core-'s base branch while other sessions had open PRs against the same base"
 project: fleet
 tags: [git, concurrency, merge-conflict, multi-session]

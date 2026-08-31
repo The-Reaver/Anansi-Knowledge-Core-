@@ -1,7 +1,7 @@
 ---
 id: large-draft-pr-description-can-go-stale-vs-head-2026-08-31
 type: finding
-status: candidate
+status: ratified
 source: "This session, 2026-08-31 — reviewing The-Reaver/Stag-Fleet#1"
 project: fleet
 tags: [pr-review, staleness, verification, draft-pr]

@@ -1,7 +1,7 @@
 ---
 id: unquoted-source-field-breaks-yaml-across-corpus-2026-08-31
 type: lesson
-status: candidate
+status: ratified
 source: "This session (Anansi Knowledge Core work), 2026-08-31 — discovered after an earlier ratification/mining pass in this same session had already appended unquoted parenthetical status annotations into 108/108 notes' source: fields"
 project: fleet
 tags: [yaml, frontmatter, data-integrity, tooling, note-schema]
