@@ -2,7 +2,7 @@
 id: geosuite-build-ledger-proposal-2026-08-25
 type: finding
 status: candidate
-source: Architecture, Redlined — Rev. 3, Part V; this session's own GeoSuite roadmap-gaps slices; captured via GeoSuite session handoff, 2026-08-25
+source: "Architecture, Redlined — Rev. 3, Part V; this session's own GeoSuite roadmap-gaps slices; captured via GeoSuite session handoff, 2026-08-25"
 project: geo
 tags: [geosuite, build-ledger, site-generator]
 ---

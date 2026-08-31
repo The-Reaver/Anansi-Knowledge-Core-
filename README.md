@@ -16,13 +16,24 @@ the other half of the same failure — every session owes the Core its lesson, u
 ## Layout
 
 ```
+raw/              append-only archive: the literal, unedited transcript of every
+                  session, one JSONL file per session (see raw/README.md)
 notes/            permanent, ratified atomic notes — the Core itself
 candidates/       unratified captures, one dated subfolder per session (candidates/<date>/)
 templates/        the note template new captures should start from
+docs/adr/         architecture decisions, starting with why raw/ and notes/ are
+                  kept as two separate stores (ADR-0005)
+scripts/          tooling — the append-only writer for raw/ lives here
 ```
 
 Nothing enters `notes/` without the operator's pass. Everything lands in `candidates/`
 first. See "Ratification" below for what that pass actually checks.
+
+`raw/` and `notes/` are deliberately two different stores, not one. `raw/` is the
+ultimate source of truth — the exact words of a session, appended and never edited.
+`notes/` is the distilled, searchable Core built from it. A note that came from an
+archived session should link back to it — see "Provenance" below and
+`docs/adr/0005-two-store-memory-archive-and-core.md` for why.
 
 ## Note format
 
@@ -35,6 +46,9 @@ Every note carries:
   workflow marker. See below.
 - `source` — where the lesson came from (session, chat, document)
 - `tags` — free-form
+- `provenance` — optional; the `raw/` archive file and line range this note was distilled
+  from, if it came from an archived session. Omit entirely for notes with no archived
+  session behind them.
 - `supersedes` / `superseded_by` — the bidirectional link between a note and whatever
   replaces it. See below.
 - `## Body` — what happened, why, and what to do differently. Plain language. Name the
@@ -94,5 +108,10 @@ session has already retrieved and acted on the stale claim.
 
 ## Status
 
-Scaffold only — awaiting the first import of notes from the operator's local
-`knowledge-home` folder.
+`notes/` holds 108 ratified notes, imported and mined from the operator's Google Drive
+note inbox and reviewed against the bar above. `candidates/` holds the rest of that
+import, still awaiting further review or splitting. `raw/` is scaffolded (folder, ADR,
+writer script, `provenance` field on the template) but empty — the historical sessions
+behind the current notes weren't reachable turn-by-turn for backfill. Sessions going
+forward should write their archive as part of closing out, so `raw/` and `notes/` grow
+together from here.
