@@ -5,6 +5,8 @@ status: candidate
 source: "this chat, 2026-08-05, Abad asked for a thorough announcement of Knowledge Core's real state and business benefit (source status: active); mined from candidates/2026-08-25/2026-08-05-knowledge-core-benefits-and-honest-risk-reference.md"
 project: fleet
 tags: [knowledge-core, limitation, network-egress, terminal]
+supersedes: []
+superseded_by: null
 ---
 
 # The application layer reading/writing the capability ledger had, as of 2026-08-05, never run end to end — it needs the operator's own terminal

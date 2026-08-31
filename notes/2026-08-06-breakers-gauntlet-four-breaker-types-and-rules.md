@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; defined the certification bar that flips an agent from school to cleared, folding in the Red Team of Breakers (source status: active); mined from candidates/2026-08-25/2026-08-06-graduation-bar-and-breakers-gauntlet-design.md"
 project: fleet
 tags: [breakers, red-team, security, correctness, scale, chaos]
+supersedes: []
+superseded_by: null
 ---
 
 # The Breakers gauntlet: Security, Correctness, Scale, and Chaos Breakers, independent of the builder and fleet, using different AI families, all must come up empty

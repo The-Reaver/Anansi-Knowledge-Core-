@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, prompted by Abad asking for a STAG readiness ranking with emphasis on GEO then \"the CIPP/E agent\" (source status: active)"
 project: cippe
 tags: [cippe, tony-llc, compliance-intelligence, naming-collision, mistake]
+supersedes: []
+superseded_by: null
 ---
 
 # The First STAG Readiness Ranking Wrongly Treated "CIPP/E Agent" as Compliance Intelligence

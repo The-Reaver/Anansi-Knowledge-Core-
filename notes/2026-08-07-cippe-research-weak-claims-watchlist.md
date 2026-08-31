@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2), weak-sourced claims flagged under Mandate 7 (source status: active); mined from candidates/2026-08-25/2026-08-07-cippe-redesign-blueprint-meta-analysis.md"
 project: cippe
 tags: [cippe, weak-claims, sourcing, mandate-7, correction]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E research weak-claims watchlist: keep as motivation not product fact — the 30% executive-function claim, cost figures, and CPRA 2026-2027 dates all need care

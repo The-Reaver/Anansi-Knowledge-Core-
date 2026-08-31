@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-06, operator on phone; asked for a tight demo scope to show the partner a real working product within two days. (source status: active)"
 project: geo
 tags: [geo-suite, demo, spec, partner, prospecting, audit, report, sales, two-day]
+supersedes: []
+superseded_by: null
 ---
 
 # GEO Suite two-day demo spec, one real practice end to end

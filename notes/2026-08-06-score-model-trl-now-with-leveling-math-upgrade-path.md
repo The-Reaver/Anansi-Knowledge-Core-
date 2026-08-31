@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; chose the first agents and the score model, and asked for a documented plan to upgrade the score model soon (source status: active); mined from candidates/2026-08-25/2026-08-06-cross-agent-curriculum-decisions-and-score-upgrade-plan.md"
 project: fleet
 tags: [dreams, scoring, trl, wilson, glicko, sprt, upgrade-path]
+supersedes: []
+superseded_by: null
 ---
 
 # Score model locked: TRL 1-9 now, with a defined, non-rewrite upgrade path to the full leveling math (Wilson, Glicko-2, SPRT)

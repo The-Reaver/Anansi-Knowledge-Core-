@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; Claude conducted four parallel research streams for the CIPP/E redesign phase. Operator runs Gemini and Qwen deep research in parallel; findings to be merged in a meta-analysis. (source status: active)"
 project: cippe
 tags: [cippe, research, neurodivergent, adhd, coga, wcag, navigation, design-system, tone, adaptation, meta-analysis]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E redesign deep research, Claude's half (four streams), for the meta-analysis

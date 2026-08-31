@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; Brain Trust ruled to design TYR's curriculum next (source status: active); mined from candidates/2026-08-25/2026-08-06-tyr-curriculum-lead-breaker.md"
 project: fleet
 tags: [tyr, curriculum, stars, red-then-green, breaker]
+supersedes: []
+superseded_by: null
 ---
 
 # TYR's STARS curriculum: six phases from audit discipline through security/scale/chaos breaking to the gauntlet as a reusable tool, each proven via red-then-green on seeded targets

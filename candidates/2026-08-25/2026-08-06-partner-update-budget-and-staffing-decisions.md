@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-06, operator on phone; asked for two partner-facing reports and stated budget, staffing, local-system, and security requirements to bring to the partner and the lawyer today. (source status: active)"
 project: fleet
 tags: [partner-update, budget, staffing, security, local, hipaa, contributions]
+supersedes: []
+superseded_by: null
 ---
 
 # Partner update produced; build-local-now, budget, and staffing decisions logged

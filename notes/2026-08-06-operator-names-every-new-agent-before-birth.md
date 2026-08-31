@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries (source status: active); mined from candidates/2026-08-25/2026-08-06-brain-trust-verdicts-and-operator-contributions.md"
 project: fleet
 tags: [governance, naming, agent-creation, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # Rule: the operator names every new agent before it is born

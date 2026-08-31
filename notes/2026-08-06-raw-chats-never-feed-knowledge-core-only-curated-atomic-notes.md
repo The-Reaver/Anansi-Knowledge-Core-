@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries, including a pushback in the operator's own interest on feeding chats into Knowledge Core (source status: active); mined from candidates/2026-08-25/2026-08-06-brain-trust-verdicts-and-operator-contributions.md"
 project: fleet
 tags: [knowledge-core, curation, noise, governance, distillation]
+supersedes: []
+superseded_by: null
 ---
 
 # Do not dump raw chats into Knowledge Core, including unrelated ones — distill each chat into curated, cited, verified atomic notes; keep unrelated personal material separate

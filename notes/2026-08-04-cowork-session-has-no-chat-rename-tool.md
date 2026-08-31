@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, requested at the start of the session and again at its close (source status: active)"
 project: fleet
 tags: [cowork, tooling-limitation, finding]
+supersedes: []
+superseded_by: null
 ---
 
 # This Cowork Session Has No Tool to Rename or Label the Chat Itself

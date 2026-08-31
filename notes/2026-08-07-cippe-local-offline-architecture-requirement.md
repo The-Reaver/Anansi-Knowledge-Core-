@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2), consensus items firm (source status: active); mined from candidates/2026-08-25/2026-08-07-cippe-redesign-blueprint-meta-analysis.md"
 project: cippe
 tags: [cippe, offline, local-first, privacy, maintenance]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E must run 100% offline with feature parity: no telemetry, no cloud sync, no hidden API calls, local LLM inference, local DB

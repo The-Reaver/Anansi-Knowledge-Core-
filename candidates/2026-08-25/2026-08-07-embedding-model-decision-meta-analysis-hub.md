@@ -5,6 +5,8 @@ status: candidate
 source: "two deep-research reports (one that retrieved live data, one that could not), reconciled 2026-08-07 (source status: hub note, candidates held, staged for Brain Trust vote, Celestina leads)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Embedding-model decision: two-tool meta-analysis, staged for the docket

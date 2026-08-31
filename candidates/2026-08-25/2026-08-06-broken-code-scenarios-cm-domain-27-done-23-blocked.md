@@ -5,6 +5,8 @@ status: candidate
 source: "this chat, 2026-08-04 to 2026-08-06, Augustin curriculum work on the 500 Broken Code Scenarios manual, CM domain (Concurrency and Memory Safety) (source status: active)"
 project: fleet
 tags: [augustin, curriculum, broken-code-scenarios, concurrency, memory-safety, build-outcome, verified]
+supersedes: []
+superseded_by: null
 ---
 
 # Broken Code Scenarios, CM Domain: 27 Built and Verified, 23 GPU/Framework Scenarios Registered as Blocked

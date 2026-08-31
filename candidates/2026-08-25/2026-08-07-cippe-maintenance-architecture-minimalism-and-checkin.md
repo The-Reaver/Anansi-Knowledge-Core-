@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; operator asked about deeper minimalism, a built-in periodic interview feedback loop, explaining the Knowledge Core to the user in plain terms, and a local laptop-to-laptop maintenance system where her Core can improve ours without leaking her data. (source status: active)"
 project: cippe
 tags: [cippe, maintenance, usb, knowledge-core, privacy, minimalism, check-in, feedback-loop, explainer, handoff, confidential]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E copilot, USB local maintenance and Core-to-Core feeding, minimalism, periodic check-in, in-app plain explainer, and her handoff document

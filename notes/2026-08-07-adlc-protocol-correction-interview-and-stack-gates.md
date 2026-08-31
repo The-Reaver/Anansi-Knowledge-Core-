@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; operator flagged that we skipped protocol by assuming the tech stack and jumping to an Antigravity build brief without Elijah's intuitive interview or a deliberate fleet-run tech-stack decision. (source status: active)"
 project: cippe
 tags: [adlc, protocol, governance, interview, tech-stack, gate, cippe, correction]
+supersedes: []
+superseded_by: null
 ---
 
 # Protocol correction, do not skip the interview and tech-stack gates before building

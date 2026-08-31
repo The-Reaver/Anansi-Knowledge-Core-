@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-06, operator on phone; asked for the definitive gameplan and roadmap as a visual life cycle showing how training leads to an agent that builds complex apps on command. An infographic was delivered to the operator this session and should be committed to the repo and registered as an artifact. (source status: active)"
 project: fleet
 tags: [adlc, lifecycle, curriculum, roadmap, agent-foundry, certification, capstone, strategy]
+supersedes: []
+superseded_by: null
 ---
 
 # The Agent Development Life Cycle (ADLC), the definitive gameplan to a build-complex-apps agent

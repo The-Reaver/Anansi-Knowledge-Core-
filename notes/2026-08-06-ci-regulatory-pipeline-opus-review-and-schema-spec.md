@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-05/06, Abad asked for the gameplan's own closing instruction, review by Opus model or higher, to actually run (source status: active)"
 project: ci
 tags: [compliance-intelligence, ci, regulatory-pipeline, opus-review, schema, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # CI Regulatory Pipeline Gameplan Got an Independent Opus Review and a Follow-Up Engineering Spec

@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, a subagent acting as Jeremy, dispatched after Abad said \"dispatch the fleet\" (source status: active)"
 project: fleet
 tags: [anansi, jeremy, build-outcome, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # Jeremy Built a Complete, Real Anansi Ledger Minimal Slice

@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07, operator on phone; asked for the plan to gather valid compliance information that the lawyer then validates, to feed the Knowledge Core (source status: active); mined from candidates/2026-08-25/2026-08-07-compliance-intelligence-gathering-plan.md"
 project: ci
 tags: [ci, pipeline, lawyer-review, provenance, knowledge-core]
+supersedes: []
+superseded_by: null
 ---
 
 # CI intelligence pipeline: ingest, relevance filter, candidate atomic note, change detection, lawyer review queue, live rule with re-review date

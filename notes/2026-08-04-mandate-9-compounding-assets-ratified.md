@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, a simulated 6-seat Brain Trust dispatch on Abad's proposal, ratified with amendment (source status: active)"
 project: fleet
 tags: [mandate-9, compounding-assets, brain-trust, governance, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # Mandate 9: A Task Only Counts as a Compounding Asset If It's Captured, Reused, and Measured

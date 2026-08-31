@@ -5,6 +5,8 @@ status: ratified
 source: "Beyond Philosophy to Formulas (Qwen deep-research meta-analysis), 2026-08-07, reconciled against our research (source status: hub note); mined from candidates/2026-08-25/2026-08-07-pkm-meta-analysis-reconciled-hub.md"
 project: fleet
 tags: [pkm, formula-first, correction, mandate-7]
+supersedes: []
+superseded_by: null
 ---
 
 # The PKM research document's headline "effectiveness formula" is a hand-assigned, unvalidated weighted-sum heuristic — usable only as a framing device, never cited as an evidence-based formula

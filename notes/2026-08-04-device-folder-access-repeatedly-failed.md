@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, repeated device_request_folder_access attempts across the session (source status: active)"
 project: fleet
 tags: [device-bridge, blocked, finding]
+supersedes: []
+superseded_by: null
 ---
 
 # Real Stag Repo Was Never Reached This Session, Folder Access Timed Out Every Attempt

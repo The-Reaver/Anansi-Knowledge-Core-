@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-06, operator on phone; continued the fleet design by defining the certification bar that flips an agent from school to cleared, folding in the Red Team of Breakers, and proposing TYR's role. (source status: active)"
 project: fleet
 tags: [certification, graduation-bar, breakers, red-team, security, aj, tyr, curriculum]
+supersedes: []
+superseded_by: null
 ---
 
 # The graduation bar (certification checklist) and the Breakers gauntlet; TYR proposed as lead Breaker

@@ -5,6 +5,8 @@ status: ratified
 source: "Google Drive inbox capture, source chat not recorded in original note (source status: v1, 2026-08-06); mined from candidates/2026-08-25/2026-08-06-DEFINITIVE-BLUEPRINT.md"
 project: fleet
 tags: [github, repo-hygiene, mandate-12, safety-rules, build-discipline]
+supersedes: []
+superseded_by: null
 ---
 
 # Repo and build safety rules: one source of truth, nothing is done until saved there, never copy folders over each other, never overwrite a proven piece

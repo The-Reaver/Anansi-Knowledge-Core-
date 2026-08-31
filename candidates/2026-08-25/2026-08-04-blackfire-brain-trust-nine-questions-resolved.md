@@ -5,6 +5,8 @@ status: candidate
 source: "this chat, 2026-08-04, Abad asked directly for the nine clarifying questions from the Brain Trust's Mandate 10 ruling to be answered and filed as a standing reference he can point future chats to by name (source status: active)"
 project: fleet
 tags: [blackfire, mandate-9, mandate-10, brain-trust, governance, operator-contribution, permanent-reference]
+supersedes: []
+superseded_by: null
 ---
 
 # Blackfire — STAG Governance Reference: Mandate 9, Mandate 10, and the Nine Open Questions Resolved

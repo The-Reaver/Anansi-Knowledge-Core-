@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07, operator on phone; clarified the company and project ownership structure and partners when scoping the architect's document. (source status: active)"
 project: geo
 tags: [ownership, entities, tony-llc, stag, geo-suite, smart-seed-tech, hbot-usa, sonny, thrivemedix, architect, partners]
+supersedes: []
+superseded_by: null
 ---
 
 # Ownership and entity map, TONY LLC, STAG, GEO Suite, Smart Seed Tech, HBOT USA, SONNY, and the people

@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Abad asked where the Lovable-built Lords of Cian archive was located (source status: active)"
 project: lords-of-cian
 tags: [lords-of-cian, lovable]
+supersedes: []
+superseded_by: null
 ---
 
 # The Lords of Cian Lovable Archive Is a Separate Project From the Production Studio

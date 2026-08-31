@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; operator asked for deep research on the privacy intelligence funnel, what privacy professionals do day-to-day at top firms, and the tools they need, then a Brain Trust decision before continuing the build. Three parallel research agents ran; verdict synthesized here. (source status: active)"
 project: cippe
 tags: [cippe, privacy, intelligence-funnel, maintenance, gdpr, ccpa, dsar, ropa, dpia, feature-set, brain-trust, research]
+supersedes: []
+superseded_by: null
 ---
 
 # Brain Trust verdict, the CIPP/E copilot intelligence funnel, maintenance mechanism, and the daily-work feature set (deep research)

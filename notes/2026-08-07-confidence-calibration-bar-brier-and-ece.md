@@ -5,6 +5,8 @@ status: ratified
 source: "Google Drive inbox capture, source chat not recorded in original note (source status: pinned Anansi note, answering whether proven formulas exist beyond Wilson); mined from candidates/2026-08-25/2026-08-07-quality-and-performance-formulas.md"
 project: fleet
 tags: [formulas, calibration, brier-score, ece]
+supersedes: []
+superseded_by: null
 ---
 
 # Confidence calibration bar: track Brier score and Expected Calibration Error per extractor, recalibrate when ECE drifts past a set band

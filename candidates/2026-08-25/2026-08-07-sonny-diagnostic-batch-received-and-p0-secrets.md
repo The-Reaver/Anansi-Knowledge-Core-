@@ -5,6 +5,8 @@ status: candidate
 source: "SONNY / ShopOnlineNewYork repo diagnostic close-out, harvested 2026-08-07 (source status: hub note, batch held as candidates pending operator approval)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # SONNY diagnostic batch: received, held, and a P0 secret exposure

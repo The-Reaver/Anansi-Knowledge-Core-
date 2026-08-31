@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; directed that the Site Generator feature itself run on the same principles the team develops by (Mandate 12, slice by slice, layering, nothing lost). (source status: active)"
 project: geo
 tags: [geo-suite, site-generator, methodology, slice-by-slice, layering, verification, provenance, mandate-12, demo]
+supersedes: []
+superseded_by: null
 ---
 
 # The Site Generator builds sites the way the fleet builds software, slice by slice, layered, verified, never overwritten, captured

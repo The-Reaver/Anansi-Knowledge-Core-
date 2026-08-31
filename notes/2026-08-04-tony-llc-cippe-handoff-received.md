@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Abad pasted a full handoff document explicitly as context, not a command (source status: active)"
 project: cippe
 tags: [tony-llc, cippe, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # TONY LLC's CIPP/E Privacy Agent Is a Separate Project From Compliance Intelligence

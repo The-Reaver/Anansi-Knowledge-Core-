@@ -5,6 +5,8 @@ status: ratified
 source: "Architecture, Redlined — Rev. 3 (artifact 924c39f2), Part IV; captured via GeoSuite session handoff, 2026-08-25"
 project: fleet
 tags: [model-tiering, cost, agent-engineering]
+supersedes: []
+superseded_by: null
 ---
 
 # Model/effort tier is chosen by task class, not by default habit

@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries (source status: active); mined from candidates/2026-08-25/2026-08-06-brain-trust-verdicts-and-operator-contributions.md"
 project: fleet
 tags: [governance, agent-creation, anti-clutter]
+supersedes: []
+superseded_by: null
 ---
 
 # Build a new agent only when there is a real job for it — every agent needs a defined role, a curriculum, and must prove useful; no agents for their own sake

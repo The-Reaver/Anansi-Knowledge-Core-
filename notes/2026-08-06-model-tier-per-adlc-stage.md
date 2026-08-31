@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; asked how model selection works across the plumbing (source status: active); mined from candidates/2026-08-25/2026-08-06-model-tiering-and-certification-design.md"
 project: fleet
 tags: [model-tiering, adlc, cost, certification]
+supersedes: []
+superseded_by: null
 ---
 
 # Model tier assigned per ADLC stage: cheap/mechanical for Assign/Level-up/Log, matched-to-difficulty for Build, code (not a model) for Prove, mid model for Capture, strong+independent for Certify

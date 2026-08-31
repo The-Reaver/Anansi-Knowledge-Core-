@@ -5,6 +5,8 @@ status: ratified
 source: "Google Drive inbox capture, source chat not recorded in original note (source status: pinned Anansi note, answering whether proven formulas exist beyond Wilson); mined from candidates/2026-08-25/2026-08-07-quality-and-performance-formulas.md"
 project: fleet
 tags: [formulas, elo, trueskill, bandit, ucb1, thompson-sampling, routing]
+supersedes: []
+superseded_by: null
 ---
 
 # Agent/strategy routing formulas beyond Wilson: Elo/TrueSkill for head-to-head skill rating, UCB1/Thompson-sampling multi-armed bandit to route work to better performers while still exploring

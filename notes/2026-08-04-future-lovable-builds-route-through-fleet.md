@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Abad's standing instruction (source status: active)"
 project: fleet
 tags: [lovable, fleet, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # New Lovable Projects Should Be Built With the Fleet, Not Lovable's Own Defaults

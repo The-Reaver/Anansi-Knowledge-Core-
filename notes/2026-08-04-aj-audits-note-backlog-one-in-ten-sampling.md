@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Abad asked for the nine clarifying questions from the Brain Trust's Mandate 10 ruling to be answered and filed as a standing reference (source status: active); mined from candidates/2026-08-25/2026-08-04-blackfire-brain-trust-nine-questions-resolved.md"
 project: fleet
 tags: [aj, auditor, accuracy-sampling, governance]
+supersedes: []
+superseded_by: null
 ---
 
 # AJ, the existing fleet auditor role, owns the post-Friday note-backlog accuracy sampling gate, roughly one note in ten spot-checked against its source chat

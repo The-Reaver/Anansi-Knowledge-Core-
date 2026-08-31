@@ -5,6 +5,8 @@ status: ratified
 source: "contribution chat two (STAG operator-contributions research session) close-out, reconciled 2026-08-07 (source status: resolved, 2026-08-07)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Resolved: the legacy formulas are recovered, gap closed

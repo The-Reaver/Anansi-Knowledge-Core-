@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, the same simulated Brain Trust dispatch that ratified Mandate 9 (source status: active)"
 project: geo
 tags: [anansi, jeremy, mandate-9, brain-trust, governance]
+supersedes: []
+superseded_by: null
 ---
 
 # Anansi Gets a Scoped, Time-Boxed Slice Running Parallel to GEO, Not Ahead of It

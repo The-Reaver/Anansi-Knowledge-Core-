@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; operator asked for the full manual, then a working drivable prototype to close this out before Phase 0. (source status: active)"
 project: cippe
 tags: [manual, prototype, cippe, closeout, phase-0, deliverable]
+supersedes: []
+superseded_by: null
 ---
 
 # Delivered — STAG Operating Manual and the drivable CIPP/E prototype (closes out before Phase 0)

@@ -5,6 +5,8 @@ status: ratified
 source: "Google Drive inbox capture, source chat not recorded in original note (source status: pinned Anansi note, answering whether proven formulas exist beyond Wilson); mined from candidates/2026-08-25/2026-08-07-quality-and-performance-formulas.md"
 project: fleet
 tags: [formulas, kappa, extractor-agreement, dawid-skene]
+supersedes: []
+superseded_by: null
 ---
 
 # Extraction reliability bar: Cohen's/Fleiss' kappa >= 0.70 on note-worthiness and category; below that, fix the rubric before pushing the batch

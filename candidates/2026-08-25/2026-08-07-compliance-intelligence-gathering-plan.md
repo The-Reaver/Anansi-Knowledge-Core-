@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07, operator on phone; asked for the plan to gather valid compliance information (RSS feeds and other working methods) that the lawyer then validates, to feed the Knowledge Core. Backbone sources verified via web search. (source status: active)"
 project: geo
 tags: [knowledge-core, intelligence-gathering, compliance, rss, api, legiscan, federal-register, lawyer, pipeline, maintenance, geo-suite]
+supersedes: []
+superseded_by: null
 ---
 
 # How we gather the raw compliance intelligence before the lawyer validates it (sources plus pipeline)

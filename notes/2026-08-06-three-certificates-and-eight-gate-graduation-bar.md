@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; defined the certification bar that flips an agent from school to cleared (source status: active); mined from candidates/2026-08-25/2026-08-06-graduation-bar-and-breakers-gauntlet-design.md"
 project: fleet
 tags: [certification, graduation-bar, gates, aj]
+supersedes: []
+superseded_by: null
 ---
 
 # Three certificates (Foundation/Architecture/Builder) and the eight-gate graduation bar an agent must clear on every gate

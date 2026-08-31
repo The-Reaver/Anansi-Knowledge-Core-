@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-05, Abad asked for a thorough announcement of Knowledge Core's real state and business benefit (source status: active); mined from candidates/2026-08-25/2026-08-05-knowledge-core-benefits-and-honest-risk-reference.md"
 project: fleet
 tags: [knowledge-core, risk, correction-path, provenance, lesson]
+supersedes: []
+superseded_by: null
 ---
 
 # A living memory system that accumulates wrong or stale facts is worse than no memory system — it reads as authoritative and is not

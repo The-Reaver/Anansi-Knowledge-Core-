@@ -5,6 +5,8 @@ status: candidate
 source: "this chat, 2026-08-06, Abad asked to run five batches; DS-025 through DS-050 built by parallel subagents and each runner re-verified by the main session, completing the DS domain (source status: active)"
 project: fleet
 tags: [augustin, curriculum, broken-code-scenarios, distributed-systems, go, build-outcome, verified, domain-complete]
+supersedes: []
+superseded_by: null
 ---
 
 # Broken Code Scenarios, DS Domain COMPLETE: 50 of 50 Built and Verified as Go In-Process Models

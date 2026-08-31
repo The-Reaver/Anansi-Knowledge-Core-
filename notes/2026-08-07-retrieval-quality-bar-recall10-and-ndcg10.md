@@ -5,6 +5,8 @@ status: ratified
 source: "Google Drive inbox capture, source chat not recorded in original note (source status: pinned Anansi note, answering whether proven formulas exist beyond Wilson); mined from candidates/2026-08-25/2026-08-07-quality-and-performance-formulas.md"
 project: fleet
 tags: [formulas, retrieval, recall, ndcg, embedding-model]
+supersedes: []
+superseded_by: null
 ---
 
 # Retrieval quality bar: Recall@10 >= 0.90, nDCG@10 >= 0.80 against a fixed eval set of query/expected-note pairs

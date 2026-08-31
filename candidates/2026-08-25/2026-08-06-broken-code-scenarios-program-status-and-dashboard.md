@@ -5,6 +5,8 @@ status: candidate
 source: "this chat, 2026-08-06, Abad asked whether atomic notes and artifacts were being created, then asked to set up both a persisted dashboard and Drive sync of the notes (source status: active)"
 project: fleet
 tags: [augustin, curriculum, broken-code-scenarios, program-status, dashboard, artifact, honesty]
+supersedes: []
+superseded_by: null
 ---
 
 # Broken Code Scenarios Program Status: 45 of 500 Verified, Plus a Persisted Progress Dashboard

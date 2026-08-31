@@ -5,6 +5,8 @@ status: candidate
 source: "this chat, 2026-08-06, session closing; Abad had a separate chat already open on this thread and asked for closing notes so it knows exactly where to look and what to do (source status: active)"
 project: ci
 tags: [compliance-intelligence, ci, regulatory-pipeline, attorney-partnership, handoff, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # Next Session's Target: Draft Attorney Terms Before Any Atom-Versioning Code

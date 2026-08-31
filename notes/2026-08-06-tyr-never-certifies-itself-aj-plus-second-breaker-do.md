@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; Brain Trust ruled to design TYR's curriculum next (source status: active); mined from candidates/2026-08-25/2026-08-06-tyr-curriculum-lead-breaker.md"
 project: fleet
 tags: [tyr, self-grading, aj, certification]
+supersedes: []
+superseded_by: null
 ---
 
 # TYR audits others, so TYR never certifies itself — AJ plus a second, different Breaker certify TYR

@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Abad asked for the nine clarifying questions from the Brain Trust's Mandate 10 ruling to be answered and filed as a standing reference (source status: active); mined from candidates/2026-08-25/2026-08-04-blackfire-brain-trust-nine-questions-resolved.md"
 project: fleet
 tags: [mandate-10, weight-watch, threshold, handoff]
+supersedes: []
+superseded_by: null
 ---
 
 # Weight-watch proxy threshold set: roughly 15 substantial tool calls, or 3 subagent dispatches, or 2 large file/document reads combined with either

@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2), consensus items firm, conflicts resolved (source status: active); mined from candidates/2026-08-25/2026-08-07-cippe-redesign-blueprint-meta-analysis.md"
 project: cippe
 tags: [cippe, design-tokens, spacing, typography, color, motion, wcag]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E design tokens locked: 8pt spacing grid, 16px scalable type at 1.6 line-height, sage/slate/muted-brick color, crossfade-only motion

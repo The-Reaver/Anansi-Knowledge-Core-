@@ -5,6 +5,8 @@ status: ratified
 source: "Beyond Philosophy to Formulas (Qwen deep-research meta-analysis), 2026-08-07, reconciled against our research (source status: hub note); mined from candidates/2026-08-25/2026-08-07-pkm-meta-analysis-reconciled-hub.md"
 project: fleet
 tags: [pkm, zettelkasten, validation, cognitive-science]
+supersedes: []
+superseded_by: null
 ---
 
 # An external evidence-based meta-analysis of seven PKM methods validates Anansi's Zettelkasten design as highest-scoring on depth of encoding, association fidelity, creativity, and metacognition

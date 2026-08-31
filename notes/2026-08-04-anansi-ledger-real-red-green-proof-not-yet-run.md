@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, stated plainly at the close of the Jeremy/Jasiah build cycle (source status: active)"
 project: fleet
 tags: [anansi, jasiah, honesty, finding]
+supersedes: []
+superseded_by: null
 ---
 
 # The Anansi Ledger's Real Proof Run Has Not Happened, Only the Code That Could Produce It

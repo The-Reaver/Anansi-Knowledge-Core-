@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-06, operator on phone; chose the first agents and the score model, and asked for a documented plan to upgrade the score model soon. (source status: active)"
 project: fleet
 tags: [training, curriculum, stars, dreams, leveling, upgrade-plan, jeremy, oluwole]
+supersedes: []
+superseded_by: null
 ---
 
 # Cross-agent curriculum decisions locked; Jeremy and Oluwole first, TRL now with a plan to upgrade the score

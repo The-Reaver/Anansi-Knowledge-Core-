@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; chose the first agents and the score model (source status: active); mined from candidates/2026-08-25/2026-08-06-cross-agent-curriculum-decisions-and-score-upgrade-plan.md"
 project: fleet
 tags: [curriculum, jeremy, oluwole, first-agents]
+supersedes: []
+superseded_by: null
 ---
 
 # Jeremy (knowledge core) and Oluwole (research and sourcing) are the first two agents; the STARS/DREAMS format is proven on them before rollout to the rest of the fleet

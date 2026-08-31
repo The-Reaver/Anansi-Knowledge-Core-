@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries (source status: active); mined from candidates/2026-08-25/2026-08-06-brain-trust-verdicts-and-operator-contributions.md"
 project: fleet
 tags: [hardware, budget, cloud, supabase, memory]
+supersedes: []
+superseded_by: null
 ---
 
 # Text and the Knowledge Core database stay tiny for years; no hardware purchase is needed unless running models locally

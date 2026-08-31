@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, a second subagent acting as Jasiah, briefed to distrust Jeremy's self-report (source status: active)"
 project: fleet
 tags: [anansi, jasiah, gate-review, build-outcome]
+supersedes: []
+superseded_by: null
 ---
 
 # Jasiah Independently Reviewed Jeremy's Ledger Code: Pass, With Real Gaps Flagged

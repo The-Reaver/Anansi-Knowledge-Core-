@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2). Consensus items are firm; conflicts resolved; weak-sourced claims flagged. (source status: active)"
 project: cippe
 tags: [cippe, redesign, blueprint, meta-analysis, design-tokens, neurodivergent, coga, wcag, local, rag, interview, tone]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E redesign blueprint, meta-analysis of Claude + Gemini + Qwen research (ratified design rules, tokens, and architecture)

@@ -5,6 +5,8 @@ status: ratified
 source: "Architecture, Redlined — Rev. 3 (artifact 924c39f2), Part IV; live-tested end-to-end on the adversarial-review skill; captured via GeoSuite session handoff, 2026-08-25"
 project: fleet
 tags: [skills, eval, quality-gate]
+supersedes: []
+superseded_by: null
 ---
 
 # No SKILL.md edit ships without a with-vs-without eval delta

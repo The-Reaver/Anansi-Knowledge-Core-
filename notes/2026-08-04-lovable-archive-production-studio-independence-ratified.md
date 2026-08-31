@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Abad's decision after the archive was located (source status: active)"
 project: lords-of-cian
 tags: [lords-of-cian, lovable, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # Lords of Cian Archive and Production Studio Stay Fully Independent For Now

@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; asked for a SEPARATE financial report so there is no ambiguity on costs later. Produce with the other reports after the demo build wraps. (source status: active)"
 project: fleet
 tags: [financial-report, partner, costs, staffing, salaries, cloud, tools, savings, deliverable-spec, budget]
+supersedes: []
+superseded_by: null
 ---
 
 # Spec for the standalone partner financial report, costs to build and maintain, staffing, tools, and money saved

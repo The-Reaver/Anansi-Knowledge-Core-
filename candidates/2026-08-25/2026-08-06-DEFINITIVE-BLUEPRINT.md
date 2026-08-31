@@ -5,6 +5,8 @@ status: candidate
 source: "Google Drive inbox capture, source chat not recorded in original note"
 project: geo
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # GEO Suite and The Fleet: The Definitive Blueprint (v1, 2026-08-06)

@@ -5,6 +5,8 @@ status: candidate
 source: "this chat, 2026-08-06, Abad said \"CT\"; CT-001 through CT-006 built by parallel subagents and each runner re-verified by the main session (source status: active)"
 project: fleet
 tags: [augustin, curriculum, broken-code-scenarios, compilers, type-systems, go, build-outcome, verified]
+supersedes: []
+superseded_by: null
 ---
 
 # Broken Code Scenarios, CT Domain Started: 6 of 50 Built and Verified (Compiler/Type-Checker Reframes)

@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, a second simulated 6-seat Brain Trust dispatch on Abad's proposal, ratified with amendment (source status: active)"
 project: fleet
 tags: [mandate-10, weight-watch, handoff, brain-trust, governance, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # Mandate 10: Sessions Must Proactively Write Knowledge Core Handoffs, Measured Honestly

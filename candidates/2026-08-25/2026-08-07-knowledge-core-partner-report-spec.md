@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; asked to note (not yet produce) a partner-facing report explaining the Knowledge Core for a non-technical partner. Produce after the demo build wraps. (source status: active)"
 project: fleet
 tags: [knowledge-core, partner-report, layman, maintenance-agents, compliance, lawyer, intelligence-gathering, deliverable-spec]
+supersedes: []
+superseded_by: null
 ---
 
 # Spec for the layman partner report explaining the Knowledge Core, its compounding value, maintenance agents, and the lawyer's intelligence role

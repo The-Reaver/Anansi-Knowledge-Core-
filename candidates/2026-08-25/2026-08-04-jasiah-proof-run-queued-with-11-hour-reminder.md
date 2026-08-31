@@ -5,6 +5,8 @@ status: candidate
 source: "this chat, 2026-08-04, Abad asked to queue this work for roughly 11 hours out (source status: active)"
 project: fleet
 tags: [anansi, jasiah, scheduling, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # Jasiah's Real Proof Run Was Queued on the Master To-Do With an 11-Hour Reminder

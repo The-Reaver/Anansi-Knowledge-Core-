@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Oluwole's diagnostic delivered as a condition of the Anansi ruling (source status: active)"
 project: fleet
 tags: [augustin, dreams-composite, finding]
+supersedes: []
+superseded_by: null
 ---
 
 # Augustin's 0/100 Composite Score Is a Genre Mismatch, Not a Skill Problem

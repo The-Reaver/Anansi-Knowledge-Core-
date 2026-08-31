@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; operator required the audit, maintenance, and interview to be done in person only, connecting via Bluetooth or USB, and asked for the best method. (source status: active)"
 project: cippe
 tags: [cippe, maintenance, in-person, offline, usb, ethernet, bluetooth, privacy, security]
+supersedes: []
+superseded_by: null
 ---
 
 # In-person, offline connection method for CIPP/E audit, maintenance, and interview

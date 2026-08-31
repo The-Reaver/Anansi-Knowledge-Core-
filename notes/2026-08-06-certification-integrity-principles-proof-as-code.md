@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06, operator on phone; asked how model selection works and whether the certifier must be a high model, and to research things not being considered (source status: active); mined from candidates/2026-08-25/2026-08-06-model-tiering-and-certification-design.md"
 project: fleet
 tags: [certification, proof-as-code, escalation, self-grading, provenance]
+supersedes: []
+superseded_by: null
 ---
 
 # Certification integrity principles: proof as code beats proof as opinion, never self-grade, escalate on repeated failure, record the certifier, human sign-off at the top

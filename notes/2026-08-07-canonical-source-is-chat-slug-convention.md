@@ -5,6 +5,8 @@ status: ratified
 source: "operator directive, 2026-08-07 (source status: ratified by operator, 2026-08-07)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Convention: the chat slug is the canonical source string

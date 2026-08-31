@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; operator asked how the app actually helps day to day, adapts to her workflow scientifically, keeps a record, reduces workload, lets her plug in her work, and takes breaks, plus a research-feedback workflow into Qwen/Gemini. (source status: active)"
 project: cippe
 tags: [cippe, adaptation-engine, personalization, workflow, bring-your-work, break, research-loop, neurodivergent, local, privacy]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E copilot, the logical adaptation engine, the bring-your-work help flow, the break button, and the research-feedback loop

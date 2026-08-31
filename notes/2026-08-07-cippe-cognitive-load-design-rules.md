@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; meta-analysis merging Claude's four research streams with four operator-run deep-research documents (Gemini x2, Qwen x2), consensus items firm (source status: active); mined from candidates/2026-08-25/2026-08-07-cippe-redesign-blueprint-meta-analysis.md"
 project: cippe
 tags: [cippe, cognitive-load, wcag, redundant-entry, design-rules]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E cognitive-load design rules: working-memory offloading first, never ask the same data twice, one thing at a time, auto-save everything, ambient non-punitive time cues

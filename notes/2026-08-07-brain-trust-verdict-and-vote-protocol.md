@@ -5,6 +5,8 @@ status: ratified
 source: "operator directive, 2026-08-07 (source status: ratified by operator, 2026-08-07)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Standing protocol: Brain Trust independent verdict then group vote

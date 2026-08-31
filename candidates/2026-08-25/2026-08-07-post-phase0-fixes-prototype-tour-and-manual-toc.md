@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; operator tested the drivable prototype tour and the manual; pinned these to fix after Phase 0. (source status: pinned)"
 project: fleet
 tags: [prototype, tour, accessibility, adhd, manual, docx, toc, fix, post-phase0]
+supersedes: []
+superseded_by: null
 ---
 
 # Post-Phase-0 fix list, prototype tour highlight drift and manual table of contents

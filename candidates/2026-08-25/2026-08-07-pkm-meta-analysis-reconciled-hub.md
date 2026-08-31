@@ -5,6 +5,8 @@ status: candidate
 source: "Beyond Philosophy to Formulas (Qwen deep-research meta-analysis), 2026-08-07, reconciled against our research (source status: hub note, 19 candidate notes held pending operator approval)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # PKM meta-analysis reconciled: hub and weak-claims watchlist

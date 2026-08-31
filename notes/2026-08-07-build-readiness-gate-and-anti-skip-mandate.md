@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; operator asked how to prevent skipping protocol (interview, tech-stack decision) before building. This is the durable control. (source status: active)"
 project: fleet
 tags: [adlc, gate, mandate, definition-of-ready, governance, prevention, read-first, verify]
+supersedes: []
+superseded_by: null
 ---
 
 # Build Readiness Gate (Definition of Ready) and the no-build-without-a-green-gate mandate

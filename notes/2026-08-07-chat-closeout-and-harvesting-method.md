@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; operator asked whether to close out all unclosed chats across all subjects (microservices, Obsidian game plan, non-software) into the Knowledge Core for a diverse brain, and whether that risks corruption. To run when at the machine, after the Core is set. (source status: active)"
 project: fleet
 tags: [knowledge-core, chat-harvesting, curation, segmentation, namespaces, provenance, machine-session, phase-0]
+supersedes: []
+superseded_by: null
 ---
 
 # How to close out every chat into the Knowledge Core without corrupting it (distill, segment, status), a machine-session method

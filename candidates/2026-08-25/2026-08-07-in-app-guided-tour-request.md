@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07, operator on phone during the GEO Suite demo build; asked for a built-in interactive tour (highlight ring, arrows, click-this steps, what-to-expect) available to anyone, so a lawyer or salesperson learns the app with no training and no ambiguity. (source status: active)"
 project: geo
 tags: [geo-suite, onboarding, guided-tour, walkthrough, usability, driver-js, role-based, demo]
+supersedes: []
+superseded_by: null
 ---
 
 # GEO Suite built-in guided tour, spotlight walkthrough with role paths so any untrained user learns the app

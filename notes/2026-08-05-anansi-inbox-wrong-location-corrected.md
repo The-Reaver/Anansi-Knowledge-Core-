@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-05, Abad reported \"Anansi said the inbox is empty\" after this session created a git-repo file believing this served as the inbox (source status: active)"
 project: fleet
 tags: [anansi, knowledge-core, inbox, naming-collision, mistake, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # ANANSI_INBOX.md Was Written to the Wrong Location, This Drive Folder Is the Real Inbox

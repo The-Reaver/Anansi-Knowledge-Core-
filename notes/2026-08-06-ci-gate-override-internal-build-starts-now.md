@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session, 2026-08-06; operator Abad overrode the \"attorney terms before any code\" gate and directed the slice-by-slice build of the lawyer-facing CI tool to start now (source status: active); mined from candidates/2026-08-25/2026-08-06-ci-lawyer-tool-build-roadmap-and-gate-override.md"
 project: ci
 tags: [ci, gate-override, atom-versioning, build-roadmap]
+supersedes: []
+superseded_by: null
 ---
 
 # Operator overrode the attorney-terms-first gate: the CI lawyer-tool's internal build (atom-versioning) starts now, slice by slice, in parallel with the legal track

@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; Qwen deep research asked clarifying questions; these are the ratified answers, aligned with Claude's research and the Externalized Thread design. (source status: active)"
 project: cippe
 tags: [cippe, research, personalization, interview, executive-function, design-decision]
+supersedes: []
+superseded_by: null
 ---
 
 # CIPP/E research clarifications (answers to Qwen), executive-function priority, personalization model, interview triggers

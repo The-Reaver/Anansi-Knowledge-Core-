@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session, 2026-08-06; operator Abad overrode the \"attorney terms before any code\" gate and directed the slice-by-slice build of the lawyer-facing CI tool to start now (source status: active); mined from candidates/2026-08-25/2026-08-06-ci-lawyer-tool-build-roadmap-and-gate-override.md"
 project: ci
 tags: [ci, build-order, layers, atom-versioning, knowledge-core]
+supersedes: []
+superseded_by: null
 ---
 
 # CI lawyer-tool build order: Layer 0 schema, Layer 1 lawyer review surface, Layer 2 correction integrity, Layer 3 one verified live feed, Layer 4 Knowledge Core integration, Layer 5 court/state coverage

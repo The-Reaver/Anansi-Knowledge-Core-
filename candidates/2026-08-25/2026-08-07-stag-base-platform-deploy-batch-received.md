@@ -5,6 +5,8 @@ status: candidate
 source: "stag-base-platform-deploy-and-agent-hardening (alias: Stag platform Railway deploy + agent-hardening session), harvested 2026-08-07 (source status: hub note, 60 candidates held, dedup deferred to docket assembly)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # STAG base-platform deploy and agent-hardening batch: received and held

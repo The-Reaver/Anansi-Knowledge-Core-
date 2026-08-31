@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Jeremy resumed via SendMessage after Jasiah's review (source status: active)"
 project: fleet
 tags: [anansi, jeremy, jasiah, build-outcome]
+supersedes: []
+superseded_by: null
 ---
 
 # Jeremy Closed Jasiah's Flagged Gap With an Automated Red-Green Smoke Test

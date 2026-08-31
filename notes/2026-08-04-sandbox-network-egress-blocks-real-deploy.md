@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, discovered by the Jeremy build subagent while building the Anansi ledger slice (source status: active)"
 project: fleet
 tags: [anansi, jeremy, sandbox-limitation, finding]
+supersedes: []
+superseded_by: null
 ---
 
 # The Build Sandbox Blocks pypi, GitHub, and apt, So the Ledger Code Was Never Run Live

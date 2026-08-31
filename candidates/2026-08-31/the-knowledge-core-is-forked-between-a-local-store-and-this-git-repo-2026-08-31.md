@@ -35,6 +35,23 @@ statement. A cloud session can only reach the git repo, and will truthfully repo
 for notes that exist locally. A local session reports presence. Both are right about
 different stores, and neither says which one it means.
 
+**Measured evidence, added after a full graph audit.** Seven links in the git store point at
+note ids that do not exist here — broken edges whose targets are, on the naming evidence,
+notes that live only in the local Knowledge Home:
+
+- `2026-08-06-does-training-translate-to-building-complex-apps`
+- `2026-08-06-master-todo-and-offline-guide-established`
+- `2026-08-06-read-first-rulebook-and-dev-process`
+- `2026-08-07-cippe-local-build-brief-for-antigravity`
+- `2026-08-07-mandate-1-fleet-first-decisions`
+- `2026-08-07-agent-naming-split-resolved-alias-kept`
+- `2026-08-07-user-originated-zettelkasten-application-to-anansi`
+
+`2026-08-07-mandate-1-fleet-first-decisions` is the sharpest of these: a **mandate** — the
+Core's highest-authority content — is cited by a ratified note and is not in the git store.
+The fork is not a backlog of unsynced extras; it is load-bearing governance the reachable
+half of the Core cannot see.
+
 This is a sharper version of the BEDROCK/Jicome gap: there the fact lived outside the Core
 entirely; here it lives in *a* Core, just not the reachable one.
 

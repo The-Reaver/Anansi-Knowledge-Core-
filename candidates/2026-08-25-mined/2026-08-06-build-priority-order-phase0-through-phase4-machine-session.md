@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-06, operator on phone; approved TYR as lead Breaker, then asked for the capstone ladder and exact build sequence (source status: active); mined from candidates/2026-08-25/2026-08-06-capstone-ladder-and-build-priority-order.md"
 project: fleet
 tags: [build-order, roadmap, priority, machine-session, phases]
+supersedes: []
+superseded_by: null
 ---
 
 # Build priority order agreed for the next machine session: setup, then the partner demo, then product foundation, then the fleet, then governance/hygiene

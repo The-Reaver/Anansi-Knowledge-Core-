@@ -5,6 +5,8 @@ status: ratified
 source: "operator directive, 2026-08-07 (source status: ratified by operator, 2026-08-07, reinforced)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Standing rule: the operator is a non-developer, hand-hold every technical step

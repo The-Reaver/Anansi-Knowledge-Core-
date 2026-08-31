@@ -6,6 +6,7 @@ source: "Architecture, Redlined — Rev. 3, Part V; this session's own GeoSuite 
 project: geo
 tags: [geosuite, build-ledger, site-generator]
 superseded_by: geosuite-build-ledger-ruling-2026-08-25
+supersedes: []
 ---
 
 # One atomic note per non-obvious build decision, not a commentary on every line

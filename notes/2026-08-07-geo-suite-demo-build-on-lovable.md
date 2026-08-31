@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-06 to 2026-08-07, operator on phone; built the GEO Suite partner demo on Lovable end to end, then produced the partner documents. (source status: active)"
 project: geo
 tags: [geo-suite, demo, lovable, build-outcome, slice-by-slice, lessons, fleet-training]
+supersedes: []
+superseded_by: null
 ---
 
 # GEO Suite demo built on Lovable, slice by slice, plus lessons for the fleet

@@ -5,6 +5,8 @@ status: ratified
 source: "operator ratification, 2026-08-07 (source status: ratified, binding)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Operator ratification: Brain Trust cycle 1

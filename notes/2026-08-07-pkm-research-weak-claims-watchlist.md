@@ -5,6 +5,8 @@ status: ratified
 source: "Beyond Philosophy to Formulas (Qwen deep-research meta-analysis), 2026-08-07, reconciled against our research (source status: hub note); mined from candidates/2026-08-25/2026-08-07-pkm-meta-analysis-reconciled-hub.md"
 project: fleet
 tags: [pkm, weak-claims, sourcing, mandate-7]
+supersedes: []
+superseded_by: null
 ---
 
 # PKM research weak-claims watchlist: the mind-mapping 32%/g=1.54 figures, the concept-mapping 0.776 label, Luhmann survivorship bias, and the left/right-brain neuromyth must not be repeated as fact

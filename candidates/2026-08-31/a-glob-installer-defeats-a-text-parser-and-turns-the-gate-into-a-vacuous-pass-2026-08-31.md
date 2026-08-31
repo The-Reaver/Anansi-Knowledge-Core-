@@ -6,12 +6,17 @@ source: "Recovery session, 2026-08-31 — independently verified against The-Rea
 project: fleet
 tags: [gates, hooks, geo, vacuous-pass, fail-closed, verification]
 supersedes: []
-superseded_by: null
+superseded_by: the-installed-hook-gate-already-fails-closed-on-zero-declared-hooks-2026-08-31
 ---
 
 # The installed-hook gate would pass vacuously on the GEO repo, because a glob installer names no hooks for a text parser to find
 
 ## Body
+
+> **SUPERSEDED AND KNOWN-FALSE.** The vacuous PASS predicted below cannot occur:
+> `run_gate()` already fails closed on zero declared hooks. See
+> `the-installed-hook-gate-already-fails-closed-on-zero-declared-hooks-2026-08-31`.
+> Retained only as the record of the error. **Do not ratify.**
 
 The new `installed_hook_gate.py` failed against the GEO repo with *"installer not found at
 `.../scripts/hooks/install-git-hooks.sh`"*. Verified against The-Geo-Suite- at

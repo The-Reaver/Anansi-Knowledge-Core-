@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07, operator on phone; flagged twice that this point is great detail the partner needs, to justify the investment in agents, Knowledge Core, GEO Suite, tools, and software. (source status: active)"
 project: geo
 tags: [partner-docs, key-message, knowledge-core, compounding, roi, geo-suite, finances, must-include]
+supersedes: []
+superseded_by: null
 ---
 
 # Required partner-document message, report depth scales with Knowledge Core richness (the compounding investment case)

@@ -5,6 +5,8 @@ status: ratified
 source: "Google Drive inbox capture, source chat not recorded in original note (source status: pinned Anansi note, answering whether proven formulas exist beyond Wilson); mined from candidates/2026-08-25/2026-08-07-quality-and-performance-formulas.md"
 project: fleet
 tags: [formulas, completeness, chao1, capture-recapture, harvest]
+supersedes: []
+superseded_by: null
 ---
 
 # Harvest completeness bar: two-pass capture-recapture / Chao1 estimate, completeness >= 0.95 before a track counts as harvested

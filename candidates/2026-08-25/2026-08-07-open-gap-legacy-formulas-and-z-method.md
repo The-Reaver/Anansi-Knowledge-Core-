@@ -5,6 +5,8 @@ status: candidate
 source: "operator, 2026-08-07 (source status: open, pending retrieval from the machine)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Open gap: legacy formulas and the Z method

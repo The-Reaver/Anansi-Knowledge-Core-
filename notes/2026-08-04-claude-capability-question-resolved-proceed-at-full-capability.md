@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, Abad asked directly whether this assistant is more capable than his fleet (source status: active)"
 project: fleet
 tags: [fleet, operator-contribution]
+supersedes: []
+superseded_by: null
 ---
 
 # Abad Chose to Have This Session Do Fleet-Level Work Directly and Pass Results to the Team

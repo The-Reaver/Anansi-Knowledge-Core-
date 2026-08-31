@@ -5,6 +5,8 @@ status: ratified
 source: "Brain Trust verdict-and-vote cycle 1, eight seats, 2026-08-07 (source status: group conclusions reached, pending operator ratification)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Brain Trust decision record, cycle 1, 2026-08-07

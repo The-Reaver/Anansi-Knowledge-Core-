@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-06, operator on phone; asked the Brain Trust to render verdicts on a large set of planning queries about memory, Knowledge Core, auditors, agent building, security, parallelizing with GEO Suite, and chat ingestion. Operator asked that all contributions be tracked. (source status: active)"
 project: fleet
 tags: [brain-trust, verdicts, strategy, memory, knowledge-core, security, red-team, agents, tyr, contributions]
+supersedes: []
+superseded_by: null
 ---
 
 # Brain Trust verdicts on the planning queries, plus operator contributions logged

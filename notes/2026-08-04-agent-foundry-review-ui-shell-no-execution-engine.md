@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, direct code review of the Agent Foundry Lovable project (source status: active)"
 project: fleet
 tags: [agent-foundry, lovable, build-outcome]
+supersedes: []
+superseded_by: null
 ---
 
 # Agent Foundry Is a UI Shell Over Database Tables, Not Yet an Agent Platform

@@ -5,6 +5,8 @@ status: candidate
 source: "contribution chats one and two reconciliation, 2026-08-07 (source status: held unverified, pending Moonshadow records)"
 project: fleet
 tags: []
+supersedes: []
+superseded_by: null
 ---
 
 # Open item: promotion reversion count, 3 versus 4

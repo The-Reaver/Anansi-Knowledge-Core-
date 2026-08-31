@@ -5,6 +5,8 @@ status: ratified
 source: "this chat, 2026-08-04, direct code review of the SafeGuard Identity Lovable project (source status: active)"
 project: fleet
 tags: [safeguard-identity, lovable, security, build-outcome]
+supersedes: []
+superseded_by: null
 ---
 
 # SafeGuard Identity's Verification Core Is Real and Carefully Built, Two Things Are Unconfirmed

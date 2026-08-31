@@ -5,6 +5,8 @@ status: ratified
 source: "Cowork session 2026-08-07; operator tested the drivable prototype tour and the manual, pinned to fix after Phase 0 (source status: pinned); mined from candidates/2026-08-25/2026-08-07-post-phase0-fixes-prototype-tour-and-manual-toc.md"
 project: cippe
 tags: [docx, manual, toc, word-field]
+supersedes: []
+superseded_by: null
 ---
 
 # A docx TableOfContents is a Word field that looks blank until the document is opened and the field is manually updated — ship it pre-populated or as a PDF instead

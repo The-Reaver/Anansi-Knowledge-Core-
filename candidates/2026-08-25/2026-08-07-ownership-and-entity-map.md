@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-07; operator clarified the ownership structure and partners while scoping the architect doc and the CIPP/E agent. (source status: active)"
 project: cippe
 tags: [ownership, entity-map, tony-llc, stag, geo-suite, smart-seed-tech, hbot-usa, sonny, cippe, relief, reference]
+supersedes: []
+superseded_by: null
 ---
 
 # Ownership and entity map, TONY LLC and the STAG portfolio

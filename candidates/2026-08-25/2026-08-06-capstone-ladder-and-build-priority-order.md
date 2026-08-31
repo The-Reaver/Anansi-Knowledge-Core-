@@ -5,6 +5,8 @@ status: candidate
 source: "Cowork session 2026-08-06, operator on phone; approved TYR as lead Breaker, then asked for the capstone ladder and the exact build sequence for when back at the machine. (source status: active)"
 project: geo
 tags: [capstone, ladder, curriculum, priority-order, build-sequence, tyr, geo-suite, roadmap]
+supersedes: []
+superseded_by: null
 ---
 
 # The capstone ladder (simple to Uber-level) and the definitive build priority order

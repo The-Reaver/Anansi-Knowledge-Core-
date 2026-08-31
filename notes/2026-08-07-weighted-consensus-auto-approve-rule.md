@@ -5,6 +5,8 @@ status: ratified
 source: "Google Drive inbox capture, source chat not recorded in original note (source status: pinned Anansi note, answering whether proven formulas exist beyond Wilson); mined from candidates/2026-08-25/2026-08-07-quality-and-performance-formulas.md"
 project: fleet
 tags: [formulas, auto-approve, consensus, review-queue]
+supersedes: []
+superseded_by: null
 ---
 
 # Auto-approve rule: accept a note automatically only if N agents' Wilson-weighted votes agree >= 2/3 AND the note clears the quality bar — otherwise, or for any high-impact rule, it goes to human review
