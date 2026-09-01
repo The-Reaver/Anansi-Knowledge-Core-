@@ -1,6 +1,12 @@
 # Security Arsenal — integration plan for Hestia and Bayamanaco
 
-**Status:** proposal, for adversarial review by AJ, Hestia, Bayamanaco, then the Brain Trust.
+> **SUPERSEDED 2026-09-01 by `2026-09-01-security-arsenal-integration-plan-v2.md`.**
+> Rejected by three blind reviewers on independent grounds — AJ: REJECT, Hestia: BLOCK,
+> Bayamanaco: INADEQUATE. Its headline gate figure was wrong, its enforcement floor did not exist
+> in the repo it targeted, it violated a hard-gate mandate, and it cited its own author's unratified
+> candidate notes as ratified precedent. **Retained as the record of the error. Do not act on it.**
+
+**Status:** SUPERSEDED. Originally: proposal, for adversarial review by AJ, Hestia, Bayamanaco, then the Brain Trust.
 **Nothing here is implemented.** Written 2026-09-01 against the real stack, verified by inspection.
 
 ---
