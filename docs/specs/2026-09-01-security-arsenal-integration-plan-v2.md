@@ -2,7 +2,12 @@
 
 **Supersedes** `2026-09-01-security-arsenal-integration-plan.md`, which was rejected by three blind
 reviewers (AJ: REJECT, Hestia: BLOCK, Bayamanaco: INADEQUATE) on independent grounds.
-**Status:** proposal. Nothing here is implemented.
+**Status:** proposal, **reviewed and not adopted as put**. Nothing here is implemented.
+**Review outcome (2026-09-01):** the Brain Trust sat five seats and rejected I1 (adopt as written) 3-2
+and I5 (self-hosted runners) 3-2, passed I2/I3/I4/I7 with binding conditions, passed I6 4-1, and
+rejected its own composition 5-0. A separately-run cold security architect returned 13 findings, three
+of them refuting factual claims in section 1 of this document. See
+`docs/decisions/BRAIN_TRUST_DECISION_RECORD_2026-09-01.md`. A v3 is owed against that record.
 **Verification stamp:** Stag-Fleet `aad9650`, The-Geo-Suite- `73a58ce`. Both refs check out —
 v1 cited `a428c6a`, which is not a valid object.
 
