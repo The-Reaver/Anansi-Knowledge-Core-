@@ -13,6 +13,24 @@ superseded_by: null
 
 ## Body
 
+> **RESOLVED, 2026-09-01, same day.** The room now emits **92 proposals**. The diagnosis below was
+> right that nothing was broken and wrong about the cause: the blocker was not the Evidence Standard
+> retrofit, it was that `solutions_intake.py` never implemented mandate
+> `pre-provenance-grandfather-exemption` (operator ruling 2026-08-30). `curiosity_intake.py`
+> references that ruling in 32 places; `solutions_intake.py` referenced it **zero** times and
+> predated it, so it refused every pointer the ruling had just made eligible. One half of a ratified
+> ruling shipped and the other half never did — the Amaya/Oluwole pattern, in code, nameable to the
+> line.
+>
+> Fixed by an explicit `_is_grandfathered()` branch requiring the marker to be literally present and
+> true. The no-fabrication refusal is untouched: a pointer with neither real provenance nor the
+> marker is still refused, verified with a purpose-built test pointer that was scanned, refused, and
+> produced no file. `archive_notes_separation_gate.py` passes with the room populated.
+>
+> **Pass One was still worth completing** (75% → 97%) — the classification the loop reads is real
+> work — but it was not what unblocked this room, and I said it would be. Correcting that here.
+
+
 The Curiosity Room and Solutions Room are **built, literal, and wired**. The operator made them
 literal on 2026-08-25 — *"two rooms, literal running components: a scheduled agent, a background
 process, a folder structure with its own intake pipeline"*. Both live at
