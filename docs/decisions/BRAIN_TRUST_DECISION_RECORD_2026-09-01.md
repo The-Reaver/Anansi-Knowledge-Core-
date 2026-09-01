@@ -1,5 +1,21 @@
 # BRAIN TRUST DECISION RECORD — 2026-09-01
 
+> **RATIFIED by the operator (Abad Morel), 2026-09-01.** The conditions in sections 3 and 4 are
+> binding and feed `docs/runbooks/2026-09-01-phase-0a-security-remediation.md`.
+>
+> **I8 resolved as Option A** — the docket is cut. The operator ratified the slate without naming
+> an option, and Option A was the chair's recommendation and the only reading under which
+> ratification takes effect today; it is also the reversible one, since it defers R7 work rather than
+> committing to it. Everything R7-shaped (the ACS half of I1, all of I5, and the R7 framing of I6) is
+> off the table until the Ambient Clinical Scribe is scheduled AND a privacy seat under a name this
+> document did not create, plus a verification-and-risk seat, are filled. **If the operator wants
+> Option B instead — seat privacy and TYR now and re-run I1, I2, I4, I5 and §6 — say so and this
+> stamp is amended; nothing built under Option A is wasted, because Phase 0a contains no R7 content.**
+>
+> Standing consequence of Option A: §6 of the v2 plan (consent interlock, audio-at-rest key custody,
+> retention, breach clock) and its §1 fact table carry **no panel authority** and must not be cited as
+> decided.
+
 **Docket:** `docs/specs/2026-09-01-security-arsenal-integration-plan-v2.md` (v2), eight issues.
 **Seated:** Elijah (product and delivery), Orlok (build and execution), Celestina (architecture), Amadeus (framing), Oluwole (research and sourcing).
 **Not seated:** AJ (barred by `AJ/AJ_HARDWIRING.md` — "Holds no Brain Trust seat, no vote, no build or Orlok role, ever"), TYR (verification and risk), PrivacyDomain/Hestia (privacy and compliance).

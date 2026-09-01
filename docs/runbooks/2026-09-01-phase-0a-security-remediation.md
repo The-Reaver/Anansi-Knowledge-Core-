@@ -1,0 +1,220 @@
+# Phase 0a — security remediation runbook
+
+**Status:** BINDING. Produced by operator ratification of
+`docs/decisions/BRAIN_TRUST_DECISION_RECORD_2026-09-01.md` on 2026-09-01, I8 resolved as **Option A**.
+**Scope:** the two repositories that exist — `The-Reaver/Stag-Fleet` and `The-Reaver/The-Geo-Suite-`.
+**Out of scope, by ratified decision:** everything keyed to R7 — PHI classification (Phase −1),
+runtime default-deny egress, `terraform plan` segmentation, self-hosted runners, and §6 of the v2 plan
+(consent interlock, audio-at-rest key custody, retention, breach clock). Those are filed as an
+unscheduled brief behind GEO and do not appear here. **Do not reintroduce R7 vocabulary into this
+runbook.**
+**Owner of every item below:** the operator (Abad Morel). Ratified I4 condition 1 — no item in this
+runbook may carry an unnamed owner.
+
+Every fact in this runbook was verified against a file at
+Stag-Fleet `aad9650` / The-Geo-Suite- `73a58ce`, or re-verified on 2026-09-01. Where a claim could not
+be verified from a clone, it says so.
+
+---
+
+## Lane 0a-1 — Get the existing battery green before adding controls
+
+Ratified as the first line of Phase 0a (chair's note, §6 of the decision record). A plan that adds
+controls to a repository whose own battery is red is adding controls to an unmeasured surface.
+
+`verify.py` at `aad9650` exits **RED: 25 non-green of 131 checks**. The split matters:
+
+- **20 are `ModuleNotFoundError` (`dotenv`, `fastapi`) in a fresh container.** Not code defects. These
+  are the argument for Phase 0.5 (stand up CI in Stag-Fleet), not work items here.
+- **5 are real.**
+
+| # | Item | Evidence | Done |
+|---|---|---|---|
+| 0a-1.1 | **`secret_scan_gate`: 0 new findings, 11 REGRESSED.** Baselined credential findings the scanner no longer detects. This is the exact regression class the gate was built for after the 2026-08-26 incident its own docstring narrates. Root-cause the detection loss before touching the baseline. | `scripts/gates/secret_scan_gate.py`, battery output 2026-09-01 | ☐ |
+| 0a-1.2 | **`spec_trace_gate`: 8 gates `missing_spec_trace`**, including five of the seven the installer wires (`stale_stage_guard`, `hook_parity_gate`, `core_ratification_gate`, `mandates_gate`, `archive_notes_separation_gate`, `branch_name_gate`, `model_tier_gate`, `audit_report_gate`). | battery output 2026-09-01 | ☐ |
+| 0a-1.3 | **`audit_report_gate`: 1 audit-shaped file below the floor, 6 violations.** | battery output 2026-09-01 | ☐ |
+| 0a-1.4 | **`test_discrimination_check`: 9/10.** | battery output 2026-09-01 | ☐ |
+| 0a-1.5 | **`test_pre_commit_secret_check`: 6/7.** | battery output 2026-09-01 | ☐ |
+
+**Exit criterion for the lane:** `verify.py` exits green in an environment with dependencies installed,
+or each remaining red item carries a written, dated exemption naming who granted it.
+
+---
+
+## Lane 0a-2 — Wire the gates that already exist
+
+The fleet's recurring defect, on its own record four times: correct mechanisms, committed and briefed,
+invoked by nothing. This lane is the antidote and it adds no new code.
+
+| # | Item | The trap | Done |
+|---|---|---|---|
+| 0a-2.1 | **Wire `omar_security_gate.py` — correctly.** | `omar_security_gate.py:110` declares `parser.add_argument("root", nargs="?", default=".")` — a **positional**, where every other gate in the battery is invoked `--root ROOT`. Wire it by pattern-match and argparse rejects `--root` and exits 2 **before scanning a byte**: a gate that "runs" and asserts nothing. That is v2's own Principle 2 failure committed by v2's own Phase 0. | ☐ |
+| 0a-2.2 | **Before 0a-2.1 can go blocking: give it a baseline.** Wired correctly it exits 1 with **106 problems** repo-wide and, unlike `secret_scan_gate`, has **no baseline mechanism at all**. Landing it blocking on day one red-lines every commit — v2's own Principle 1, violated. Land it report-only, baseline the 106, then flip. | Ratified I2 condition 2 pattern applies here by analogy. | ☐ |
+| 0a-2.3 | **Install the hooks, or `hook_parity_gate` is theatre.** `.git/hooks/` in a fresh clone contains only `*.sample`. `hook_parity_gate.py` is the fleet's purpose-built control for hook drift, is declared in **both** `.pre-commit-config.yaml` and `scripts/hooks/install-git-hooks.sh`, and **runs nowhere**. Verified 2026-09-01. | This is the finding v2 should have made and did not. | ☐ |
+| 0a-2.4 | **`branch_name_gate` is a third orphan and no document mentions it.** Wire it or delete it; do not leave it in the third state. | `gate_coverage_report.py` output: orphaned 3 — `branch_name_gate`, `hook_parity_gate`, `stale_stage_guard`. | ☐ |
+| 0a-2.5 | **Do NOT "make `gate_coverage_report.py` read the installer."** Withdrawn by ratified decision (cold review F1). Line 26 reads `.git/hooks/pre-commit` — the **installed** hook — and its docstring documents that limit. The tool is correct; the proposed change would replace measured state with declared intent. If both views are wanted, add a **second column** (declared-by-installer vs installed). Never merge them. | Verified 2026-09-01: `PRE_COMMIT_HOOK = os.path.join(REPO, ".git", "hooks", "pre-commit")`; `.git/hooks/` holds only samples. | ☐ |
+| 0a-2.6 | **Delete the three dead `.pre-commit-config.yaml` targets.** `.secrets.baseline`, `pyproject.toml` and `projects/` do not exist in Stag-Fleet. Re-verified 2026-09-01: all three ABSENT. | A hook pointed at a missing path is a hook that reports clean. | ☐ |
+
+---
+
+## Lane 0a-3 — Fix the enforcement claim that is false today
+
+Ratified from cold review F2. v2 §0 asserts Mandate 2 (compliance section) is a hard gate. It is not.
+
+Three independent reasons `mandates_gate.py` could not have caught v1, of which v2 names one:
+
+1. **Path scope:** `specs_dir = os.path.join(ROOT, "specs")` then `os.listdir(specs_dir)` — non-recursive, one repo.
+2. **The check is a substring match:** `re.search(r"(?i)complian", t)`. Any document containing the
+   word "compliant" once — in a footnote, a bibliography line — passes. It never verifies a section exists.
+3. **The allowlist exempts effectively everything.** `governance/.spec-compliance-allowlist.txt` states
+   in its own header: *"this is a 100%-of-specs exemption list, not a partial one… only 47 of the 126
+   `specs/*.md` files independently carry a 'compliance' section; the other 79 are listed below."*
+
+Broadening the path moves enforcement from zero to zero.
+
+| # | Item | Done |
+|---|---|---|
+| 0a-3.1 | Make the scan **recursive and multi-repo** — it has never scanned this repository, which is where the v2 plan lives. | ☐ |
+| 0a-3.2 | Replace the substring match with a **structural** check: a heading, not a word. | ☐ |
+| 0a-3.3 | Put a **dated burn-down** on the 79-file allowlist, owner named. | ☐ |
+| 0a-3.4 | **Or** delete the claim that Mandate 2 is a hard gate, everywhere it appears. One of 0a-3.1–3.3 or 0a-3.4. Not neither. | ☐ |
+
+---
+
+## Lane 0a-4 — Repository controls
+
+| # | Item | Verified state | Done |
+|---|---|---|---|
+| 0a-4.1 | **Branch protection on `main`, Stag-Fleet.** Confirmed `"protected": false` via the GitHub API on 2026-08-31. Required PR + review can land **immediately**; the *required status check* half cannot, because Stag-Fleet has no `.github` directory and therefore no check to require. Ratified I3 condition 3: Phase 0.5 precedes it. | verified | ☐ |
+| 0a-4.2 | **Branch protection on `main`, GEO.** **Not verifiable from a clone.** The repository is not attached to this session for API access, so its protection state is unknown, not absent — a distinction this session got wrong repeatedly before correcting it. Check it in the GitHub UI before deciding whether this item is work. | unverified — check first | ☐ |
+| 0a-4.3 | **Require GEO's existing PR gate**, once 0a-4.2 is known. `the-geo-suite-/.github/workflows/tests.yml:29-33` is `on: push:[main]` **and `pull_request:`**, running `python -m pytest -q` with no `continue-on-error`. **GEO already has a hard-failing PR gate.** What it lacks is branch protection *requiring* it. Re-verified 2026-09-01. | verified | ☐ |
+| 0a-4.4 | **CODEOWNERS and push protection are paid features on private repositories** (Orlok). Confirm the plan tier before scheduling either as work. `CODEOWNERS` and `.github/CODEOWNERS` are both ABSENT in GEO, re-verified 2026-09-01. | verified absent; cost unverified | ☐ |
+| 0a-4.5 | **Scope the `RAILWAY_TOKEN` exposure.** `deploy-verify.yml` runs `on: push: branches:[main]` and materialises the live production environment via `railway run`. One unreviewed push to `main` reaches it. **This is the reason 0a-4.2 is urgent.** | verified | ☐ |
+
+**Note on 0a-4.5 and the OIDC item that was in v2 Phase 0 item 3:** that item is **not in this runbook**
+and must not be added without a design pass. Railway issues project tokens, not OIDC federation, and
+`railway run --service … -- python scripts/deploy_verify.py --check-env` *is* the mechanism —
+injecting the live environment is what lets `--check-env` compare against reality rather than a guess,
+and that gate caught four production config bugs that 985 green unit tests missed. As written the item
+read "redesign or delete the one gate that has actually caught a production defect." Reduce the blast
+radius by gating *who can trigger it* (0a-4.2), not by removing the environment injection.
+
+---
+
+## Lane 0a-5 — Container hardening, minus the two changes that would break production
+
+Ratified I3 condition 4. **Both** Dockerfiles are in scope; v2 counted one.
+
+| # | Item | Done |
+|---|---|---|
+| 0a-5.1 | Add a non-root `USER` to `backend/Dockerfile`. Re-verified 2026-09-01: no `USER` line. | ☐ |
+| 0a-5.2 | Add a non-root `USER` to `frontend/Dockerfile`. Re-verified 2026-09-01: no `USER` line. v2 did not count this image. | ☐ |
+| 0a-5.3 | Add `.dockerignore`. Re-verified 2026-09-01: ABSENT at repo root, `backend/` and `frontend/`. | ☐ |
+
+**Explicitly excluded by ratified decision — do not "fix" these:**
+
+- **Shell-form `CMD`.** `backend/Dockerfile:33` is `CMD python -m uvicorn … --port $PORT` and
+  `frontend/Dockerfile:38` is `CMD npm run start -- --port ${PORT:-3000}`. Both are shell-form
+  **deliberately**, so `$PORT` expands at container start per Railway's manifest. Converting to exec
+  form breaks the healthcheck and takes production down. A nine-line comment in the backend image says
+  so. This was listed as a defect in v2; it is not one.
+- **Removing `build-essential`** (`backend/Dockerfile:20`). Deferred behind a staging environment
+  because of the `psycopg` / `cryptography` / `weasyprint` wheel builds. Multi-stage build is the right
+  answer and it is not a Phase 0a-sized change.
+
+---
+
+## Lane 0a-6 — The item that outranks everything else on realised harm
+
+Added by ratified decision (Amadeus, I1). **This is not in the v2 plan at all**, and it is the only
+item on this list addressing a vulnerability the fleet has actually shipped.
+
+`BRAIN_TRUST_DECISION_RECORD_2026-08-27.md` (GEO) records that `/sites/pipeline` **shipped a live
+cross-tenant vulnerability on 2026-08-23** — it returned every agent's sites to every agent — that the
+first fix was itself wrong, that `audit_results` has **no tenant column at all**, that its only RLS
+policy is `is_operator()`, and that `SupabaseAuditResultsRepository` reads through
+`get_supabase_admin()`, which **bypasses RLS by design**. `get_supabase_admin()` confirmed at
+`backend/app/core/supabase_client.py:68`.
+
+| # | Item | Done |
+|---|---|---|
+| 0a-6.1 | Tenant-isolation and authorization review of `audit_results`: does it need a tenant column, and what reads it. | ☐ |
+| 0a-6.2 | Review the `list_pipeline` ownership filter and every other path reaching Supabase through `get_supabase_admin()`. | ☐ |
+| 0a-6.3 | Decide whether admin-client reads are permitted at all outside migrations, and write the rule down. | ☐ |
+
+**Rationale, recorded so it is not re-litigated:** v2 Phases −1 through 5 contain supply chain, CI,
+egress, container hardening, segmentation, detection and isolation. **Not one control addresses tenant
+isolation or authorization** — the one class of failure this fleet has experienced, in the one live
+product with real clients. A plan can be excellent and still be pointed at the wrong wall.
+
+---
+
+## Lane 0a-7 — Credentials already in history
+
+Forward-looking push protection does nothing about material already pushed.
+
+| # | Item | Done |
+|---|---|---|
+| 0a-7.1 | **Sixteen baselined credential-shaped findings in `research/knowledge-home/raw/`** — DB connection strings with credentials, a Stripe key, JWTs, an AWS access key — in a pushed GitHub repository. Triage each: live or dead. | ☐ |
+| 0a-7.2 | Rotate every live one. This is the live tail of `docs/runbooks/credential-rotation-2026-09-01.md` and inherits its tick-boxes and its per-credential date/initials fields. | ☐ |
+| 0a-7.3 | Reconcile against `reports/STAG_BRAIN_TRUST_LEDGER.md`'s 2026-08-25 rotation row — a prior rotation is recorded, and 0a-1.1 says detection has since gone **backwards**. Those two facts need to be squared. | ☐ |
+| 0a-7.4 | Decide on history rewrite vs. rotation-only, and write the decision down. Rotation alone leaves the strings readable in history forever. | ☐ |
+
+---
+
+## Lane 0a-8 — The one new control that ships blocking on day one
+
+Ratified I2 condition 1. This is the **build-time** half of the split, and only that half.
+
+| # | Item | Done |
+|---|---|---|
+| 0a-8.1 | **Build-time egress gate:** fail the build if code classified Red has a call path to a frontier provider. Deterministic, testable offline, and it costs nothing today **because zero Red code exists** — so it blocks nothing while establishing the mechanism. | ☐ |
+
+**Explicitly NOT in Phase 0a:** the runtime default-deny egress boundary. It does not inherit the
+build-time control's safety case, it has no substrate (GEO runs on Railway, a PaaS with no customer
+egress firewall — both `railway.json` files are eight lines of healthcheck config), and its allowlist
+is a discovery exercise across two repos, thirteen backend dependencies, a frontend tree and Railway's
+own build-time fetches. Enumerating that list **is** the learned baseline the plan claims it does not
+need. It runs in observe mode only, after the inventory is enumerated and read once, and it does not
+go blocking before a staging environment exists.
+
+The fleet's own empirical answer to "blocking from day one," recorded 2026-08-31: `prepush.py` exited
+RED at three minutes, and *"wiring it naively would have blocked every push and been bypassed with
+`--no-verify` within a day."*
+
+---
+
+## The escalation mechanism, ratified (I4)
+
+Any control in this runbook that lands report-only carries all five conditions, or it does not land:
+
+1. **Owner: the operator (Abad Morel), stated explicitly.** Not "a named owner" as a requirement — the name.
+2. **The escalation is a check that runs** — a scheduled job that reads a date and flips the flag — **not
+   a calendar note.** If the escalation is not code, this is a policy in a markdown file, which is the
+   thing the operator's directive rejects. The fleet's demonstrated failure mode:
+   `bink_golden_dataset_runner.py` was built, correct, and its judge step **sat unrun for six-plus weeks
+   with a live API key.**
+3. **The clock starts on the first green run against the real target**, not on adoption.
+4. **Escalation covers only findings observed inside the window**, not all future publications, and
+   carries a declared severity scope.
+5. **Not wired into `main`'s required checks until staging exists**, or it ships with a logged
+   single-operator override. Otherwise a third-party CVE feed can halt GEO's deploy path on a calendar
+   date with a one-person team and no on-call.
+
+---
+
+## The condition that makes this runbook real
+
+Ratified from the finding Elijah and Orlok reached independently:
+
+> **Every item in this runbook gets a slice number in `master-todo.md` and an hours estimate,
+> sequenced explicitly against GEO's Phase 1 — or it is not scheduled, it is decorated.**
+
+The team executing this is one operator plus agent sessions already carrying 40–55 GEO slices at
+160–220 agent runs, on a product behind its deadline. The ledger's recurring escalation state across
+every prior review is *"blocked on Abad."* A plan with no line in `master-todo.md` does not lose the
+fight for the operator's time — it never enters it.
+
+Lanes 0a-1, 0a-2, 0a-4 (the parts not blocked on 0a-4.2), 0a-5 and 0a-6 are hours-to-days and carry no
+production regression risk. **Lane 0a-6 goes first on realised harm.** Lanes 0a-3, 0a-7 and 0a-8 are
+real slices and land inside GEO's Phase 1 rather than "in parallel" by a second team that does not exist.

@@ -2,7 +2,13 @@
 
 **Supersedes** `2026-09-01-security-arsenal-integration-plan.md`, which was rejected by three blind
 reviewers (AJ: REJECT, Hestia: BLOCK, Bayamanaco: INADEQUATE) on independent grounds.
-**Status:** proposal, **reviewed and not adopted as put**. Nothing here is implemented.
+**Status: SUPERSEDED, 2026-09-01. Not adopted. Do not implement from this document.**
+The operator ratified the Brain Trust slate on 2026-09-01 under Option A, which **split this plan**.
+Its fleet half, with the panel's conditions applied and four items it did not contain, is now
+`docs/runbooks/2026-09-01-phase-0a-security-remediation.md` (BINDING). Its R7 half is
+`docs/briefs/2026-09-01-r7-containment-brief-UNSCHEDULED.md` (not work). This file is kept for the
+audit trail only. Sections 1 (fact table) and 6 carry **no panel authority** and contain claims the
+review refuted — see the decision record before citing anything here.
 **Review outcome (2026-09-01):** the Brain Trust sat five seats and rejected I1 (adopt as written) 3-2
 and I5 (self-hosted runners) 3-2, passed I2/I3/I4/I7 with binding conditions, passed I6 4-1, and
 rejected its own composition 5-0. A separately-run cold security architect returned 13 findings, three
