@@ -52,6 +52,31 @@ enforce the intent of the rule."*
 - **Automated isolation.** Event-driven triggers that automatically isolate a container, service or
   endpoint on highly anomalous behaviour, acting as an automated first responder.
 
+### Verbatim labels, preserved for exact-match search
+
+Reproduced with the original capitalisation, spelling and punctuation, because the rest of this
+note paraphrases and a paste of the original text would otherwise miss it:
+
+```
+1. Automated "Fire Drills" (Testing & Validation)
+   Vulnerability Scanning
+   Automated Boundary Testing
+2. Active Defense Mechanisms (Blue Team Guardrails)
+   Network Segmentation
+   System Hardening
+   Privilege Escalation & Access Monitoring
+3. Event-Driven Incident Response
+   Automated Isolation
+```
+
+Two sentences from the original, verbatim, as further search anchors:
+
+> "I need to integrate a comprehensive arsenal of cybersecurity strategies directly into our
+> governance architecture."
+
+> "Analyze the current workspace, tell me how you plan to weave these into our existing governance
+> structure without breaking it, and let's get to work implementing them."
+
 ### Where the response lives
 
 `docs/specs/2026-09-01-security-arsenal-integration-plan.md` — the requirements mapped onto the
