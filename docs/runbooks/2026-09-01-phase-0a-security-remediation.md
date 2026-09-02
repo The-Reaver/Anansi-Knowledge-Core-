@@ -82,8 +82,8 @@ invoked by nothing. This lane is the antidote and it adds no new code.
 
 | # | Item | The trap | Done |
 |---|---|---|---|
-| 0a-2.1 | **Wire `omar_security_gate.py` — correctly.** **argv contract fixed 2026-09-01** on `claude/gate-defects-2026-09-01`: it now accepts `--root` as well as the positional, and rejects a caller that passes both with different values. **Still not wired** — blocked on 0a-2.2. | `omar_security_gate.py:110` declared `parser.add_argument("root", nargs="?", default=".")` — a **positional**, where every other gate in the battery is invoked `--root ROOT`. Wire it by pattern-match and argparse rejects `--root` and exits 2 **before scanning a byte**: a gate that "runs" and asserts nothing. That is v2's own Principle 2 failure committed by v2's own Phase 0. | ☐ |
-| 0a-2.2 | **Before 0a-2.1 can go blocking: give it a baseline.** **Done 2026-09-01** on `claude/gate-defects-2026-09-01`: `--secret-baseline` added, `security/omar_secret_baseline.json` generated **after review** (see below), gate now PASSes with 107 known / 0 blocking. A missing baseline path fails closed; a genuinely new finding still blocks (tested). | Ratified I2 condition 2 pattern applies here by analogy. | ✅ |
+| 0a-2.1 | **Wire `omar_security_gate.py` — correctly.** **Unblocked 2026-09-01** on `claude/gate-defects-2026-09-01`: argv contract fixed (accepts `--root` and the positional, rejects a caller that disagrees with itself) and the gate rescoped to the rate-limit check by operator ruling, so it no longer needs a secret baseline at all. Current state at repo root: **3 real findings across 471 checked files, 4 unparseable**. Wiring is now a decision, not a blocker. | `omar_security_gate.py:110` declared `parser.add_argument("root", nargs="?", default=".")` — a **positional**, where every other gate in the battery is invoked `--root ROOT`. Wire it by pattern-match and argparse rejects `--root` and exits 2 **before scanning a byte**: a gate that "runs" and asserts nothing. That is v2's own Principle 2 failure committed by v2's own Phase 0. | ☐ |
+| 0a-2.2 | ~~**Before 0a-2.1 can go blocking: give it a baseline.**~~ **SUPERSEDED by operator ruling 2026-09-01: omar is scoped to the rate-limit check and its secret half is dropped, so it needs no secret baseline.** The baseline was built first, and building it is what produced the evidence for the ruling. `security/omar_secret_baseline.json` and its test are deleted; the review that justified them is retained below because it is the record of what the 106 findings actually were. | Ratified I2 condition 2 pattern no longer applies — there is nothing to baseline. | ✅ (by removal) |
 | 0a-2.3 | **Install the hooks, or `hook_parity_gate` is theatre.** `.git/hooks/` in a fresh clone contains only `*.sample`. `hook_parity_gate.py` is the fleet's purpose-built control for hook drift, is declared in **both** `.pre-commit-config.yaml` and `scripts/hooks/install-git-hooks.sh`, and **runs nowhere**. Verified 2026-09-01. | This is the finding v2 should have made and did not. | ☐ |
 | 0a-2.4 | **`branch_name_gate` is a third orphan and no document mentions it.** Wire it or delete it; do not leave it in the third state. | `gate_coverage_report.py` output: orphaned 3 — `branch_name_gate`, `hook_parity_gate`, `stale_stage_guard`. | ☐ |
 | 0a-2.5 | **Do NOT "make `gate_coverage_report.py` read the installer."** Withdrawn by ratified decision (cold review F1). Line 26 reads `.git/hooks/pre-commit` — the **installed** hook — and its docstring documents that limit. The tool is correct; the proposed change would replace measured state with declared intent. If both views are wanted, add a **second column** (declared-by-installer vs installed). Never merge them. | Verified 2026-09-01: `PRE_COMMIT_HOOK = os.path.join(REPO, ".git", "hooks", "pre-commit")`; `.git/hooks/` holds only samples. | ☐ |
@@ -126,6 +126,56 @@ Both are mine, from the earlier push-range fix, and both are now fixed and mutat
 `prepush.py` is on the operator's protected list and was edited under the standing override granted for
 the push-range fix; 0a-2.2a is a defect in the code that override produced. `security/secret_scan.py` and
 `security/secret_scan_baseline.json` remain untouched.
+
+---
+
+## Omar rescoped — operator ruling, 2026-09-01
+
+**Ruling: scope omar to the rate-limit check, drop its secret half.** This resolves the structural
+question raised (and deliberately not decided) when its baseline was built.
+
+`omar_security_gate.check_secrets` was literally `scan_for_secrets(root)` — the **same scanner**
+`secret_scan_gate` composes, with none of its baseline or regression machinery. Two gates duplicated one
+control at different roots, and the duplicate was the unwireable one.
+
+### Secret coverage after the change — checked, not assumed
+
+| When | Gate | Scope |
+|---|---|---|
+| commit | `scripts/hooks/pre_commit_secret_check.py` | `git diff --cached`, repo-wide |
+| push | `prepush.py` | the outgoing commit range, repo-wide |
+| archive | `scripts/gates/secret_scan_gate.py` | `research/knowledge-home/raw/`, baselined **and** regression-checked |
+
+**Nothing is lost for new content.** What is given up is a full-tree sweep of existing content, whose
+entire output was the 106 findings reviewed above — none a live credential outside `raw/`.
+
+### The trap in the ruling, and how it was closed
+
+Removing the secret half would, by itself, have **created** the defect this gate exists to embody the fix
+for. The battery invokes gates with `--root` and no `--source`; a rate-limit gate with nothing to check
+would have printed PASS over zero files. The gate now discovers every `.py` under root, and **every line
+of output states its own scope** — files checked, files unparseable — so a bare PASS is impossible.
+
+### Two false-positive classes discovery exposed, both fixed
+
+| Defect | Effect | Fix |
+|---|---|---|
+| `@patch` from `unittest.mock` read as an HTTP PATCH route | **every mocked test function in the repo** counted as an unprotected mutating handler | attribute decorators (`@app.patch`) still count; a bare `@patch` does not |
+| Matching was a **substring** test | `deposit` contains "post"; `soft_delete` contains "delete" — ordinary functions reported as handlers | matching is now exact |
+
+Unparseable files are now split from blocking findings: printed as `NOT CHECKED` every run and counted in
+the summary, but non-blocking — an unperformed check is not a clean check, and a repo blocked by a
+vendored BOM earns a standing `--no-verify`.
+
+### Result
+
+**3 real findings across 471 checked files, 4 unparseable.** A wireable gate.
+
+| # | Follow-up | Status |
+|---|---|---|
+| 0a-2.1a | The 3 findings: two handlers in `jeremy/anansi-ledger/app/main.py` (`capture`, `reuse`), one in a test fixture (`tests/test_billing_gate_authz.py::post_clients`). Fix or accept each. | ☐ |
+| 0a-2.1b | `scripts/generate_scorecard.py` **will not parse** — a U+FEFF BOM on line 1. A real script Python cannot import, surfaced only because the gate started reporting what it could not check. | ☐ |
+| 0a-2.1c | Wire the gate into the battery. Now a decision, not a blocker. | ☐ |
 
 ---
 
