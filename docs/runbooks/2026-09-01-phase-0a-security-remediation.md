@@ -62,8 +62,9 @@ append-only premise governs the store on the capture machine; it does not surviv
 | # | Follow-up | Status |
 |---|---|---|
 | 0a-1.1a | Gate now splits regressions into "file present, no longer matches" (the real 2026-08-26 signal) and "file absent from this checkout" (baseline/checkout problem). Both still fail — an unperformed check is not a clean check. An unparseable baseline key fails closed. Mutation-verified. | **Done**, `claude/gate-defects-2026-09-01` |
-| 0a-1.1b | **Regenerate the baseline against committed content only.** `security/secret_scan_baseline.json` and `security/secret_scan.py` are on the operator's protected list and were not touched. **Blocked on operator authorization.** | ☐ |
-| 0a-1.1c | Decide whether the three never-committed transcripts should be retained outside git (the `.gitignore` comment says "back these up outside git if you need them retained") or dropped from the baseline. | ☐ |
+| 0a-1.1b | **Regenerate the baseline against committed content only.** **Done 2026-09-01 on operator authorization**, on `claude/gate-defects-2026-09-01`. 27 entries → 16, every one in a tracked file. Gate is green: 16 known, 0 new, 0 regressed. A genuinely new finding still blocks (tested). `security/secret_scan.py` untouched. **The commit is local — the push was denied by the permission classifier and is pending.** | ◐ |
+| 0a-1.1d | **The durable fix, which is the test and not the data:** `tests/test_secret_scan_baseline_is_clone_reproducible.py` asserts every baselined path is tracked in git, plus no stale entries, no unbaselined live findings, kind+path only, and that removals stay enumerated. Both failure directions mutation-verified. | ✅ |
+| 0a-1.1c | Decide whether the three never-committed transcripts should be retained outside git (the `.gitignore` comment says "back these up outside git if you need them retained"). They are **on your machine only** and have never been audited by anything. | ☐ |
 
 ### Correction to the exposure count, checked rather than assumed
 
@@ -72,6 +73,54 @@ pushed** — they were committed before the `.gitignore` rule landed, so the rul
 transcripts. The kinds are: OpenAI/Anthropic key, DB connection string with credentials, JWT, Stripe
 key. Six are top-level `raw/*.jsonl`; six are under `raw/antigravity-imports/`, which the earlier count
 did not separate. Lane 0a-7 inherits this list.
+
+---
+
+## Carried forward to rotation: the 11 entries removed from the baseline — 2026-09-01
+
+**Read this as an open worklist, not as resolved.** Removing these fixed the *gate's signal*. It did
+nothing to the underlying credentials. Each was a real pattern match seen on the capture machine when the
+baseline was generated, and **the material is now recorded in no repository at all** — which is precisely
+why it needs a line here. They are enumerated inside `security/secret_scan_baseline.json` as well, so the
+record survives independently of this document.
+
+### Group A — file was never committed (3)
+
+These name transcripts that exist **only on the capture machine**. `.gitignore:146` excludes
+`research/knowledge-home/raw/*.jsonl` deliberately. Nothing has ever scanned the current contents of these
+files except the machine that made them.
+
+| Kind | File | Rotate? |
+|---|---|---|
+| Generic Secret | `2026-08-28-live-87ca0bf9.jsonl` | ☐ |
+| OpenAI/Anthropic key | `2026-08-25-live-cb849e2f.jsonl` | ☐ |
+| OpenAI/Anthropic key | `2026-08-28-live-8f1c2106.jsonl` | ☐ |
+
+### Group B — file is committed, but the committed content does not carry the pattern (8)
+
+Each named file has **exactly one commit** and its worktree content matches `HEAD`, so it was never edited
+here. The loosest probes return zero matches in the committed content — `AKIA` 0, `sk-` 0, `eyJ` 0,
+`BEGIN PRIVATE KEY` 0. A tightened regex still matches loosely, so zero loose matches means **the baseline
+was generated from a different version of these files** — the pre-commit local version. The credentials
+were real when seen; they are not in the repo.
+
+| Kind | File | Rotate? |
+|---|---|---|
+| AWS Access Key | `2026-08-25-live-8962d687.jsonl` | ☐ |
+| DB connection string | `2026-08-25-live-8962d687.jsonl` | ☐ |
+| OpenAI/Anthropic key | `2026-08-25-live-8962d687.jsonl` | ☐ |
+| OpenAI/Anthropic key | `2026-08-25-live-6b04c60c.jsonl` | ☐ |
+| Private Key | `2026-08-25-live-6b04c60c.jsonl` | ☐ |
+| DB connection string | `2026-08-27-live-c69335ef.jsonl` | ☐ |
+| Generic Secret | `2026-08-27-live-c69335ef.jsonl` | ☐ |
+| JWT | `2026-08-27-live-c69335ef.jsonl` | ☐ |
+
+**Distinct credentials to chase: at most 11, across 5 files, 3 of which are local-only.** Cross-reference
+`reports/STAG_BRAIN_TRUST_LEDGER.md`'s 2026-08-25 rotation row before rotating — some may already have
+been done, and 0a-7.3 already owes that reconciliation.
+
+**These do not replace lane 0a-7's 16 live findings.** That list is material *in the pushed repo*. This
+list is material that *was seen and is now untracked*. Both need rotation; only one is still exposed in git.
 
 ---
 
