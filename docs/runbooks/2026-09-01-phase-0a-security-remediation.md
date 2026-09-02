@@ -326,9 +326,10 @@ Forward-looking push protection does nothing about material already pushed.
 
 | # | Item | Done |
 |---|---|---|
-| 0a-7.1 | **Sixteen baselined credential-shaped findings in `research/knowledge-home/raw/`** — DB connection strings with credentials, a Stripe key, JWTs, an AWS access key — in a pushed GitHub repository. Triage each: live or dead. | ☐ |
+| 0a-7.0 | **ROTATE THE STRIPE `sk_live_` KEY** in `2026-08-21-live-f810b6ef.jsonl`, tracked and pushed. Live-mode prefix, no redaction markers, never rotated, never scanned for. Then review Stripe API logs since 2026-08-21. See `docs/runbooks/2026-09-01-credential-reconciliation.md`. | ☐ **NOW** |
+| 0a-7.1 | ~~**Sixteen baselined credential-shaped findings in `research/knowledge-home/raw/`**~~ **Triaged 2026-09-01: 16 findings = 19 distinct values = 6 real credentials.** Original text: — DB connection strings with credentials, a Stripe key, JWTs, an AWS access key — in a pushed GitHub repository. Triage each: live or dead. | ☐ |
 | 0a-7.2 | Rotate every live one. This is the live tail of `docs/runbooks/credential-rotation-2026-09-01.md` and inherits its tick-boxes and its per-credential date/initials fields. | ☐ |
-| 0a-7.3 | Reconcile against `reports/STAG_BRAIN_TRUST_LEDGER.md`'s 2026-08-25 rotation row — a prior rotation is recorded, and 0a-1.1 says detection has since gone **backwards**. Those two facts need to be squared. | ☐ |
+| 0a-7.3 | Reconcile against `reports/STAG_BRAIN_TRUST_LEDGER.md`'s 2026-08-25 rotation row. **DONE 2026-09-01 on operator authorization — `docs/runbooks/2026-09-01-credential-reconciliation.md`.** Result: 19 distinct values → **6 real credentials, 13 not credentials**. Five of the six were rotated on 2026-08-25 and the ledger's arithmetic checks out independently. **The sixth — a Stripe `sk_live_` key in a tracked, pushed file — was never in the rotation's scope and has never been rotated.** | ✅ |
 | 0a-7.4 | Decide on history rewrite vs. rotation-only, and write the decision down. Rotation alone leaves the strings readable in history forever. | ☐ |
 
 ---
