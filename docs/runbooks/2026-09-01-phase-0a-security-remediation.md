@@ -83,11 +83,49 @@ invoked by nothing. This lane is the antidote and it adds no new code.
 | # | Item | The trap | Done |
 |---|---|---|---|
 | 0a-2.1 | **Wire `omar_security_gate.py` — correctly.** **argv contract fixed 2026-09-01** on `claude/gate-defects-2026-09-01`: it now accepts `--root` as well as the positional, and rejects a caller that passes both with different values. **Still not wired** — blocked on 0a-2.2. | `omar_security_gate.py:110` declared `parser.add_argument("root", nargs="?", default=".")` — a **positional**, where every other gate in the battery is invoked `--root ROOT`. Wire it by pattern-match and argparse rejects `--root` and exits 2 **before scanning a byte**: a gate that "runs" and asserts nothing. That is v2's own Principle 2 failure committed by v2's own Phase 0. | ☐ |
-| 0a-2.2 | **Before 0a-2.1 can go blocking: give it a baseline.** Wired correctly it exits 1 with **106 problems** repo-wide and, unlike `secret_scan_gate`, has **no baseline mechanism at all**. Landing it blocking on day one red-lines every commit — v2's own Principle 1, violated. Land it report-only, baseline the 106, then flip. | Ratified I2 condition 2 pattern applies here by analogy. | ☐ |
+| 0a-2.2 | **Before 0a-2.1 can go blocking: give it a baseline.** **Done 2026-09-01** on `claude/gate-defects-2026-09-01`: `--secret-baseline` added, `security/omar_secret_baseline.json` generated **after review** (see below), gate now PASSes with 107 known / 0 blocking. A missing baseline path fails closed; a genuinely new finding still blocks (tested). | Ratified I2 condition 2 pattern applies here by analogy. | ✅ |
 | 0a-2.3 | **Install the hooks, or `hook_parity_gate` is theatre.** `.git/hooks/` in a fresh clone contains only `*.sample`. `hook_parity_gate.py` is the fleet's purpose-built control for hook drift, is declared in **both** `.pre-commit-config.yaml` and `scripts/hooks/install-git-hooks.sh`, and **runs nowhere**. Verified 2026-09-01. | This is the finding v2 should have made and did not. | ☐ |
 | 0a-2.4 | **`branch_name_gate` is a third orphan and no document mentions it.** Wire it or delete it; do not leave it in the third state. | `gate_coverage_report.py` output: orphaned 3 — `branch_name_gate`, `hook_parity_gate`, `stale_stage_guard`. | ☐ |
 | 0a-2.5 | **Do NOT "make `gate_coverage_report.py` read the installer."** Withdrawn by ratified decision (cold review F1). Line 26 reads `.git/hooks/pre-commit` — the **installed** hook — and its docstring documents that limit. The tool is correct; the proposed change would replace measured state with declared intent. If both views are wanted, add a **second column** (declared-by-installer vs installed). Never merge them. | Verified 2026-09-01: `PRE_COMMIT_HOOK = os.path.join(REPO, ".git", "hooks", "pre-commit")`; `.git/hooks/` holds only samples. | ☐ |
 | 0a-2.6 | **Delete the three dead `.pre-commit-config.yaml` targets.** `.secrets.baseline`, `pyproject.toml` and `projects/` do not exist in Stag-Fleet. Re-verified 2026-09-01: all three ABSENT. | A hook pointed at a missing path is a hook that reports clean. | ☐ |
+
+---
+
+## The 106 omar findings, reviewed — 2026-09-01
+
+The fleet's own rule is that a finding must never be silently baselined. Every one was looked at before
+the baseline was written. **The 106 are not 106 problems.**
+
+| Kind | File-findings | Distinct values | What they are |
+|---|---|---|---|
+| OpenAI/Anthropic key | 63 | **8** | 111 of the 164 raw matches are all-lowercase-and-hyphen prose — kebab-case inside documentation, e.g. `task-curriculum-…` matching `sk-` + path characters. This is precisely the false-positive class the 2026-08-26 regex tightening targeted, and that tightening silently killed 7 of 7 real detections and was correctly reverted. **Baselining is the right instrument here; touching `SECRET_PATTERNS` is not.** The credential-shaped remainder (len 49 and len 108) sits in `research/knowledge-home/raw/` and is already in `secret_scan_baseline.json`. |
+| DB connection string | 19 | 18 | Every match **outside** `raw/` was inspected structurally — scheme, user, password length, host tail, never the value. All are placeholders (`<PROJECT_REF>`, `${POSTGRES_USER}`), curriculum fixtures, or Supabase's local-dev default on `127.0.0.1:54322`. |
+| Generic Secret / unquoted | 21 | 15 | The literal word "secret" in prose, `.env.example` keys, and curriculum source. |
+| Stripe key / JWT | 3 | 3 | Test fixtures, cross-referenced from `specs/` and `tests/`. |
+
+**A false alarm I checked before raising it:** two credential-shaped DB strings appear in
+`operator-playbooks/geo-launch-checklist.md` and `operator-playbooks/live-db-verification.md`, both
+tracked and pushed, with filenames that suggest live infrastructure. They are **placeholders** —
+`postgres` user, a placeholder password, host `<PROJECT_REF>.supabase.co`. Not an exposure.
+
+**The structural conclusion:** `omar_security_gate.check_secrets` is literally `scan_for_secrets(root)` —
+the *same scanner* `secret_scan_gate` uses, with none of its baseline machinery. The two gates duplicate
+one control at different roots. That is why omar was never wireable, and it is worth a decision the panel
+did not make: whether omar should keep its secret half at all, or be scoped to the thing only it does —
+the OWASP anti-automation / rate-limit check on mutating handlers. **Raised, not decided.**
+
+### Two defects in `prepush.py` that this work exposed
+
+Both are mine, from the earlier push-range fix, and both are now fixed and mutation-verified.
+
+| # | Defect | Status |
+|---|---|---|
+| 0a-2.2a | `push_range()` **failed closed on a branch that is tracked.** `git push -u` writes `branch.<b>.remote` and `.merge` at once, but the remote-tracking ref only appears via a fetch whose refspec covers it — and in a clone made with a narrow refspec, `git fetch <rem> <branch>` writes `FETCH_HEAD` and nothing else. **The fail-closed message prescribed `git fetch`, a remedy that provably does not work in this clone.** A gate that blocks with a broken remedy gets bypassed with `--no-verify`. Now bounds against the remote's default branch — a superset of the outgoing set, which can over-report but never return a false clean — and the remaining fail-closed text names a remedy that works. | **Fixed** |
+| 0a-2.2b | `run_secret_stage` scans **two** scopes, but the tests could inject only the first, so the real repository's git state leaked into assertions about injected-clean input. `test_prepush` passed at `aad9650` and failed on **identical code** one branch later for that reason alone. Both scopes are now injectable and default to clean. `test_prepush` is 8/8. | **Fixed** |
+
+`prepush.py` is on the operator's protected list and was edited under the standing override granted for
+the push-range fix; 0a-2.2a is a defect in the code that override produced. `security/secret_scan.py` and
+`security/secret_scan_baseline.json` remain untouched.
 
 ---
 
