@@ -114,10 +114,52 @@ anything but the machine that made them.** That is the only place the answer liv
 |---|---|---|---|
 | R1 | **Rotate the Stripe `sk_live_` key** in the Stripe dashboard. | **Now** | ☐ |
 | R2 | Review Stripe API logs for unrecognised use since 2026-08-21. | **Now** | ☐ |
-| R3 | Run a secret scan over the three never-committed transcripts on your machine, and classify what the 5 post-rotation entries actually were. | High | ☐ |
+| R3 | Run a secret scan over the three never-committed transcripts **on your machine**. Confirmed 2026-09-01: they are not in the forked Core and not on disk anywhere reachable from this session, so your machine is the only place this can be done. | High | ☐ |
 | R4 | Decide history rewrite vs. rotation-only. Rotation stops the key working; it stays readable in git history forever. Inherited from lane `0a-7.4`. | High | ☐ |
 | R5 | Add `sk_live_` / `sk_test_` prefix separation to the classification used in future reviews — a live-mode prefix should never sort alongside prose. | Medium | ☐ |
-| R6 | Record this reconciliation as a ledger row, so the next reviewer inherits the answer rather than redoing it. | Medium | ☐ |
+| R6 | Record this reconciliation as a ledger row, so the next reviewer inherits the answer rather than redoing it. | Medium | ✅ appended 2026-09-01, commit pending push |
+
+---
+
+## Follow-on: this repository has no secret-scanning coverage at all
+
+Chased while reconciling, because the three never-committed transcripts might have existed in the other
+fork. They do not — they are not on disk anywhere reachable, so **R3 can only be done on your machine.**
+But looking for them surfaced a gap nobody had checked.
+
+`secret_scan_gate` scans `research/knowledge-home/raw/` **in Stag-Fleet**. The Anansi Knowledge Core is a
+**separate, separately-pushed repository** holding 238+ notes, every candidate, and every runbook —
+including this one. What guards it:
+
+| Control | Present here? |
+|---|---|
+| `.github/` workflows | **absent** |
+| `.pre-commit-config.yaml` | **absent** |
+| `scripts/gates/` | **absent** |
+| `security/` | **absent** |
+| `verify.py` / `prepush.py` | **absent** |
+| installed git hooks | **none** — `.git/hooks/` holds only `*.sample` |
+
+**Nothing has ever scanned this repository.** It is the same blind spot the cold review found for
+`mandates_gate` — *"this document sits in a third repo the gate has never scanned"* — and it applies to
+secret scanning too.
+
+**Scanned on 2026-09-01 using Stag-Fleet's own `SECRET_PATTERNS`. Result: clean.** Four matches, all
+prose, **every one with a maximum opaque run of zero characters**:
+
+| Match | Where | Verdict |
+|---|---|---|
+| `sk-` slug, 8 segments | `notes/2026-08-06-production-systems-with-patient-data-need-a-human-engineer.md` | prose |
+| `sk-` slug, 11 segments | `candidates/2026-08-31/the-fleet-curriculum-exists-on-disk-…` | prose |
+| `sk-` slug, 4 segments | `docs/runbooks/2026-09-01-credential-reconciliation.md` — **this file**, which discusses `sk-ant-` | prose |
+| `postgres://user:pass@\`` | `candidates/2026-09-01/a-rotation-is-only-as-complete-as-the-scan-…` | placeholder in prose |
+
+**Clean by luck, not by control.** The Core ingests raw session material by design; the day a transcript
+excerpt carries a real key, nothing in this repository will notice.
+
+| # | Action | Priority | Done |
+|---|---|---|---|
+| R7 | Install the fleet's secret hook in the Knowledge Core, or run its scanner over this repo in CI. Either closes the gap; neither exists today. | High | ☐ |
 
 ## What is now settled, and should not be re-derived
 
