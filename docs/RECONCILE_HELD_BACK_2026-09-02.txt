@@ -1,0 +1,128 @@
+2026-07-18-geo-dry-run-g1-empty-erd-truncation.md  -- front matter is not valid YAML: mapping values are not allowed here
+  in "<unico
+2026-07-18-geo-dry-run-g2-nfr-miscategorization.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+2026-07-21-audit-and-site-engine-built-bink-upgraded.md  -- front matter is not valid YAML: mapping values are not allowed here
+  in "<unico
+2026-07-22-antigravity-non-delivery-both-failure-modes.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-22-background-engine-meta-lessons-shape-not-substance.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-22-bg1-fake-audit-stub-quarantined.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-22-bg2-router-wiring-autofix-corrupted-main.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-22-geo2-check9-false-flag-on-config-path.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-22-geo3-pydantic-extra-forbid-import-crash.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-24-agent-improvements-report-rejected-as-unverified-simulation.md  -- front matter is not valid YAML: mapping values are not allowed here
+  in "<unico
+2026-07-24-antigravity-twelve-specs-accepted.md  -- front matter is not valid YAML: mapping values are not allowed here
+  in "<unico
+2026-07-24-batch3-pytest-only-tests-false-green-hole.md  -- front matter is not valid YAML: mapping values are not allowed here
+  in "<unico
+2026-07-24-batch3-remediation-verified-two-returns.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-24-bill1-mock-mislabeled-as-mathematical-guarantee.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+2026-07-24-bill3-billing-gate-get-bypass-authz-hole.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-24-correction-multistack-is-approved-roadmap.md  -- front matter is not valid YAML: mapping values are not allowed here
+  in "<unico
+2026-07-24-facts-persistence-layer-confirmed-only-invariant.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-24-geo-site-engine-real-implementation-quarantine-lifted.md  -- front matter is not valid YAML: while parsing a block mapping
+  in "<unicode str
+2026-07-24-intake-protocol-established.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-24-oluwole-vanguard-researcher-adopted.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-24-seventeen-agent-drafts-rejected-quarantined.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-24-verify-py-created.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-25-amadeus-own-consolidation-error-logged.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-25-orlok-weakness-ledger-governance-hardening.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-25-phase-cd-fully-accepted-ag-roadmap-complete.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-25-phase-cd-verify-py-hardened-against-pytest-imports.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-26-full-fleet-research-hbot-anirak-cursor-joins.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-26-patterns-stall-broken-elijah-pm-tree-opened.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-28-compliance-intelligence-mission-landed.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-07-28-compliance-intelligence-v1-v3-built.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-08-01-fleet-leveling-false-attribution-caught.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-08-02-lords-of-cian-repo-created-and-pushed.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-08-02-msg056-project-relief-accepted-round3.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+2026-08-09-geo-worth-is-provable-an-agency-would-bill-450k-1m-to-build.md  -- front matter is not valid YAML: mapping values are not allowed here
+  in "<unico
+2026-08-09-lords-of-cian-atlas-xlsx-upload-purpose-unresolved.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+2026-08-21-claude-cli-judge-call-costs-010-to-012-dollars-dominated-by-cache-overhead.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+2026-08-21-cli-shell-out-llm-judge-only-runs-inside-claude-code-cowork-not-ci.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+2026-08-21-llm-judge-schema-put-reasoning-before-verdict-to-avoid-self-contradiction.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+origin-check13-migration-column-model-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-check14-catalog-parity-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-check15-backend-mypy-type-gate.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+origin-maintenance-protocol-a-lesson-isnt-learned-until-its-a-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-s1-deploy-config-gate-and-s2-open.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-s10-provider-provisioning-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-s11-environment-alignment-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-s13-lockfile-parity-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-s3-nav-target-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-s4-auth-contract-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-s5-dependency-route-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-s9-api-version-pin-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-scaffold-emission-hardens-projects-on-day-one.md  -- front matter is not valid YAML: mapping values are not allowed here
+  in "<unico
+origin-sprint-b1-define-stage-and-deepened-interview.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+origin-sprint-b2-backlog-stage-and-plan-traceability.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-b3-delivery-scaffolding-completes-sprint-b.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-c1-design-system-and-lofi-wireframes.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-c2-state-design-and-midfi-wireframes.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-c3-hifi-mockups-real-artifacts.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-c4-prototype-and-screen-data-map-completes-sprint-c.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-d1-architect-data-model-and-coverage.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
+origin-sprint-d2-api-contract-closes-architect-gate.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-d3-adrs-and-seam-registry.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-d4-nfr-map-and-plan-wired-completes-sprint-d.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-d5-erd-robustness-and-as-obj-fix.md  -- front matter is not valid YAML: while parsing a block collection
+  in "<unicode 
+origin-sprint-e1-observability-and-improvement-layer.md  -- front matter is not valid YAML: while scanning a simple key
+  in "<unicode strin
