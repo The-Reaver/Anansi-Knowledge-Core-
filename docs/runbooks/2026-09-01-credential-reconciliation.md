@@ -159,7 +159,7 @@ excerpt carries a real key, nothing in this repository will notice.
 
 | # | Action | Priority | Done |
 |---|---|---|---|
-| R7 | Install the fleet's secret hook in the Knowledge Core, or run its scanner over this repo in CI. Either closes the gap; neither exists today. | High | ☐ |
+| R7 | Install the fleet's secret hook in the Knowledge Core, or run its scanner over this repo in CI. | High | ✅ **Done 2026-09-01** — see below |
 
 ## What is now settled, and should not be re-derived
 
@@ -170,3 +170,40 @@ excerpt carries a real key, nothing in this repository will notice.
   exactly why the 2026-08-26 regex tightening was attempted, and exactly why reverting it was still right:
   it killed 7 of 7 real detections to remove noise. **The noise is real; the answer is classification at
   review time, not a tighter pattern.**
+
+
+---
+
+## R7 closed — the Core now has its own secret check
+
+`scripts/secret_check.py`, `scripts/hooks/install-git-hooks.sh`, `tests/test_secret_check.py`.
+Hook installed in this clone and verified firing on staged files.
+
+**Patterns are vendored, not imported.** The Core is cloned on its own with no Stag-Fleet beside it, so
+an import would leave the check silently absent exactly where it is needed. Vendoring buys independence
+and costs drift, so the drift is **tested**: `test_secret_check.py` compares the pattern set against
+Stag-Fleet's `security/secret_scan.py` whenever that repo is present, and says so when it is not.
+Currently: **exact match**. Silent divergence is the failure mode, not divergence.
+
+**Blocking is split from noted, because this corpus is prose *about* credentials.** A checker that
+blocked on every pattern hit would block nearly every commit touching a note and be bypassed with
+`--no-verify` inside a day — the fleet has that on record for `prepush.py`. So only
+`[LIVE-MODE PREFIX]` and `[credential-shaped]` block; prose is printed every run, never silent, never
+blocking. Unreadable files block: an unperformed check is not a clean check.
+
+**Classification is kind-specific**, because one rule does not fit both shapes. A URL has no hyphen
+structure to read, so it is judged by host and by whether its credentials are placeholders; a token is
+judged by its longest opaque run. Judging a URL by opaque runs marks every `postgres://user:pass@host`
+in prose as credential-shaped — which is how a checker teaches its reader to ignore it. That bug was in
+the first draft and is why the test suite asserts both directions.
+
+Current state: **265 files read, 0 blocking, 7 prose matches noted.**
+
+Three properties are mutation-verified. The third is the sharpest: re-narrowing the OpenAI/Anthropic
+pattern to the exact 2026-08-26 defect (`sk-[A-Za-z0-9]{20,}`, dropping `_-`) makes a real key stop
+matching, and the suite fails. **The regression that took a week to notice last time now takes one test
+run.**
+
+One assertion is worth stating on its own, because it retro-confirms the Stripe finding: the scanner's
+Stripe pattern is `[rs]k_live_[A-Za-z0-9]{20,}` — it **cannot match `sk_test_`**. Any Stripe hit in this
+fleet is live-mode by construction of the pattern, not by my reading of a prefix.
